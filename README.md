@@ -27,14 +27,14 @@ python -m http.server -d site                   # 打开 http://localhost:8000
 
 | 接口 | 本机（Danny，2026-10-06） | GitHub Actions runner |
 |---|---|---|
-| fapi.binance.com `/ping` `/exchangeInfo` | 200 | 待运行 |
-| api.binance.com `/exchangeInfo` | 200 | 待运行 |
-| data-api.binance.vision `/exchangeInfo` | 200 | 待运行 |
-| Alpha `token/list` | 200 | 待运行 |
-| DexScreener | 200 | 待运行 |
-| CoinGecko `/ping` | 200 | 待运行 |
+| fapi.binance.com `/ping` `/exchangeInfo` | 200 | **451（被拒）** |
+| api.binance.com `/exchangeInfo` | 200 | **451（被拒）** |
+| data-api.binance.vision `/exchangeInfo` | 200 | 200 |
+| Alpha `token/list` | 200 | 200 |
+| DexScreener | 200 | 200 |
+| CoinGecko `/ping` | 200 | 200 |
 
-> 推到 GitHub 后在 Actions 页手动运行 `connectivity-test`，把结果填入上表。若 Binance 返回 451/403，改用 self-hosted runner：
+> 结论（2026-10-06 实测）：GitHub 托管 runner 访问 Binance 合约/现货 API 返回 451，**必须使用 self-hosted runner**（Alpha、DexScreener、CoinGecko 可用）。
 
 ### Self-hosted runner（Binance 被拒时）
 
