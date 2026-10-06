@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpha 合约监控看板</title>
+<style>
+:root{
+  --bg:#fafaf8;--card:#fff;--text:#1d1d1b;--muted:#6f6f68;--line:#e4e3dd;--head:#f1f0eb;
+  --warn-bg:#fff3c4;--warn-fg:#7a5b00;--alert-bg:#ffd9d6;--alert-fg:#a3160b;--na:#9a9a93;--link:#1a56c4;--new:#1a7f4b;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141413;--card:#1d1d1b;--text:#ecebe5;--muted:#9b9a92;--line:#33332f;--head:#252522;
+  --warn-bg:#4a3b08;--warn-fg:#ffd75e;--alert-bg:#5a1a15;--alert-fg:#ff9a90;--na:#6f6f68;--link:#7aa7ff;--new:#4cc88a;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif}
+main{max-width:1500px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card b{display:block;font-size:26px;line-height:1.2}
+.card span{color:var(--muted);font-size:12px}
+.card.alert b{color:var(--alert-fg)}.card.warn b{color:var(--warn-fg)}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:8px 0 10px}
+.bar label{display:flex;gap:5px;align-items:center;cursor:pointer;user-select:none}
+select{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:3px 6px}
+.wrap{overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);max-height:78vh}
+table{border-collapse:separate;border-spacing:0;width:100%;white-space:nowrap}
+th,td{padding:7px 10px;text-align:right;border-bottom:1px solid var(--line)}
+th{position:sticky;top:0;background:var(--head);cursor:pointer;font-weight:600;font-size:12px;z-index:2;user-select:none}
+th.sorted::after{content:" ▼";font-size:9px}th.sorted.asc::after{content:" ▲"}
+td:first-child,th:first-child{position:sticky;left:0;text-align:left;background:var(--card);z-index:1;border-right:1px solid var(--line)}
+th:first-child{background:var(--head);z-index:3}
+td.l,th.l{text-align:left}
+tr:hover td{background:var(--head)}tr:hover td:first-child{background:var(--head)}
+.ok{}.warn{background:var(--warn-bg);color:var(--warn-fg)}.alert{background:var(--alert-bg);color:var(--alert-fg);font-weight:600}.na{color:var(--na)}
+.badge{display:inline-block;font-size:10px;padding:0 5px;border-radius:8px;background:var(--new);color:#fff;margin-left:5px;vertical-align:1px}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.links a{margin-right:8px}
+section{margin-top:26px}
+h2{font-size:16px;margin:0 0 8px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:14px}
+summary{cursor:pointer;font-weight:600}
+.mtable{width:auto;margin:10px 0;white-space:normal}.mtable th,.mtable td{text-align:left;cursor:default;position:static}
+.mtable td:first-child,.mtable th:first-child{position:static;border-right:0}
+ul{margin:6px 0;padding-left:20px}
+.disc{color:var(--muted);font-size:12px;margin-top:22px}
+#err{display:none;background:var(--alert-bg);color:var(--alert-fg);padding:10px 14px;border-radius:8px;margin:12px 0}
+</style>
+</head>
+<body>
+<main>
+  <h1>Alpha 合约监控看板 <span class="sub" id="stage"></span></h1>
+  <div class="sub">已上 Binance Alpha + USDⓈ-M 永续、未上 Binance 现货的代币 · 粗筛"是否有人建仓或操盘" · <span id="time">加载中…</span></div>
+  <div id="err"></div>
+  <div class="cards" id="cards"></div>
+  <div class="bar">
+    <label><input type="checkbox" id="fAlert"> 只看警惕</label>
+    <label><input type="checkbox" id="fNew"> 只看新合约（≤<span id="newDays">14</span> 天）</label>
+    <label>链 <select id="fChain"><option value="">全部</option></select></label>
+    <span class="sub" id="count"></span>
+  </div>
+  <div class="wrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+
+  <section>
+    <h2>未匹配 / 歧义</h2>
+    <div id="unmatched" class="sub">—</div>
+  </section>
+
+  <details id="method"><summary>方法论</summary><div id="methodBody"></div></details>
+  <p class="disc">免责声明：本页面仅为数据筛选与学习用途，口径为粗略估算，不构成任何投资建议。数据来自 Binance、DexScreener、CoinGecko 公开接口，可能有延迟或错误。</p>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const num = v => typeof v === "number" && isFinite(v);
+
+function abbr(v, prefix = "$") {
+  if (!num(v)) return "—";
+  const a = Math.abs(v), u = [[1e9,"B"],[1e6,"M"],[1e3,"K"]];
+  for (const [d, s] of u) if (a >= d) return prefix + (v / d).toFixed(2) + s;
+  return prefix + (a >= 1 ? v.toFixed(2) : v.toPrecision(3));
+}
+function price(v) {
+  if (!num(v)) return "—";
+  if (v >= 1) return "$" + v.toFixed(2);
+  return "$" + v.toPrecision(3);
+}
+const fmt = {
+  pct: v => num(v) ? (v * 100).toFixed(2) + "%" : "—",
+  x:   v => num(v) ? v.toFixed(2) + "x" : "—",
+};
+const tz8 = iso => new Date(new Date(iso).getTime() + 8 * 3600e3).toISOString().replace("T"," ").slice(0,16);
+
+// 列定义：以后 B/C 阶段新增指标只需在此追加；缺失字段自动显示 —
+const METRIC_COLS = [
+  ["oi_to_mcap","OI/MC"],["oi_to_dex_liq","OI/DEX流动性"],["perp_to_spot_vol","合约量/现货量"],["float_ratio","流通率"],
+];
+let DATA, sortKey = "default", sortAsc = false;
+
+function colDefs() {
+  const th = DATA.thresholds?.stage_a?.metrics || {};
+  const metric = ([k, label]) => ({
+    key: k, label, metric: true,
+    get: t => t.metrics?.[k]?.value,
+    render: t => { const m = t.metrics?.[k]; return [fmt[th[k]?.fmt || "x"](m?.value), m?.level || "na"]; },
+  });
+  return [
+    {key:"ticker", label:"Ticker", cls:"l", get:t=>t.ticker, render:t=>[esc(t.ticker)+(t.is_new_perp?'<span class="badge" title="上合约 ≤'+(DATA.thresholds?.new_perp_days??14)+' 天">新</span>':""),""]},
+    {key:"chain", label:"链", cls:"l", get:t=>t.chain, render:t=>[esc(t.chain),""]},
+    {key:"price", label:"价格", get:t=>t.price, render:t=>[price(t.price),""]},
+    {key:"mcap_usd", label:"流通市值", get:t=>t.mcap_usd, render:t=>[abbr(t.mcap_usd),""]},
+    {key:"fdv_usd", label:"FDV", get:t=>t.fdv_usd, render:t=>[abbr(t.fdv_usd),""]},
+    {key:"oi_usd", label:"OI", get:t=>t.oi_usd, render:t=>[abbr(t.oi_usd),""]},
+    ...METRIC_COLS.map(metric),
+    {key:"alpha_vol_24h_usd", label:"Alpha 量", get:t=>t.alpha_vol_24h_usd, render:t=>[abbr(t.alpha_vol_24h_usd),""]},
+    {key:"flags", label:"标记", cls:"l", get:t=>(t.flags||[]).length, render:t=>[flagHtml(t.flags),""]},
+    {key:"links", label:"链接", cls:"l links", nosort:true, render:t=>[linkHtml(t.links),""]},
+  ];
+}
+const FLAGS = {
+  circ_mismatch:["⚠️","Alpha 与 CoinGecko 流通量差异 >20%"],
+  no_dex_liq:["🕳️","无有效 DEX 流动性"],
+  multi_alpha:["🔀","Alpha 同名多币，自动取流动性最大者"],
+  override:["✍️","已使用人工 override"],
+  alpha_offline:["💤","Alpha 已下线（未完全摘牌）"],
+};
+function flagHtml(fl) { return (fl||[]).map(f => `<span title="${esc(FLAGS[f]?.[1]||f)}">${FLAGS[f]?.[0]||esc(f)}</span>`).join(" "); }
+function linkHtml(l) {
+  if (!l) return "";
+  const n = {binance_futures:"合约", dexscreener:"DEX", explorer:"浏览器"};
+  return Object.entries(l).map(([k,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${n[k]||esc(k)}</a>`).join("");
+}
+
+function defaultCmp(a, b) {
+  const ca = a.cond_level||{}, cb = b.cond_level||{};
+  return (cb.alert||0)-(ca.alert||0) || (cb.warn||0)-(ca.warn||0) ||
+         (b.metrics?.oi_to_mcap?.value ?? -1) - (a.metrics?.oi_to_mcap?.value ?? -1);
+}
+
+function render() {
+  const cols = colDefs();
+  $("#tbl thead").innerHTML = "<tr>" + cols.map(c =>
+    `<th class="${c.cls||""}${sortKey===c.key?" sorted"+(sortAsc?" asc":""):""}" data-k="${c.key}">${c.label}</th>`).join("") + "</tr>";
+  let rows = DATA.tokens.filter(t =>
+    (!$("#fAlert").checked || (t.cond_level?.alert||0) > 0) &&
+    (!$("#fNew").checked || t.is_new_perp) &&
+    (!$("#fChain").value || t.chain === $("#fChain").value));
+  if (sortKey === "default") rows.sort(defaultCmp);
+  else {
+    const c = cols.find(c => c.key === sortKey);
+    rows.sort((a, b) => {
+      const x = c.get(a), y = c.get(b);
+      if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;  // 空值永远排最后
+      const r = typeof x === "string" ? x.localeCompare(y) : x - y;
+      return sortAsc ? r : -r;
+    });
+  }
+  $("#tbl tbody").innerHTML = rows.map(t => "<tr>" + cols.map(c => {
+    const [h, lv] = c.render(t);
+    return `<td class="${c.cls||""} ${lv}">${h}</td>`;
+  }).join("") + "</tr>").join("") || `<tr><td colspan="${cols.length}" class="na">无数据</td></tr>`;
+  $("#count").textContent = `显示 ${rows.length} / ${DATA.tokens.length}`;
+}
+
+function renderMethod() {
+  const th = DATA.thresholds || {}, m = th.stage_a?.metrics || {};
+  const dir = {high:"越高越危险", low:"越低越危险"};
+  const f = (k, v) => (fmt[m[k].fmt] || fmt.x)(v);
+  let h = `<table class="mtable"><tr><th>指标</th><th>公式</th><th>偏热 (warn)</th><th>警惕 (alert)</th><th>方向</th></tr>` +
+    Object.entries(m).map(([k, s]) => `<tr><td>${esc(s.label)}</td><td>${esc(s.formula)}</td>
+      <td>${s.direction==="high"?"≥":"≤"} ${f(k,s.warn)}</td><td>${s.direction==="high"?"≥":"≤"} ${f(k,s.alert)}</td><td>${dir[s.direction]||""}</td></tr>`).join("") + "</table>";
+  h += `<ul>
+    <li><b>监控范围</b>：Alpha 代币 ∩ Binance USDⓈ-M 永续（TRADING）− Binance 现货（TRADING）。1000XXX / 1MXXX 类合约已换算回单币口径。</li>
+    <li><b>价格</b>统一取合约 mark price；<b>OI</b> 为名义价值（USDT 与 USDC 合约相加）。</li>
+    <li><b>"现货量"</b>当前取 DEX 24h 成交额。Alpha 成交量含刷分水分且可能与 DEX 重叠，仅单独展示、不计入分母。其他 CEX 现货量暂未纳入。</li>
+    <li><b>流通量</b>以 Binance Alpha 为准；与 CoinGecko 差异 &gt;${((th.circ_mismatch_pct??0.2)*100).toFixed(0)}% 标 ⚠️。可在 overrides 中改用 CoinGecko 或手填。</li>
+    <li>DEX 流动性与成交额为该代币所有 pair 之和，已忽略流动性 &lt; ${abbr(th.dex_min_pair_liq_usd??1e4)} 的 pair。</li>
+    <li>分母为 0 或数据缺失时指标显示 "—"（灰），不计入警惕/偏热数。</li>
+    <li><b>汇总</b>：「警惕」= 至少一个指标为 alert 的币；「偏热」= 无 alert 但至少一个 warn。</li>
+    <li>新徽标：上合约 ≤ ${th.new_perp_days??14} 天。标记：⚠️ 流通量不一致 · 🕳️ 无 DEX 流动性 · 🔀 同名多币自动择优 · ✍️ 人工覆盖 · 💤 Alpha 已下线但未完全摘牌（已完全摘牌的不监控）。</li>
+  </ul>`;
+  $("#methodBody").innerHTML = h;
+}
+
+function init(d) {
+  DATA = d;
+  $("#stage").textContent = `· 阶段 ${d.stage || "A"}`;
+  const g = d.generated_at;
+  $("#time").textContent = `更新于 ${g.replace("T"," ").slice(0,16)} UTC · ${tz8(g)} UTC+8`;
+  $("#newDays").textContent = d.thresholds?.new_perp_days ?? 14;
+  const s = d.summary || {};
+  $("#cards").innerHTML = [
+    ["监控数量", s.n_universe, ""], ["警惕", s.n_alert, "alert"], ["偏热", s.n_warn, "warn"], ["未匹配", s.n_unmatched, ""],
+  ].map(([l, v, c]) => `<div class="card ${c}"><b>${v ?? "—"}</b><span>${l}</span></div>`).join("");
+  const chains = [...new Set(d.tokens.map(t => t.chain))].sort();
+  $("#fChain").innerHTML = '<option value="">全部</option>' + chains.map(c => `<option>${esc(c)}</option>`).join("");
+  $("#unmatched").innerHTML = (d.unmatched||[]).length
+    ? "<ul>" + d.unmatched.map(u => `<li><b>${esc(u.perp_symbol)}</b> — ${esc(u.reason)}${u.detail?"：" + esc(u.detail):""}</li>`).join("") + "</ul>"
+    : "无";
+  if ((d.errors||[]).length) {
+    const e = $("#err"); e.style.display = "block";
+    e.textContent = `本次更新有 ${d.errors.length} 个数据源请求失败，相关字段显示为 "—"。`;
+  }
+  renderMethod(); render();
+}
+
+$("#tbl thead").addEventListener("click", e => {
+  const th = e.target.closest("th"); if (!th) return;
+  const k = th.dataset.k, c = colDefs().find(c => c.key === k); if (c.nosort) return;
+  if (sortKey === k) sortAsc = !sortAsc; else { sortKey = k; sortAsc = typeof c.get(DATA.tokens[0]||{}) === "string"; }
+  render();
+});
+["#fAlert", "#fNew", "#fChain"].forEach(s => $(s).addEventListener("change", render));
+
+fetch("data.json", {cache: "no-store"}).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(init).catch(e => { $("#time").textContent = "加载失败"; const x = $("#err"); x.style.display = "block"; x.textContent = "无法读取 data.json：" + e.message; });
+</script>
+</body>
+</html>

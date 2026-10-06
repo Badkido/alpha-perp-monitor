@@ -1,0 +1,13 @@
+# 人工覆盖，key 为合约 symbol（如 XXXUSDT）。可用字段：
+#   chain:       链（bsc/ethereum/solana/base/arbitrum/...），仅用于说明/校验
+#   address:     指定 Alpha 中的合约地址（解决同名不同币 / 多地址歧义）
+#   exclude:     true = 从监控范围剔除
+#   circ_source: alpha（默认）| cg（改用 CoinGecko 流通量）| manual（配合 circ_supply）
+#   circ_supply: circ_source=manual 时的手填流通量（单币口径）
+#   note:        备注
+#
+# 示例：
+# XXXUSDT: { chain: bsc, address: "0xabc...", note: "Alpha 有两个同名币，取此地址" }
+# YYYUSDT: { exclude: true, note: "非目标币种" }
+# ZZZUSDT: { circ_source: manual, circ_supply: 123000000, note: "官方披露流通量" }
+{}

@@ -1,0 +1,6679 @@
+{
+ "generated_at": "2026-10-06T03:14:32Z",
+ "stage": "A",
+ "thresholds": {
+  "stage_a": {
+   "metrics": {
+    "oi_to_mcap": {
+     "label": "OI / 流通市值",
+     "formula": "oi_usd / (price × circ_supply)",
+     "warn": 0.2,
+     "alert": 0.5,
+     "direction": "high",
+     "fmt": "pct"
+    },
+    "oi_to_dex_liq": {
+     "label": "OI / DEX 流动性",
+     "formula": "oi_usd / dex_liq_usd",
+     "warn": 20,
+     "alert": 100,
+     "direction": "high",
+     "fmt": "x"
+    },
+    "perp_to_spot_vol": {
+     "label": "合约量 / 现货量",
+     "formula": "perp_vol_24h_usd / dex_vol_24h_usd（现货量 = DEX 24h 成交额）",
+     "warn": 5,
+     "alert": 20,
+     "direction": "high",
+     "fmt": "x"
+    },
+    "float_ratio": {
+     "label": "流通率",
+     "formula": "circ_supply / total_supply",
+     "warn": 0.25,
+     "alert": 0.1,
+     "direction": "low",
+     "fmt": "pct"
+    }
+   }
+  },
+  "new_perp_days": 14,
+  "circ_mismatch_pct": 0.2,
+  "dex_min_pair_liq_usd": 10000,
+  "price_match_tolerance": 0.5,
+  "multi_alpha_dominance": 5
+ },
+ "summary": {
+  "n_universe": 137,
+  "n_alert": 63,
+  "n_warn": 46,
+  "n_unmatched": 0
+ },
+ "tokens": [
+  {
+   "ticker": "ESPORTS",
+   "perp_symbol": "ESPORTSUSDT",
+   "chain": "bsc",
+   "address": "0xf39e4b21c84e737df08e2c3b32541d856f508e48",
+   "perp_onboard_date": "2025-07-29",
+   "is_new_perp": false,
+   "price": 0.01136,
+   "mcap_usd": 10223884.69372799,
+   "fdv_usd": 10224000.0,
+   "fdv_to_mcap": 1.0000112781271957,
+   "oi_usd": 6386225.92395,
+   "perp_vol_24h_usd": 3008811.41027,
+   "alpha_vol_24h_usd": 46306.21942025172,
+   "dex_liq_usd": 43992.74,
+   "dex_vol_24h_usd": 38812.47,
+   "funding_rate": 5e-05,
+   "circ_supply": 899989849.7999991,
+   "total_supply": 900000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.6246379057725225,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 145.16545057093512,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 77.52177097386483,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.999988721999999,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 3,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ESPORTSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xf39e4b21c84e737df08e2c3b32541d856f508e48",
+    "explorer": "https://bscscan.com/token/0xf39e4b21c84e737df08e2c3b32541d856f508e48"
+   }
+  },
+  {
+   "ticker": "BSB",
+   "perp_symbol": "BSBUSDT",
+   "chain": "bsc",
+   "address": "0x595deaad1eb5476ff1e649fdb7efc36f1e4679cc",
+   "perp_onboard_date": "2026-03-25",
+   "is_new_perp": false,
+   "price": 0.10057165,
+   "mcap_usd": 23765080.895,
+   "fdv_usd": 100571650.0,
+   "fdv_to_mcap": 4.231908590774439,
+   "oi_usd": 5331184.75207557,
+   "perp_vol_24h_usd": 1895360.19706,
+   "alpha_vol_24h_usd": 1531896.004883161,
+   "dex_liq_usd": 19394.27,
+   "dex_vol_24h_usd": 4869.93,
+   "funding_rate": 5e-05,
+   "circ_supply": 236300000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.2243284916903949,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 274.88452785671075,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 389.19659975810737,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2363,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BSBUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x595deaad1eb5476ff1e649fdb7efc36f1e4679cc",
+    "explorer": "https://bscscan.com/token/0x595deaad1eb5476ff1e649fdb7efc36f1e4679cc"
+   }
+  },
+  {
+   "ticker": "LYN",
+   "perp_symbol": "LYNUSDT",
+   "chain": "bsc",
+   "address": "0x302dfaf2cdbe51a18d97186a7384e87cf599877d",
+   "perp_onboard_date": "2025-10-06",
+   "is_new_perp": false,
+   "price": 0.02716201,
+   "mcap_usd": 6943657.3947257,
+   "fdv_usd": 27162010.0,
+   "fdv_to_mcap": 3.911772781392104,
+   "oi_usd": 10385433.06825,
+   "perp_vol_24h_usd": 15630380.72782,
+   "alpha_vol_24h_usd": 1138209.4882180977,
+   "dex_liq_usd": 79508.77,
+   "dex_vol_24h_usd": 975474.5,
+   "funding_rate": 0.00048671,
+   "circ_supply": 255638570.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 1.4956718740384027,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 130.61996894493527,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 16.02336168482108,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.25563857,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/LYNUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x302dfaf2cdbe51a18d97186a7384e87cf599877d",
+    "explorer": "https://bscscan.com/token/0x302dfaf2cdbe51a18d97186a7384e87cf599877d"
+   }
+  },
+  {
+   "ticker": "PTB",
+   "perp_symbol": "PTBUSDT",
+   "chain": "bsc",
+   "address": "0x95c9b514566fbd224dc2037f5914eb8ab91c9201",
+   "perp_onboard_date": "2025-09-03",
+   "is_new_perp": false,
+   "price": 0.0009292,
+   "mcap_usd": 7578506.116552565,
+   "fdv_usd": 7805280.0,
+   "fdv_to_mcap": 1.0299232962222102,
+   "oi_usd": 5179777.8530968,
+   "perp_vol_24h_usd": 6856797.8858339,
+   "alpha_vol_24h_usd": 200919.12284042145,
+   "dex_liq_usd": 55569.77,
+   "dex_vol_24h_usd": 123419.56,
+   "funding_rate": 5e-05,
+   "circ_supply": 8155947176.6601,
+   "total_supply": 8400000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.6834827040362754,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 93.2121520945075,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 55.556816811159436,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.9709460924595357,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PTBUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x95c9b514566fbd224dc2037f5914eb8ab91c9201",
+    "explorer": "https://bscscan.com/token/0x95c9b514566fbd224dc2037f5914eb8ab91c9201"
+   }
+  },
+  {
+   "ticker": "LAB",
+   "perp_symbol": "LABUSDT",
+   "chain": "bsc",
+   "address": "0x7ec43cf65f1663f820427c62a5780b8f2e25593a",
+   "perp_onboard_date": "2025-10-17",
+   "is_new_perp": false,
+   "price": 0.04919,
+   "mcap_usd": 33790566.03961642,
+   "fdv_usd": 49190000.0,
+   "fdv_to_mcap": 1.4557317549025108,
+   "oi_usd": 13294945.89507782,
+   "perp_vol_24h_usd": 6762708.48601,
+   "alpha_vol_24h_usd": 527002.8507848284,
+   "dex_liq_usd": 102071.39,
+   "dex_vol_24h_usd": 18480.23,
+   "funding_rate": 5e-05,
+   "circ_supply": 686939744.6557516,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3934514112456916,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 130.2514435737362,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 365.94287441281847,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.6869397446557516,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/LABUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x7ec43cf65f1663f820427c62a5780b8f2e25593a",
+    "explorer": "https://bscscan.com/token/0x7ec43cf65f1663f820427c62a5780b8f2e25593a"
+   }
+  },
+  {
+   "ticker": "CLO",
+   "perp_symbol": "CLOUSDT",
+   "chain": "bsc",
+   "address": "0x81d3a238b02827f62b9f390f947d36d4a5bf89d2",
+   "perp_onboard_date": "2025-10-14",
+   "is_new_perp": false,
+   "price": 0.0598573,
+   "mcap_usd": 15437744.386723654,
+   "fdv_usd": 59857300.0,
+   "fdv_to_mcap": 3.8773345704231788,
+   "oi_usd": 5099688.56753346,
+   "perp_vol_24h_usd": 4665263.34199,
+   "alpha_vol_24h_usd": 2843259.5162398317,
+   "dex_liq_usd": 23720.03,
+   "dex_vol_24h_usd": 2264.05,
+   "funding_rate": 0.0003935,
+   "circ_supply": 257909133.668302,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3303389692032441,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 214.99503025643142,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 2060.5831770455598,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.257909133668302,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CLOUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x81d3a238b02827f62b9f390f947d36d4a5bf89d2",
+    "explorer": "https://bscscan.com/token/0x81d3a238b02827f62b9f390f947d36d4a5bf89d2"
+   }
+  },
+  {
+   "ticker": "BEAT",
+   "perp_symbol": "BEATUSDT",
+   "chain": "bsc",
+   "address": "0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36",
+   "perp_onboard_date": "2025-11-12",
+   "is_new_perp": false,
+   "price": 0.08516112,
+   "mcap_usd": 30063294.65522592,
+   "fdv_usd": 85161120.0,
+   "fdv_to_mcap": 2.8327274497572867,
+   "oi_usd": 6816821.1016344,
+   "perp_vol_24h_usd": 3688621.2178,
+   "alpha_vol_24h_usd": 120877.79946907307,
+   "dex_liq_usd": 37539.51,
+   "dex_vol_24h_usd": 7790.57,
+   "funding_rate": 5e-05,
+   "circ_supply": 353016666.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.22674897012491702,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 181.59057221669647,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 473.47257232782715,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.353016666,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BEATUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36",
+    "explorer": "https://bscscan.com/token/0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36"
+   }
+  },
+  {
+   "ticker": "AIO",
+   "perp_symbol": "AIOUSDT",
+   "chain": "bsc",
+   "address": "0x81a7da4074b8e0ed51bea40f9dcbdf4d9d4832b4",
+   "perp_onboard_date": "2025-08-13",
+   "is_new_perp": false,
+   "price": 0.0427,
+   "mcap_usd": 19015911.25,
+   "fdv_usd": 42700000.0,
+   "fdv_to_mcap": 2.245487972605047,
+   "oi_usd": 3962190.73208125,
+   "perp_vol_24h_usd": 10103236.16274,
+   "alpha_vol_24h_usd": 106165.34513288969,
+   "dex_liq_usd": 28498.16,
+   "dex_vol_24h_usd": 76040.47,
+   "funding_rate": 5e-05,
+   "circ_supply": 445337500.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.20836186496617404,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 139.0332123927036,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 132.86656648413665,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.4453375,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AIOUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x81a7da4074b8e0ed51bea40f9dcbdf4d9d4832b4",
+    "explorer": "https://bscscan.com/token/0x81a7da4074b8e0ed51bea40f9dcbdf4d9d4832b4"
+   }
+  },
+  {
+   "ticker": "ARX",
+   "perp_symbol": "ARXUSDT",
+   "chain": "bsc",
+   "address": "0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715",
+   "perp_onboard_date": "2026-06-23",
+   "is_new_perp": false,
+   "price": 0.28795714,
+   "mcap_usd": 61821507.73218582,
+   "fdv_usd": 287957140.0,
+   "fdv_to_mcap": 4.657879604739604,
+   "oi_usd": 11165756.73733065,
+   "perp_vol_24h_usd": 6478659.9394,
+   "alpha_vol_24h_usd": 694753.7873841805,
+   "dex_liq_usd": 20228.81,
+   "dex_vol_24h_usd": 36955.0,
+   "funding_rate": 0.00035018,
+   "circ_supply": 214689963.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.18061281820723823,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 551.9729898758577,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 175.31213474225407,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.214689963,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ARXUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715",
+    "explorer": "https://bscscan.com/token/0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715"
+   }
+  },
+  {
+   "ticker": "GRVT",
+   "perp_symbol": "GRVTUSDT",
+   "chain": "bsc",
+   "address": "0x46f2564e0fa8248d15125e7e54173cfbdef91be7",
+   "perp_onboard_date": "2026-07-31",
+   "is_new_perp": false,
+   "price": 0.2214,
+   "mcap_usd": 39456209.4192,
+   "fdv_usd": 221400000.0,
+   "fdv_to_mcap": 5.611284085801292,
+   "oi_usd": 6564078.885,
+   "perp_vol_24h_usd": 2661108.31,
+   "alpha_vol_24h_usd": 179577.32328864408,
+   "dex_liq_usd": 24193.95,
+   "dex_vol_24h_usd": 9611.34,
+   "funding_rate": 5e-05,
+   "circ_supply": 178212328.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1663636467269412,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 271.31075682143677,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 276.8717275634823,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.178212328,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/GRVTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x46f2564e0fa8248d15125e7e54173cfbdef91be7",
+    "explorer": "https://bscscan.com/token/0x46f2564e0fa8248d15125e7e54173cfbdef91be7"
+   }
+  },
+  {
+   "ticker": "KGEN",
+   "perp_symbol": "KGENUSDT",
+   "chain": "bsc",
+   "address": "0xf3d5b4c34ed623478cc5141861776e6cf7ae3a1e",
+   "perp_onboard_date": "2025-10-07",
+   "is_new_perp": false,
+   "price": 0.1616,
+   "mcap_usd": 35901364.0096,
+   "fdv_usd": 158044800.0,
+   "fdv_to_mcap": 4.402194856934654,
+   "oi_usd": 5116560.62159676,
+   "perp_vol_24h_usd": 942408.68252,
+   "alpha_vol_24h_usd": 194724.0639580157,
+   "dex_liq_usd": 13902.51,
+   "dex_vol_24h_usd": 1345.48,
+   "funding_rate": 5e-05,
+   "circ_supply": 222161906.0,
+   "total_supply": 978000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.14251716509235124,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 368.03142897194533,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 700.4256343609716,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.22715941308793455,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/KGENUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xf3d5b4c34ed623478cc5141861776e6cf7ae3a1e",
+    "explorer": "https://bscscan.com/token/0xf3d5b4c34ed623478cc5141861776e6cf7ae3a1e"
+   }
+  },
+  {
+   "ticker": "CYS",
+   "perp_symbol": "CYSUSDT",
+   "chain": "bsc",
+   "address": "0x0c69199c1562233640e0db5ce2c399a88eb507c7",
+   "perp_onboard_date": "2025-12-12",
+   "is_new_perp": false,
+   "price": 0.1628,
+   "mcap_usd": 26178240.0,
+   "fdv_usd": 162800000.0,
+   "fdv_to_mcap": 6.218905472636816,
+   "oi_usd": 3692832.3249,
+   "perp_vol_24h_usd": 2787871.8982,
+   "alpha_vol_24h_usd": 705725.9913952973,
+   "dex_liq_usd": 11178.4,
+   "dex_vol_24h_usd": 482.64,
+   "funding_rate": 5e-05,
+   "circ_supply": 160800000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.14106495795362867,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 330.35428369891935,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 5776.296822061993,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.1608,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CYSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0c69199c1562233640e0db5ce2c399a88eb507c7",
+    "explorer": "https://bscscan.com/token/0x0c69199c1562233640e0db5ce2c399a88eb507c7"
+   }
+  },
+  {
+   "ticker": "CAP",
+   "perp_symbol": "CAPUSDT",
+   "chain": "bsc",
+   "address": "0x99991c6aabba5a096f24f250b73580f5179b9999",
+   "perp_onboard_date": "2026-06-27",
+   "is_new_perp": false,
+   "price": 0.07432,
+   "mcap_usd": 115939200.0,
+   "fdv_usd": 743200000.0,
+   "fdv_to_mcap": 6.410256410256411,
+   "oi_usd": 14930374.92492,
+   "perp_vol_24h_usd": 19649459.7588,
+   "alpha_vol_24h_usd": 3242339.262033293,
+   "dex_liq_usd": 15932.84,
+   "dex_vol_24h_usd": 16434.49,
+   "funding_rate": 5e-05,
+   "circ_supply": 1560000000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.128777625901507,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 937.0818338048961,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 1195.6233359720927,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.156,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CAPUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x99991c6aabba5a096f24f250b73580f5179b9999",
+    "explorer": "https://bscscan.com/token/0x99991c6aabba5a096f24f250b73580f5179b9999"
+   }
+  },
+  {
+   "ticker": "BILL",
+   "perp_symbol": "BILLUSDT",
+   "chain": "bsc",
+   "address": "0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5",
+   "perp_onboard_date": "2026-05-07",
+   "is_new_perp": false,
+   "price": 0.01131277,
+   "mcap_usd": 27469605.26024988,
+   "fdv_usd": 113127700.0,
+   "fdv_to_mcap": 4.118286336050936,
+   "oi_usd": 2933388.52911,
+   "perp_vol_24h_usd": 3051271.30389,
+   "alpha_vol_24h_usd": 54612.29544470433,
+   "dex_liq_usd": 16024.11,
+   "dex_vol_24h_usd": 68.29,
+   "funding_rate": 5e-05,
+   "circ_supply": 2428194444.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.10678670120370402,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 183.0609331257711,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 44681.085135305315,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2428194444,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BILLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5",
+    "explorer": "https://bscscan.com/token/0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5"
+   }
+  },
+  {
+   "ticker": "GWEI",
+   "perp_symbol": "GWEIUSDT",
+   "chain": "bsc",
+   "address": "0x30117e4bc17d7b044194b76a38365c53b72f7d49",
+   "perp_onboard_date": "2026-01-29",
+   "is_new_perp": false,
+   "price": 0.020825,
+   "mcap_usd": 43409712.5,
+   "fdv_usd": 208250000.0,
+   "fdv_to_mcap": 4.797313504437515,
+   "oi_usd": 2872002.95894622,
+   "perp_vol_24h_usd": 1833910.03396,
+   "alpha_vol_24h_usd": 639615.7012356616,
+   "dex_liq_usd": 19994.36,
+   "dex_vol_24h_usd": 2203.33,
+   "funding_rate": 5e-05,
+   "circ_supply": 2084500000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.06616037733367204,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 143.64065461191157,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 832.3356165258949,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.20845,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/GWEIUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x30117e4bc17d7b044194b76a38365c53b72f7d49",
+    "explorer": "https://bscscan.com/token/0x30117e4bc17d7b044194b76a38365c53b72f7d49"
+   }
+  },
+  {
+   "ticker": "龙虾",
+   "perp_symbol": "龙虾USDT",
+   "chain": "bsc",
+   "address": "0xeccbb861c0dda7efd964010085488b69317e4444",
+   "perp_onboard_date": "2026-03-11",
+   "is_new_perp": false,
+   "price": 0.04625833,
+   "mcap_usd": 46258330.0,
+   "fdv_usd": 46258330.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 26215342.63824,
+   "perp_vol_24h_usd": 80874782.065236,
+   "alpha_vol_24h_usd": 2577496.44972447,
+   "dex_liq_usd": 2120547.3,
+   "dex_vol_24h_usd": 2515224.73,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.5667161490317527,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 12.362536142551502,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 32.15409784287387,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/龙虾USDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xeccbb861c0dda7efd964010085488b69317e4444",
+    "explorer": "https://bscscan.com/token/0xeccbb861c0dda7efd964010085488b69317e4444"
+   }
+  },
+  {
+   "ticker": "SIREN",
+   "perp_symbol": "SIRENUSDT",
+   "chain": "bsc",
+   "address": "0x997a58129890bbda032231a52ed1ddc845fc18e1",
+   "perp_onboard_date": "2025-03-22",
+   "is_new_perp": false,
+   "price": 0.0229,
+   "mcap_usd": 16568639.175208112,
+   "fdv_usd": 16568639.175208112,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 8540551.2444,
+   "perp_vol_24h_usd": 2602768.46184,
+   "alpha_vol_24h_usd": 102951.51737557453,
+   "dex_liq_usd": 2269283.53,
+   "dex_vol_24h_usd": 26803.49,
+   "funding_rate": 0.00047948,
+   "circ_supply": 723521361.3627996,
+   "total_supply": 723521361.3627996,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.5154648582835546,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.763545247428822,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 97.10558072251038,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [
+    "alpha_offline"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SIRENUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x997a58129890bbda032231a52ed1ddc845fc18e1",
+    "explorer": "https://bscscan.com/token/0x997a58129890bbda032231a52ed1ddc845fc18e1"
+   }
+  },
+  {
+   "ticker": "ZEST",
+   "perp_symbol": "ZESTUSDT",
+   "chain": "bsc",
+   "address": "0x5506599c722389a60580b5213ea1da60d64754a1",
+   "perp_onboard_date": "2026-06-04",
+   "is_new_perp": false,
+   "price": 0.176204,
+   "mcap_usd": 44737461.41666668,
+   "fdv_usd": 176204000.0,
+   "fdv_to_mcap": 3.9386231229999167,
+   "oi_usd": 7820669.5994196,
+   "perp_vol_24h_usd": 1197522.07594,
+   "alpha_vol_24h_usd": 349869.3222455766,
+   "dex_liq_usd": 11097.15,
+   "dex_vol_24h_usd": 727.39,
+   "funding_rate": 5e-05,
+   "circ_supply": 253895833.3333334,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.17481254751093356,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 704.7457770165854,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 1646.3273841268094,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2538958333333334,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ZESTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x5506599c722389a60580b5213ea1da60d64754a1",
+    "explorer": "https://bscscan.com/token/0x5506599c722389a60580b5213ea1da60d64754a1"
+   }
+  },
+  {
+   "ticker": "BULLA",
+   "perp_symbol": "BULLAUSDT",
+   "chain": "bsc",
+   "address": "0x595e21b20e78674f8a64c1566a20b2b316bc3511",
+   "perp_onboard_date": "2025-07-04",
+   "is_new_perp": false,
+   "price": 0.08351,
+   "mcap_usd": 83510000.0,
+   "fdv_usd": 83510000.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 8093340.92196,
+   "perp_vol_24h_usd": 3128509.773365,
+   "alpha_vol_24h_usd": 58545.17863151158,
+   "dex_liq_usd": 31988.31,
+   "dex_vol_24h_usd": 47588.44,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.09691463204358759,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 253.00933128258416,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 65.74096090069352,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BULLAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x595e21b20e78674f8a64c1566a20b2b316bc3511",
+    "explorer": "https://bscscan.com/token/0x595e21b20e78674f8a64c1566a20b2b316bc3511"
+   }
+  },
+  {
+   "ticker": "RAVE",
+   "perp_symbol": "RAVEUSDT",
+   "chain": "bsc",
+   "address": "0x97693439ea2f0ecdeb9135881e49f354656a911c",
+   "perp_onboard_date": "2025-12-14",
+   "is_new_perp": false,
+   "price": 0.18587965,
+   "mcap_usd": 50441363.99342858,
+   "fdv_usd": 185879650.0,
+   "fdv_to_mcap": 3.685063909536945,
+   "oi_usd": 4418237.49,
+   "perp_vol_24h_usd": 2860572.8577,
+   "alpha_vol_24h_usd": 334370.278795131,
+   "dex_liq_usd": 11613.39,
+   "dex_vol_24h_usd": 2333.79,
+   "funding_rate": 5e-05,
+   "circ_supply": 271365714.2857143,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08759155463313008,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 380.44339249779784,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 1225.719905261399,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2713657142857143,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/RAVEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x97693439ea2f0ecdeb9135881e49f354656a911c",
+    "explorer": "https://bscscan.com/token/0x97693439ea2f0ecdeb9135881e49f354656a911c"
+   }
+  },
+  {
+   "ticker": "BR",
+   "perp_symbol": "BRUSDT",
+   "chain": "bsc",
+   "address": "0xff7d6a96ae471bbcd7713af9cb1feeb16cf56b41",
+   "perp_onboard_date": "2025-03-21",
+   "is_new_perp": false,
+   "price": 0.40567424,
+   "mcap_usd": 135841212.42352942,
+   "fdv_usd": 405674240.0,
+   "fdv_to_mcap": 2.9863855950812472,
+   "oi_usd": 9142318.9379488,
+   "perp_vol_24h_usd": 75077396.93701,
+   "alpha_vol_24h_usd": 38050.43962134178,
+   "dex_liq_usd": 50407.78,
+   "dex_vol_24h_usd": 17983.54,
+   "funding_rate": -0.00013794,
+   "circ_supply": 334852941.1764706,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.06730151163142324,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 181.36722025744442,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 4174.784104631791,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.3348529411764706,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BRUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xff7d6a96ae471bbcd7713af9cb1feeb16cf56b41",
+    "explorer": "https://bscscan.com/token/0xff7d6a96ae471bbcd7713af9cb1feeb16cf56b41"
+   }
+  },
+  {
+   "ticker": "ACU",
+   "perp_symbol": "ACUUSDT",
+   "chain": "bsc",
+   "address": "0x6ef2ffb38d64afe18ce782da280b300e358cfeaf",
+   "perp_onboard_date": "2026-01-21",
+   "is_new_perp": false,
+   "price": 0.13225,
+   "mcap_usd": 53374207.89925,
+   "fdv_usd": 136402075.24150002,
+   "fdv_to_mcap": 2.55558031884941,
+   "oi_usd": 2731560.84567288,
+   "perp_vol_24h_usd": 868679.35704,
+   "alpha_vol_24h_usd": 241080.27731723868,
+   "dex_liq_usd": 12722.81,
+   "dex_vol_24h_usd": 727.2,
+   "funding_rate": 7.524e-05,
+   "circ_supply": 403585693.0,
+   "total_supply": 1031395654.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.051177543483718155,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 214.6979201664475,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 1194.5535712871288,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.391300556129743,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ACUUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x6ef2ffb38d64afe18ce782da280b300e358cfeaf",
+    "explorer": "https://bscscan.com/token/0x6ef2ffb38d64afe18ce782da280b300e358cfeaf"
+   }
+  },
+  {
+   "ticker": "ZETA",
+   "perp_symbol": "ZETAUSDT",
+   "chain": "ethereum",
+   "address": "0xf091867ec603a6628ed83d274e835539d82e9cc8",
+   "perp_onboard_date": "2024-02-02",
+   "is_new_perp": false,
+   "price": 0.05085,
+   "mcap_usd": 84193298.4375,
+   "fdv_usd": 106785000.0,
+   "fdv_to_mcap": 1.2683313515655965,
+   "oi_usd": 3963407.1134236,
+   "perp_vol_24h_usd": 1729635.11871,
+   "alpha_vol_24h_usd": 2802.6510968113207,
+   "dex_liq_usd": 25956.56,
+   "dex_vol_24h_usd": 2802.93,
+   "funding_rate": 5e-05,
+   "circ_supply": 1655718750.0,
+   "total_supply": 2100000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04707509014349631,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 152.69385132019033,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 617.0810968201133,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.7884375,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ZETAUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0xf091867ec603a6628ed83d274e835539d82e9cc8",
+    "explorer": "https://etherscan.io/token/0xf091867ec603a6628ed83d274e835539d82e9cc8"
+   }
+  },
+  {
+   "ticker": "BTW",
+   "perp_symbol": "BTWUSDT",
+   "chain": "bsc",
+   "address": "0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
+   "perp_onboard_date": "2026-06-04",
+   "is_new_perp": false,
+   "price": 1.19473794,
+   "mcap_usd": 3478359073.1677446,
+   "fdv_usd": 11947379400.0,
+   "fdv_to_mcap": 3.434774601668571,
+   "oi_usd": 98392414.4730868,
+   "perp_vol_24h_usd": 200479551.39139,
+   "alpha_vol_24h_usd": 2661335.128889908,
+   "dex_liq_usd": 140242.22,
+   "dex_vol_24h_usd": 2286733.43,
+   "funding_rate": 5e-05,
+   "circ_supply": 2911399192.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.028287020518408052,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 701.589111132773,
+     "level": "alert"
+    },
+    "perp_to_spot_vol": {
+     "value": 87.67071349955731,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2911399192,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BTWUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
+    "explorer": "https://bscscan.com/token/0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa"
+   }
+  },
+  {
+   "ticker": "BLUAI",
+   "perp_symbol": "BLUAIUSDT",
+   "chain": "bsc",
+   "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
+   "perp_onboard_date": "2025-10-21",
+   "is_new_perp": false,
+   "price": 0.008804,
+   "mcap_usd": 10811312.0,
+   "fdv_usd": 88040000.0,
+   "fdv_to_mcap": 8.143322475570033,
+   "oi_usd": 5028114.05550399,
+   "perp_vol_24h_usd": 1859454.738057,
+   "alpha_vol_24h_usd": 118224.89328628487,
+   "dex_liq_usd": 621899.12,
+   "dex_vol_24h_usd": 43070.88,
+   "funding_rate": 5e-05,
+   "circ_supply": 1228000000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.46507898907218564,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 8.085095948526169,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 43.17196997268224,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.1228,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BLUAIUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
+    "explorer": "https://bscscan.com/token/0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad"
+   }
+  },
+  {
+   "ticker": "EVAA",
+   "perp_symbol": "EVAAUSDT",
+   "chain": "bsc",
+   "address": "0xaa036928c9c0df07d525b55ea8ee690bb5a628c1",
+   "perp_onboard_date": "2025-10-03",
+   "is_new_perp": false,
+   "price": 0.75796179,
+   "mcap_usd": 20897741.317434877,
+   "fdv_usd": 37898089.5,
+   "fdv_to_mcap": 1.8135017045302317,
+   "oi_usd": 5118242.54471671,
+   "perp_vol_24h_usd": 5261057.30076,
+   "alpha_vol_24h_usd": 322075.382537744,
+   "dex_liq_usd": 149256.45,
+   "dex_vol_24h_usd": 241014.28,
+   "funding_rate": 5e-05,
+   "circ_supply": 27570969.39864855,
+   "total_supply": 50000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.2449184563523421,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 34.29160042810016,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 21.828819855653368,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.551419387972971,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/EVAAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xaa036928c9c0df07d525b55ea8ee690bb5a628c1",
+    "explorer": "https://bscscan.com/token/0xaa036928c9c0df07d525b55ea8ee690bb5a628c1"
+   }
+  },
+  {
+   "ticker": "MYX",
+   "perp_symbol": "MYXUSDT",
+   "chain": "bsc",
+   "address": "0xd82544bf0dfe8385ef8fa34d67e6e4940cc63e16",
+   "perp_onboard_date": "2025-06-18",
+   "is_new_perp": false,
+   "price": 0.0711006,
+   "mcap_usd": 28653121.623894237,
+   "fdv_usd": 71100600.0,
+   "fdv_to_mcap": 2.4814259658433944,
+   "oi_usd": 5751611.0173764,
+   "perp_vol_24h_usd": 3036667.19352,
+   "alpha_vol_24h_usd": 68570.37265835615,
+   "dex_liq_usd": 254996.36,
+   "dex_vol_24h_usd": 57579.67,
+   "funding_rate": 5e-05,
+   "circ_supply": 402994090.4,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.20073244000681764,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 22.555659294024434,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 52.73853069182231,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.40299409039999995,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MYXUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xd82544bf0dfe8385ef8fa34d67e6e4940cc63e16",
+    "explorer": "https://bscscan.com/token/0xd82544bf0dfe8385ef8fa34d67e6e4940cc63e16"
+   }
+  },
+  {
+   "ticker": "TRUST",
+   "perp_symbol": "TRUSTUSDT",
+   "chain": "base",
+   "address": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+   "perp_onboard_date": "2025-11-05",
+   "is_new_perp": false,
+   "price": 0.058387,
+   "mcap_usd": 10489097.966984,
+   "fdv_usd": 62260752.884615384,
+   "fdv_to_mcap": 5.9357585447852985,
+   "oi_usd": 1584660.362736,
+   "perp_vol_24h_usd": 724591.66256,
+   "alpha_vol_24h_usd": 20430.157755278466,
+   "dex_liq_usd": 23392.85,
+   "dex_vol_24h_usd": 692.97,
+   "funding_rate": 5e-05,
+   "circ_supply": 179647832.0,
+   "total_supply": 1066346153.8461539,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.15107689600420882,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 67.74122703031054,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 1045.6320801189083,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.16847046463480614,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TRUSTUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+    "explorer": "https://basescan.org/token/0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3"
+   }
+  },
+  {
+   "ticker": "GRASS",
+   "perp_symbol": "GRASSUSDT",
+   "chain": "solana",
+   "address": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+   "perp_onboard_date": "2024-11-08",
+   "is_new_perp": false,
+   "price": 0.7382,
+   "mcap_usd": 180050738.1762,
+   "fdv_usd": 738200000.0,
+   "fdv_to_mcap": 4.099955420774714,
+   "oi_usd": 22171153.93878,
+   "perp_vol_24h_usd": 28067300.8619,
+   "alpha_vol_24h_usd": 1132666.450933073,
+   "dex_liq_usd": 320450.66,
+   "dex_vol_24h_usd": 1033833.52,
+   "funding_rate": 7.018e-05,
+   "circ_supply": 243905091.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1231383673477807,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 69.18741855229757,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 27.148762657550513,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.243905091,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/GRASSUSDT",
+    "dexscreener": "https://dexscreener.com/solana/Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
+    "explorer": "https://solscan.io/token/Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs"
+   }
+  },
+  {
+   "ticker": "M",
+   "perp_symbol": "MUSDT",
+   "chain": "bsc",
+   "address": "0x22b1458e780f8fa71e2f84502cee8b5a3cc731fa",
+   "perp_onboard_date": "2025-07-07",
+   "is_new_perp": false,
+   "price": 1.01173733,
+   "mcap_usd": 2309865116.3301053,
+   "fdv_usd": 10117373300.000002,
+   "fdv_to_mcap": 4.380071038985342,
+   "oi_usd": 4233451.29,
+   "perp_vol_24h_usd": 843295.9232,
+   "alpha_vol_24h_usd": 10385.784129383841,
+   "dex_liq_usd": 54909.03,
+   "dex_vol_24h_usd": 5084.38,
+   "funding_rate": 5e-05,
+   "circ_supply": 2283067993.873573,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.0018327699137368127,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 77.09936398439383,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 165.86012910128667,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2283067993873573,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x22b1458e780f8fa71e2f84502cee8b5a3cc731fa",
+    "explorer": "https://bscscan.com/token/0x22b1458e780f8fa71e2f84502cee8b5a3cc731fa"
+   }
+  },
+  {
+   "ticker": "KOMA",
+   "perp_symbol": "KOMAUSDT",
+   "chain": "bsc",
+   "address": "0xd5eaaac47bd1993d661bc087e15dfb079a7f3c19",
+   "perp_onboard_date": "2024-12-10",
+   "is_new_perp": false,
+   "price": 0.020733,
+   "mcap_usd": 8039746.046078429,
+   "fdv_usd": 20733000.0,
+   "fdv_to_mcap": 2.578812798460593,
+   "oi_usd": 8023381.521904,
+   "perp_vol_24h_usd": 1302324.797334,
+   "alpha_vol_24h_usd": 188468.99718069096,
+   "dex_liq_usd": 2732254.14,
+   "dex_vol_24h_usd": 182598.55,
+   "funding_rate": 0.00018624,
+   "circ_supply": 387775336.2310533,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.9979645471286483,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.9365429095494022,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 7.132174912308997,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.3877753362310533,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/KOMAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xd5eaaac47bd1993d661bc087e15dfb079a7f3c19",
+    "explorer": "https://bscscan.com/token/0xd5eaaac47bd1993d661bc087e15dfb079a7f3c19"
+   }
+  },
+  {
+   "ticker": "STAR",
+   "perp_symbol": "STARUSDT",
+   "chain": "bsc",
+   "address": "0x8fce7206e3043dd360f115afa956ee31b90b787c",
+   "perp_onboard_date": "2026-05-14",
+   "is_new_perp": false,
+   "price": 0.03907354,
+   "mcap_usd": 7277405.989922289,
+   "fdv_usd": 39073540.0,
+   "fdv_to_mcap": 5.369157644098573,
+   "oi_usd": 5483398.17429978,
+   "perp_vol_24h_usd": 13462988.37177,
+   "alpha_vol_24h_usd": 3995374.1753470944,
+   "dex_liq_usd": 944969.46,
+   "dex_vol_24h_usd": 3992647.02,
+   "funding_rate": 5e-05,
+   "circ_supply": 186248954.91737604,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.7534825158707869,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.802725279925745,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 3.3719455549992494,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.18624895491737603,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/STARUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x8fce7206e3043dd360f115afa956ee31b90b787c",
+    "explorer": "https://bscscan.com/token/0x8fce7206e3043dd360f115afa956ee31b90b787c"
+   }
+  },
+  {
+   "ticker": "AIN",
+   "perp_symbol": "AINUSDT",
+   "chain": "bsc",
+   "address": "0x9558a9254890b2a8b057a789f413631b9084f4a3",
+   "perp_onboard_date": "2025-07-10",
+   "is_new_perp": false,
+   "price": 0.05519,
+   "mcap_usd": 23786870.862283483,
+   "fdv_usd": 55190000.0,
+   "fdv_to_mcap": 2.3201874815535066,
+   "oi_usd": 17336216.9861496,
+   "perp_vol_24h_usd": 168552268.6701,
+   "alpha_vol_24h_usd": 10262711.535168871,
+   "dex_liq_usd": 1280038.62,
+   "dex_vol_24h_usd": 9546501.62,
+   "funding_rate": 0.00104438,
+   "circ_supply": 430999653.239418,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.7288145248914579,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 13.543510887311822,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 17.655919977741544,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.430999653239418,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [
+    "alpha_offline"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AINUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x9558a9254890b2a8b057a789f413631b9084f4a3",
+    "explorer": "https://bscscan.com/token/0x9558a9254890b2a8b057a789f413631b9084f4a3"
+   }
+  },
+  {
+   "ticker": "TRADOOR",
+   "perp_symbol": "TRADOORUSDT",
+   "chain": "bsc",
+   "address": "0x9123400446a56176eb1b6be9ee5cf703e409f492",
+   "perp_onboard_date": "2025-09-19",
+   "is_new_perp": false,
+   "price": 0.69748267,
+   "mcap_usd": 10008178.83183,
+   "fdv_usd": 41848960.199999996,
+   "fdv_to_mcap": 4.18147606104955,
+   "oi_usd": 5734345.80641179,
+   "perp_vol_24h_usd": 1016977.1009,
+   "alpha_vol_24h_usd": 352709.1350289541,
+   "dex_liq_usd": 864078.11,
+   "dex_vol_24h_usd": 352685.99,
+   "funding_rate": 0.00022468,
+   "circ_supply": 14349000.0,
+   "total_supply": 60000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.5729659614169046,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 6.636374350938933,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.883519985866181,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.23915,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TRADOORUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x9123400446a56176eb1b6be9ee5cf703e409f492",
+    "explorer": "https://bscscan.com/token/0x9123400446a56176eb1b6be9ee5cf703e409f492"
+   }
+  },
+  {
+   "ticker": "COLLECT",
+   "perp_symbol": "COLLECTUSDT",
+   "chain": "bsc",
+   "address": "0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "perp_onboard_date": "2025-12-31",
+   "is_new_perp": false,
+   "price": 0.02121,
+   "mcap_usd": 11389770.0,
+   "fdv_usd": 63630000.0,
+   "fdv_to_mcap": 5.58659217877095,
+   "oi_usd": 6491484.3573,
+   "perp_vol_24h_usd": 20842455.91029,
+   "alpha_vol_24h_usd": 9360253.69106198,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 0.00017405,
+   "circ_supply": 537000000.0,
+   "total_supply": 3000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.5699398984615142,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.179,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/COLLECTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+    "explorer": "https://bscscan.com/token/0x4b3d30992f003c8167699735f5ab2831b2a087d3"
+   }
+  },
+  {
+   "ticker": "LIGHT",
+   "perp_symbol": "LIGHTUSDT",
+   "chain": "bsc",
+   "address": "0x477c2c0459004e3354ba427fa285d7c053203c0e",
+   "perp_onboard_date": "2025-09-27",
+   "is_new_perp": false,
+   "price": 0.2022,
+   "mcap_usd": 8706119.7384,
+   "fdv_usd": 84924000.0,
+   "fdv_to_mcap": 9.75451780492135,
+   "oi_usd": 4903580.79000845,
+   "perp_vol_24h_usd": 1534702.0894,
+   "alpha_vol_24h_usd": 450624.59016802156,
+   "dex_liq_usd": 1235628.7,
+   "dex_vol_24h_usd": 447182.39,
+   "funding_rate": 0.00010914,
+   "circ_supply": 43056972.0,
+   "total_supply": 420000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.5632337869625516,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.968490526327569,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 3.431937669549107,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.1025166,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/LIGHTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x477c2c0459004e3354ba427fa285d7c053203c0e",
+    "explorer": "https://bscscan.com/token/0x477c2c0459004e3354ba427fa285d7c053203c0e"
+   }
+  },
+  {
+   "ticker": "AVAAI",
+   "perp_symbol": "AVAAIUSDT",
+   "chain": "solana",
+   "address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+   "perp_onboard_date": "2025-01-17",
+   "is_new_perp": false,
+   "price": 0.00930091,
+   "mcap_usd": 9293386.054884907,
+   "fdv_usd": 9300872.114789316,
+   "fdv_to_mcap": 1.0008055255490516,
+   "oi_usd": 2795239.34406248,
+   "perp_vol_24h_usd": 1769208.503616,
+   "alpha_vol_24h_usd": 62217.2576888688,
+   "dex_liq_usd": 1394301.37,
+   "dex_vol_24h_usd": 62241.32,
+   "funding_rate": 5e-05,
+   "circ_supply": 999191052.798587,
+   "total_supply": 999995926.72,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3007772761783862,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.004759806025637,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 28.42498365420271,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.9991951228000967,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AVAAIUSDT",
+    "dexscreener": "https://dexscreener.com/solana/DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+    "explorer": "https://solscan.io/token/DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
+   }
+  },
+  {
+   "ticker": "US",
+   "perp_symbol": "USUSDT",
+   "chain": "sui",
+   "address": "0xee962a61432231c2ede6946515beb02290cb516ad087bb06a731e922b2a5f57a::us::US",
+   "perp_onboard_date": "2025-12-12",
+   "is_new_perp": false,
+   "price": 0.01065009,
+   "mcap_usd": 34877916.745919086,
+   "fdv_usd": 106500899.99999999,
+   "fdv_to_mcap": 3.0535338671700107,
+   "oi_usd": 8705703.171364,
+   "perp_vol_24h_usd": 87529656.617046,
+   "alpha_vol_24h_usd": 1352159.9788577862,
+   "dex_liq_usd": 511406.81,
+   "dex_vol_24h_usd": 1352312.03,
+   "funding_rate": -0.00074034,
+   "circ_supply": 3274894085.018914,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.24960502184760266,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 17.02304897223406,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 64.72593208909485,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.3274894085018914,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/USUSDT",
+    "dexscreener": "https://dexscreener.com/sui/0xee962a61432231c2ede6946515beb02290cb516ad087bb06a731e922b2a5f57a::us::US",
+    "explorer": "https://suivision.xyz/coin/0xee962a61432231c2ede6946515beb02290cb516ad087bb06a731e922b2a5f57a::us::US"
+   }
+  },
+  {
+   "ticker": "FHE",
+   "perp_symbol": "FHEUSDT",
+   "chain": "bsc",
+   "address": "0xd55c9fb62e176a8eb6968f32958fefdd0962727e",
+   "perp_onboard_date": "2025-04-12",
+   "is_new_perp": false,
+   "price": 0.02154,
+   "mcap_usd": 12580523.086734695,
+   "fdv_usd": 21540000.0,
+   "fdv_to_mcap": 1.7121704599638201,
+   "oi_usd": 3068073.0555,
+   "perp_vol_24h_usd": 763824.4629,
+   "alpha_vol_24h_usd": 42601.97367368131,
+   "dex_liq_usd": 977378.68,
+   "dex_vol_24h_usd": 10039.62,
+   "funding_rate": 5e-05,
+   "circ_supply": 584053996.5986395,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.24387484004819115,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.1390832624873704,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 76.081013315245,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.5840539965986394,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FHEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xd55c9fb62e176a8eb6968f32958fefdd0962727e",
+    "explorer": "https://bscscan.com/token/0xd55c9fb62e176a8eb6968f32958fefdd0962727e"
+   }
+  },
+  {
+   "ticker": "DOOD",
+   "perp_symbol": "DOODUSDT",
+   "chain": "bsc",
+   "address": "0x722294f6c97102fb0ddb5b907c8d16bdeab3f6d9",
+   "perp_onboard_date": "2025-05-09",
+   "is_new_perp": false,
+   "price": 0.0017085,
+   "mcap_usd": 13326300.0,
+   "fdv_usd": 17085000.0,
+   "fdv_to_mcap": 1.2820512820512822,
+   "oi_usd": 3005033.910868,
+   "perp_vol_24h_usd": 1196704.196967,
+   "alpha_vol_24h_usd": 39107.78132793093,
+   "dex_liq_usd": 184203.99,
+   "dex_vol_24h_usd": 39044.13,
+   "funding_rate": 5e-05,
+   "circ_supply": 7800000000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.22549649271500716,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 16.31362008427722,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 30.650041298576763,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.78,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/DOODUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x722294f6c97102fb0ddb5b907c8d16bdeab3f6d9",
+    "explorer": "https://bscscan.com/token/0x722294f6c97102fb0ddb5b907c8d16bdeab3f6d9"
+   }
+  },
+  {
+   "ticker": "DRIFT",
+   "perp_symbol": "DRIFTUSDT",
+   "chain": "solana",
+   "address": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+   "perp_onboard_date": "2024-11-08",
+   "is_new_perp": false,
+   "price": 0.01989,
+   "mcap_usd": 12163049.741057532,
+   "fdv_usd": 19890000.0,
+   "fdv_to_mcap": 1.6352806593283435,
+   "oi_usd": 2301668.50872,
+   "perp_vol_24h_usd": 1378956.89937,
+   "alpha_vol_24h_usd": 37309.02516141371,
+   "dex_liq_usd": 27847.65,
+   "dex_vol_24h_usd": 6514.14,
+   "funding_rate": 5e-05,
+   "circ_supply": 611515824.085346,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.18923448951709032,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 82.65216306295144,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 211.68671526402562,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.611515824085346,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/DRIFTUSDT",
+    "dexscreener": "https://dexscreener.com/solana/DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+    "explorer": "https://solscan.io/token/DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7"
+   }
+  },
+  {
+   "ticker": "WET",
+   "perp_symbol": "WETUSDT",
+   "chain": "solana",
+   "address": "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U",
+   "perp_onboard_date": "2025-12-10",
+   "is_new_perp": false,
+   "price": 0.0645675,
+   "mcap_usd": 11024882.037828127,
+   "fdv_usd": 64567500.0,
+   "fdv_to_mcap": 5.856525247023834,
+   "oi_usd": 1267186.03965807,
+   "perp_vol_24h_usd": 604502.34939,
+   "alpha_vol_24h_usd": 9147.84298625397,
+   "dex_liq_usd": 807720.66,
+   "dex_vol_24h_usd": 7250.73,
+   "funding_rate": 5e-05,
+   "circ_supply": 170749712.128054,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.11493873905499877,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.5688419306472488,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 83.37123977723623,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.17074971212805398,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/WETUSDT",
+    "dexscreener": "https://dexscreener.com/solana/WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U",
+    "explorer": "https://solscan.io/token/WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U"
+   }
+  },
+  {
+   "ticker": "RIVER",
+   "perp_symbol": "RIVERUSDT",
+   "chain": "bsc",
+   "address": "0xda7ad9dea9397cffddae2f8a052b82f1484252b3",
+   "perp_onboard_date": "2025-10-17",
+   "is_new_perp": false,
+   "price": 1.21158417,
+   "mcap_usd": 69310839.20360179,
+   "fdv_usd": 121158417.0,
+   "fdv_to_mcap": 1.7480442942567043,
+   "oi_usd": 6168695.97590208,
+   "perp_vol_24h_usd": 6529536.272,
+   "alpha_vol_24h_usd": 194826.2556498128,
+   "dex_liq_usd": 158645.94,
+   "dex_vol_24h_usd": 18601.65,
+   "funding_rate": 5e-05,
+   "circ_supply": 57206788.36832424,
+   "total_supply": 100000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08900045139810568,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 38.88341533292361,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 351.0191984044426,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.5720678836832425,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/RIVERUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xda7ad9dea9397cffddae2f8a052b82f1484252b3",
+    "explorer": "https://bscscan.com/token/0xda7ad9dea9397cffddae2f8a052b82f1484252b3"
+   }
+  },
+  {
+   "ticker": "USELESS",
+   "perp_symbol": "USELESSUSDT",
+   "chain": "bsc",
+   "address": "0xba38b3c706f7a515ff7c8db04daa0a134ec46d2b",
+   "perp_onboard_date": "2025-08-15",
+   "is_new_perp": false,
+   "price": 0.23256,
+   "mcap_usd": 232348634.66397852,
+   "fdv_usd": 232560000.0,
+   "fdv_to_mcap": 1.0009096904585955,
+   "oi_usd": 17618033.15744,
+   "perp_vol_24h_usd": 27956553.12934,
+   "alpha_vol_24h_usd": 200127.1579117522,
+   "dex_liq_usd": 872624.9,
+   "dex_vol_24h_usd": 192169.52,
+   "funding_rate": 5e-05,
+   "circ_supply": 999091136.326017,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.07582585188382585,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 20.189697953198447,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 145.47860206623818,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.999091136326017,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/USELESSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xba38b3c706f7a515ff7c8db04daa0a134ec46d2b",
+    "explorer": "https://bscscan.com/token/0xba38b3c706f7a515ff7c8db04daa0a134ec46d2b"
+   }
+  },
+  {
+   "ticker": "NAORIS",
+   "perp_symbol": "NAORISUSDT",
+   "chain": "bsc",
+   "address": "0x1b379a79c91a540b2bcd612b4d713f31de1b80cc",
+   "perp_onboard_date": "2025-07-31",
+   "is_new_perp": false,
+   "price": 0.03242959,
+   "mcap_usd": 59410849.44738706,
+   "fdv_usd": 129718360.0,
+   "fdv_to_mcap": 2.18341197283967,
+   "oi_usd": 4362926.18936283,
+   "perp_vol_24h_usd": 919768.13733,
+   "alpha_vol_24h_usd": 27942.05732824294,
+   "dex_liq_usd": 65772.01,
+   "dex_vol_24h_usd": 409.83,
+   "funding_rate": 5e-05,
+   "circ_supply": 1831995083.730231,
+   "total_supply": 4000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.07343652262078058,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 66.33408632886284,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 2244.26747024376,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.45799877093255775,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/NAORISUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x1b379a79c91a540b2bcd612b4d713f31de1b80cc",
+    "explorer": "https://bscscan.com/token/0x1b379a79c91a540b2bcd612b4d713f31de1b80cc"
+   }
+  },
+  {
+   "ticker": "AKE",
+   "perp_symbol": "AKEUSDT",
+   "chain": "bsc",
+   "address": "0x2c3a8ee94ddd97244a93bc48298f97d2c412f7db",
+   "perp_onboard_date": "2025-09-26",
+   "is_new_perp": false,
+   "price": 0.0304008,
+   "mcap_usd": 693024237.0,
+   "fdv_usd": 3040080000.0,
+   "fdv_to_mcap": 4.386686406755497,
+   "oi_usd": 14493087.21783549,
+   "perp_vol_24h_usd": 28290874.265009,
+   "alpha_vol_24h_usd": 1185086.977593377,
+   "dex_liq_usd": 2734452.72,
+   "dex_vol_24h_usd": 1141334.84,
+   "funding_rate": 5e-05,
+   "circ_supply": 22796250000.0,
+   "total_supply": 100000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.020912814363569638,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.300178391029371,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 24.787532346781774,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2279625,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AKEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x2c3a8ee94ddd97244a93bc48298f97d2c412f7db",
+    "explorer": "https://bscscan.com/token/0x2c3a8ee94ddd97244a93bc48298f97d2c412f7db"
+   }
+  },
+  {
+   "ticker": "XNY",
+   "perp_symbol": "XNYUSDT",
+   "chain": "bsc",
+   "address": "0xe3225e11cab122f1a126a28997788e5230838ab9",
+   "perp_onboard_date": "2025-08-13",
+   "is_new_perp": false,
+   "price": 0.00684988,
+   "mcap_usd": 25145996.310838915,
+   "fdv_usd": 68498800.0,
+   "fdv_to_mcap": 2.724043985104472,
+   "oi_usd": 4055058.5966424,
+   "perp_vol_24h_usd": 755688.785629,
+   "alpha_vol_24h_usd": 3838.4851707405537,
+   "dex_liq_usd": 694103.43,
+   "dex_vol_24h_usd": 0.1,
+   "funding_rate": 0.00032891,
+   "circ_supply": 3671012676.256944,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.16126060572491654,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.84215323160469,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 7556887.8562900005,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.3671012676256944,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/XNYUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xe3225e11cab122f1a126a28997788e5230838ab9",
+    "explorer": "https://bscscan.com/token/0xe3225e11cab122f1a126a28997788e5230838ab9"
+   }
+  },
+  {
+   "ticker": "BLESS",
+   "perp_symbol": "BLESSUSDT",
+   "chain": "bsc",
+   "address": "0x7c8217517ed4711fe2deccdfeffe8d906b9ae11f",
+   "perp_onboard_date": "2025-09-23",
+   "is_new_perp": false,
+   "price": 0.00874487,
+   "mcap_usd": 26358987.155983172,
+   "fdv_usd": 87448700.0,
+   "fdv_to_mcap": 3.317604712294501,
+   "oi_usd": 4211598.788166,
+   "perp_vol_24h_usd": 2427511.585546,
+   "alpha_vol_24h_usd": 87473.39237400085,
+   "dex_liq_usd": 243128.08,
+   "dex_vol_24h_usd": 85814.06,
+   "funding_rate": 5e-05,
+   "circ_supply": 3014222870.778316,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1597784756767491,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 17.322551916528933,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 28.28804027622047,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.3014222870778316,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BLESSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x7c8217517ed4711fe2deccdfeffe8d906b9ae11f",
+    "explorer": "https://bscscan.com/token/0x7c8217517ed4711fe2deccdfeffe8d906b9ae11f"
+   }
+  },
+  {
+   "ticker": "CLANKER",
+   "perp_symbol": "CLANKERUSDT",
+   "chain": "base",
+   "address": "0x1bc0c42215582d5a085795f4badbac3ff36d1bcb",
+   "perp_onboard_date": "2025-11-12",
+   "is_new_perp": false,
+   "price": 14.08798096,
+   "mcap_usd": 13894654.850682814,
+   "fdv_usd": 14087980.959999999,
+   "fdv_to_mcap": 1.0139137036072317,
+   "oi_usd": 2027561.1136,
+   "perp_vol_24h_usd": 663585.4187,
+   "alpha_vol_24h_usd": 63776.40995568877,
+   "dex_liq_usd": 1632892.32,
+   "dex_vol_24h_usd": 7127.4,
+   "funding_rate": 5e-05,
+   "circ_supply": 986277.23093422,
+   "total_supply": 1000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.14592382001488588,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.2416992160266882,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 93.10343445015013,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.98627723093422,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CLANKERUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x1bc0c42215582d5a085795f4badbac3ff36d1bcb",
+    "explorer": "https://basescan.org/token/0x1bc0c42215582d5a085795f4badbac3ff36d1bcb"
+   }
+  },
+  {
+   "ticker": "VELVET",
+   "perp_symbol": "VELVETUSDT",
+   "chain": "bsc",
+   "address": "0x8b194370825e37b33373e74a41009161808c1488",
+   "perp_onboard_date": "2025-07-15",
+   "is_new_perp": false,
+   "price": 0.069,
+   "mcap_usd": 35649294.39843089,
+   "fdv_usd": 69000000.0,
+   "fdv_to_mcap": 1.9355221797331574,
+   "oi_usd": 4659343.89389,
+   "perp_vol_24h_usd": 8591310.36784,
+   "alpha_vol_24h_usd": 30700.145040844185,
+   "dex_liq_usd": 565885.11,
+   "dex_vol_24h_usd": 9754.16,
+   "funding_rate": 0.00026979,
+   "circ_supply": 516656440.55696934,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.13069947028446885,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 8.233727679970233,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 880.7842364529595,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.5166564405569694,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/VELVETUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x8b194370825e37b33373e74a41009161808c1488",
+    "explorer": "https://bscscan.com/token/0x8b194370825e37b33373e74a41009161808c1488"
+   }
+  },
+  {
+   "ticker": "STBL",
+   "perp_symbol": "STBLUSDT",
+   "chain": "bsc",
+   "address": "0x8dedf84656fa932157e27c060d8613824e7979e3",
+   "perp_onboard_date": "2025-09-17",
+   "is_new_perp": false,
+   "price": 0.02532305,
+   "mcap_usd": 17726135.0,
+   "fdv_usd": 253230500.0,
+   "fdv_to_mcap": 14.285714285714286,
+   "oi_usd": 2173984.73841304,
+   "perp_vol_24h_usd": 978925.08273,
+   "alpha_vol_24h_usd": 598749.2001521876,
+   "dex_liq_usd": 1726359.16,
+   "dex_vol_24h_usd": 598827.14,
+   "funding_rate": 5e-05,
+   "circ_supply": 700000000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.12264290768478521,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.259288790411979,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.6347373346004324,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.07,
+     "level": "alert"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/STBLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x8dedf84656fa932157e27c060d8613824e7979e3",
+    "explorer": "https://bscscan.com/token/0x8dedf84656fa932157e27c060d8613824e7979e3"
+   }
+  },
+  {
+   "ticker": "FLOCK",
+   "perp_symbol": "FLOCKUSDT",
+   "chain": "base",
+   "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+   "perp_onboard_date": "2025-09-09",
+   "is_new_perp": false,
+   "price": 0.06482,
+   "mcap_usd": 31332588.809805587,
+   "fdv_usd": 64820000.0,
+   "fdv_to_mcap": 2.068772561165277,
+   "oi_usd": 3284349.45592,
+   "perp_vol_24h_usd": 3942314.27528,
+   "alpha_vol_24h_usd": 217494.19966118052,
+   "dex_liq_usd": 588115.54,
+   "dex_vol_24h_usd": 194067.55,
+   "funding_rate": 5e-05,
+   "circ_supply": 483378414.2210056,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.10482215420680967,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.584530985050998,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 20.314134306740105,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.48337841422100564,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FLOCKUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
+    "explorer": "https://basescan.org/token/0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691"
+   }
+  },
+  {
+   "ticker": "FARTCOIN",
+   "perp_symbol": "FARTCOINUSDT",
+   "chain": "solana",
+   "address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+   "perp_onboard_date": "2024-12-20",
+   "is_new_perp": false,
+   "price": 0.1724,
+   "mcap_usd": 172399699.3344,
+   "fdv_usd": 172400000.0,
+   "fdv_to_mcap": 1.0000017440030415,
+   "oi_usd": 14445886.99669828,
+   "perp_vol_24h_usd": 30608721.39547,
+   "alpha_vol_24h_usd": 1740734.6437580136,
+   "dex_liq_usd": 8778392.8,
+   "dex_vol_24h_usd": 793010.06,
+   "funding_rate": 5e-05,
+   "circ_supply": 999998256.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08379299414367251,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.6456186600237666,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 38.59815018673281,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.999998256,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FARTCOINUSDT",
+    "dexscreener": "https://dexscreener.com/solana/9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+    "explorer": "https://solscan.io/token/9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+   }
+  },
+  {
+   "ticker": "CARV",
+   "perp_symbol": "CARVUSDT",
+   "chain": "bsc",
+   "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+   "perp_onboard_date": "2025-08-07",
+   "is_new_perp": false,
+   "price": 0.04857122,
+   "mcap_usd": 34996254.72204533,
+   "fdv_usd": 48571220.0,
+   "fdv_to_mcap": 1.3878976589287235,
+   "oi_usd": 2929885.34679,
+   "perp_vol_24h_usd": 44773498.02529,
+   "alpha_vol_24h_usd": 1444662.3847578901,
+   "dex_liq_usd": 203357.85,
+   "dex_vol_24h_usd": 1443315.35,
+   "funding_rate": -0.00886736,
+   "circ_supply": 720514220.6031747,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08371996860979428,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 14.40753502650623,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 31.021285837007134,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.7205142206031747,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CARVUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+    "explorer": "https://bscscan.com/token/0xc08cd26474722ce93f4d0c34d16201461c10aa8c"
+   }
+  },
+  {
+   "ticker": "ORDER",
+   "perp_symbol": "ORDERUSDT",
+   "chain": "bsc",
+   "address": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8",
+   "perp_onboard_date": "2025-09-26",
+   "is_new_perp": false,
+   "price": 0.03840862,
+   "mcap_usd": 22553420.69109051,
+   "fdv_usd": 38408620.0,
+   "fdv_to_mcap": 1.7030064098069575,
+   "oi_usd": 1225261.15206,
+   "perp_vol_24h_usd": 703964.85516,
+   "alpha_vol_24h_usd": 23794.38517460042,
+   "dex_liq_usd": 302856.91,
+   "dex_vol_24h_usd": 23794.94,
+   "funding_rate": 5e-05,
+   "circ_supply": 587196850.3708415,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.05432706500899114,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.045676725883521,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 29.584645103538822,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.5871968503708415,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ORDERUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8",
+    "explorer": "https://bscscan.com/token/0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8"
+   }
+  },
+  {
+   "ticker": "MOODENG",
+   "perp_symbol": "MOODENGUSDT",
+   "chain": "solana",
+   "address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+   "perp_onboard_date": "2024-10-25",
+   "is_new_perp": false,
+   "price": 0.04510416,
+   "mcap_usd": 44651846.064418264,
+   "fdv_usd": 44651846.064418264,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 2377597.8556,
+   "perp_vol_24h_usd": 2720419.68007,
+   "alpha_vol_24h_usd": 136254.94008177353,
+   "dex_liq_usd": 3019634.96,
+   "dex_vol_24h_usd": 120463.9,
+   "funding_rate": 5e-05,
+   "circ_supply": 989971791.17,
+   "total_supply": 989971791.17,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.053247470489123566,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.7873792319585543,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 22.58286241828465,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MOODENGUSDT",
+    "dexscreener": "https://dexscreener.com/solana/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+    "explorer": "https://solscan.io/token/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
+   }
+  },
+  {
+   "ticker": "MERL",
+   "perp_symbol": "MERLUSDT",
+   "chain": "bsc",
+   "address": "0xa0c56a8c0692bd10b3fa8f8ba79cf5332b7107f9",
+   "perp_onboard_date": "2025-05-29",
+   "is_new_perp": false,
+   "price": 0.03029364,
+   "mcap_usd": 42370725.789556175,
+   "fdv_usd": 63616644.0,
+   "fdv_to_mcap": 1.501429178153957,
+   "oi_usd": 1975748.13784,
+   "perp_vol_24h_usd": 2301155.20701,
+   "alpha_vol_24h_usd": 95716.49140343463,
+   "dex_liq_usd": 241948.99,
+   "dex_vol_24h_usd": 95689.27,
+   "funding_rate": 5e-05,
+   "circ_supply": 1398667370.1000004,
+   "total_supply": 2100000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04663002818627657,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 8.165969768421022,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 24.048205269096524,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.6660320810000002,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MERLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xa0c56a8c0692bd10b3fa8f8ba79cf5332b7107f9",
+    "explorer": "https://bscscan.com/token/0xa0c56a8c0692bd10b3fa8f8ba79cf5332b7107f9"
+   }
+  },
+  {
+   "ticker": "H",
+   "perp_symbol": "HUSDT",
+   "chain": "ethereum",
+   "address": "0xe76c5b78f93909d34404e9eb4c1f19e7582a5de1",
+   "perp_onboard_date": "2025-06-25",
+   "is_new_perp": false,
+   "price": 0.0695784,
+   "mcap_usd": 272127229.1876751,
+   "fdv_usd": 695784000.0,
+   "fdv_to_mcap": 2.5568334417580316,
+   "oi_usd": 12423956.6202642,
+   "perp_vol_24h_usd": 2937562.18913,
+   "alpha_vol_24h_usd": 34246.14855634519,
+   "dex_liq_usd": 889224.05,
+   "dex_vol_24h_usd": 34253.93,
+   "funding_rate": 0.00014911,
+   "circ_supply": 3911087768.44071,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.045654955798987325,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 13.971683087366115,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 85.75839879190504,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.391108776844071,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/HUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0xe76c5b78f93909d34404e9eb4c1f19e7582a5de1",
+    "explorer": "https://etherscan.io/token/0xe76c5b78f93909d34404e9eb4c1f19e7582a5de1"
+   }
+  },
+  {
+   "ticker": "ATH",
+   "perp_symbol": "ATHUSDT",
+   "chain": "ethereum",
+   "address": "0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b",
+   "perp_onboard_date": "2025-04-02",
+   "is_new_perp": false,
+   "price": 0.00734511,
+   "mcap_usd": 147847990.09969023,
+   "fdv_usd": 308494620.0,
+   "fdv_to_mcap": 2.086566207575698,
+   "oi_usd": 4915582.02227025,
+   "perp_vol_24h_usd": 7257906.751072,
+   "alpha_vol_24h_usd": 93996.08714173794,
+   "dex_liq_usd": 423916.88,
+   "dex_vol_24h_usd": 92215.82,
+   "funding_rate": 5e-05,
+   "circ_supply": 20128764593.0,
+   "total_supply": 42000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.03324754038898869,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 11.5956270065732,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 78.70565756582764,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.47925629983333334,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ATHUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b",
+    "explorer": "https://etherscan.io/token/0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b"
+   }
+  },
+  {
+   "ticker": "SKR",
+   "perp_symbol": "SKRUSDT",
+   "chain": "solana",
+   "address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+   "perp_onboard_date": "2026-01-22",
+   "is_new_perp": false,
+   "price": 0.01762135,
+   "mcap_usd": 88908329.34220913,
+   "fdv_usd": 187495243.38291454,
+   "fdv_to_mcap": 2.1088602695619585,
+   "oi_usd": 2593893.33018,
+   "perp_vol_24h_usd": 1795920.19191,
+   "alpha_vol_24h_usd": 145620.38346793328,
+   "dex_liq_usd": 689078.03,
+   "dex_vol_24h_usd": 46460.58,
+   "funding_rate": 5e-05,
+   "circ_supply": 5045489099.428201,
+   "total_supply": 10640231502.29208,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.02917491926089485,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.7642955039213772,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 38.6547088286457,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.47418978603438466,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SKRUSDT",
+    "dexscreener": "https://dexscreener.com/solana/SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+    "explorer": "https://solscan.io/token/SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+   }
+  },
+  {
+   "ticker": "VVV",
+   "perp_symbol": "VVVUSDT",
+   "chain": "base",
+   "address": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+   "perp_onboard_date": "2025-01-29",
+   "is_new_perp": false,
+   "price": 29.004,
+   "mcap_usd": 1408710586.8709216,
+   "fdv_usd": 2352358527.448744,
+   "fdv_to_mcap": 1.6698664362804903,
+   "oi_usd": 30728837.6532,
+   "perp_vol_24h_usd": 33014320.56603,
+   "alpha_vol_24h_usd": 9112216.944843506,
+   "dex_liq_usd": 19077335.76,
+   "dex_vol_24h_usd": 1284495.84,
+   "funding_rate": 5e-05,
+   "circ_supply": 48569527.88825409,
+   "total_supply": 81104624.44658473,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.021813449788473584,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.610751000023286,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 25.702162309867813,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.5988502902228694,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/VVVUSDT",
+    "dexscreener": "https://dexscreener.com/base/0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
+    "explorer": "https://basescan.org/token/0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf"
+   }
+  },
+  {
+   "ticker": "FLUID",
+   "perp_symbol": "FLUIDUSDT",
+   "chain": "ethereum",
+   "address": "0x6f40d4a6237c257fff2db00fa0510deeecd303eb",
+   "perp_onboard_date": "2025-09-24",
+   "is_new_perp": false,
+   "price": 1.945,
+   "mcap_usd": 162790658.81557372,
+   "fdv_usd": 194500000.0,
+   "fdv_to_mcap": 1.1947859994863093,
+   "oi_usd": 3426076.27335877,
+   "perp_vol_24h_usd": 98699392.4131,
+   "alpha_vol_24h_usd": 1582663.74929042,
+   "dex_liq_usd": 529341.76,
+   "dex_vol_24h_usd": 653681.5,
+   "funding_rate": -0.00015057,
+   "circ_supply": 83696996.82034639,
+   "total_supply": 100000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.02104590213152333,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 6.472333249050235,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 150.9900347693793,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.8369699682034638,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FLUIDUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0x6f40d4a6237c257fff2db00fa0510deeecd303eb",
+    "explorer": "https://etherscan.io/token/0x6f40d4a6237c257fff2db00fa0510deeecd303eb"
+   }
+  },
+  {
+   "ticker": "SAFE",
+   "perp_symbol": "SAFEUSDT",
+   "chain": "ethereum",
+   "address": "0x5afe3855358e112b5647b952709e6165e1c1eeee",
+   "perp_onboard_date": "2024-10-25",
+   "is_new_perp": false,
+   "price": 0.11542794,
+   "mcap_usd": 96236890.6955987,
+   "fdv_usd": 115427940.0,
+   "fdv_to_mcap": 1.1994146856334271,
+   "oi_usd": 1308417.0484,
+   "perp_vol_24h_usd": 2909177.95793,
+   "alpha_vol_24h_usd": 95015.47310704908,
+   "dex_liq_usd": 305312.37,
+   "dex_vol_24h_usd": 94946.06,
+   "funding_rate": 5e-05,
+   "circ_supply": 833739999.9999888,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.013595795114979116,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.285502904451595,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 30.640323125888532,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.8337399999999888,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SAFEUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0x5afe3855358e112b5647b952709e6165e1c1eeee",
+    "explorer": "https://etherscan.io/token/0x5afe3855358e112b5647b952709e6165e1c1eeee"
+   }
+  },
+  {
+   "ticker": "TRUTH",
+   "perp_symbol": "TRUTHUSDT",
+   "chain": "sui",
+   "address": "0x0a48f85a3905cfa49a652bdb074d9e9fabad27892d54afaa5c9e0adeb7ac3cdf::swarm_network_token::SWARM_NETWORK_TOKEN",
+   "perp_onboard_date": "2025-10-01",
+   "is_new_perp": false,
+   "price": 0.01416422,
+   "mcap_usd": 29536723.036366,
+   "fdv_usd": 141642200.0,
+   "fdv_to_mcap": 4.795460885271811,
+   "oi_usd": 5945598.470643,
+   "perp_vol_24h_usd": 1219997.476974,
+   "alpha_vol_24h_usd": 129704.3309913427,
+   "dex_liq_usd": 1220433.27,
+   "dex_vol_24h_usd": 129718.84,
+   "funding_rate": 0.000244,
+   "circ_supply": 2085305300.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.20129512889167497,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.871711233046768,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 9.404936684401433,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.20853053,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 3
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TRUTHUSDT",
+    "dexscreener": "https://dexscreener.com/sui/0x0a48f85a3905cfa49a652bdb074d9e9fabad27892d54afaa5c9e0adeb7ac3cdf::swarm_network_token::SWARM_NETWORK_TOKEN",
+    "explorer": "https://suivision.xyz/coin/0x0a48f85a3905cfa49a652bdb074d9e9fabad27892d54afaa5c9e0adeb7ac3cdf::swarm_network_token::SWARM_NETWORK_TOKEN"
+   }
+  },
+  {
+   "ticker": "SWARMS",
+   "perp_symbol": "SWARMSUSDT",
+   "chain": "solana",
+   "address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+   "perp_onboard_date": "2025-01-07",
+   "is_new_perp": false,
+   "price": 0.008454,
+   "mcap_usd": 8453871.75282,
+   "fdv_usd": 8453871.75282,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 3833841.59696574,
+   "perp_vol_24h_usd": 1495104.092628,
+   "alpha_vol_24h_usd": 204020.25646908217,
+   "dex_liq_usd": 1658650.43,
+   "dex_vol_24h_usd": 203719.56000000003,
+   "funding_rate": 5e-05,
+   "circ_supply": 999984830.0,
+   "total_supply": 999984830.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.453501272442046,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.3114223031104513,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 7.339030639119778,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SWARMSUSDT",
+    "dexscreener": "https://dexscreener.com/solana/74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+    "explorer": "https://solscan.io/token/74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
+   }
+  },
+  {
+   "ticker": "4",
+   "perp_symbol": "4USDT",
+   "chain": "bsc",
+   "address": "0x0a43fc31a73013089df59194872ecae4cae14444",
+   "perp_onboard_date": "2025-10-08",
+   "is_new_perp": false,
+   "price": 0.018372,
+   "mcap_usd": 18372000.0,
+   "fdv_usd": 18372000.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 7182983.12280196,
+   "perp_vol_24h_usd": 4781610.34187,
+   "alpha_vol_24h_usd": 430673.16898287926,
+   "dex_liq_usd": 1522981.79,
+   "dex_vol_24h_usd": 329512.19,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3909744787068343,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.716394621370989,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 14.511178909253704,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/4USDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0a43fc31a73013089df59194872ecae4cae14444",
+    "explorer": "https://bscscan.com/token/0x0a43fc31a73013089df59194872ecae4cae14444"
+   }
+  },
+  {
+   "ticker": "我踏马来了",
+   "perp_symbol": "我踏马来了USDT",
+   "chain": "bsc",
+   "address": "0xc51a9250795c0186a6fb4a7d20a90330651e4444",
+   "perp_onboard_date": "2026-01-21",
+   "is_new_perp": false,
+   "price": 0.01135469,
+   "mcap_usd": 11354690.0,
+   "fdv_usd": 11354690.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 4171891.37932736,
+   "perp_vol_24h_usd": 1240312.091292,
+   "alpha_vol_24h_usd": 172379.9000732832,
+   "dex_liq_usd": 983226.29,
+   "dex_vol_24h_usd": 89357.96,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3674157004134292,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.243063292507526,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 13.880264178949473,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/我踏马来了USDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xc51a9250795c0186a6fb4a7d20a90330651e4444",
+    "explorer": "https://bscscan.com/token/0xc51a9250795c0186a6fb4a7d20a90330651e4444"
+   }
+  },
+  {
+   "ticker": "PIPPIN",
+   "perp_symbol": "PIPPINUSDT",
+   "chain": "solana",
+   "address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+   "perp_onboard_date": "2025-01-24",
+   "is_new_perp": false,
+   "price": 0.018265,
+   "mcap_usd": 18264931.561045,
+   "fdv_usd": 18264931.561045,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 5386968.04245439,
+   "perp_vol_24h_usd": 2028834.26902,
+   "alpha_vol_24h_usd": 122830.71611816618,
+   "dex_liq_usd": 4273998.95,
+   "dex_vol_24h_usd": 123007.77,
+   "funding_rate": -3.087e-05,
+   "circ_supply": 999996253.0,
+   "total_supply": 999996253.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.29493502477411876,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.2604046246792806,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 16.49354564366137,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PIPPINUSDT",
+    "dexscreener": "https://dexscreener.com/solana/Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+    "explorer": "https://solscan.io/token/Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+   }
+  },
+  {
+   "ticker": "GRIFFAIN",
+   "perp_symbol": "GRIFFAINUSDT",
+   "chain": "solana",
+   "address": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP",
+   "perp_onboard_date": "2025-01-02",
+   "is_new_perp": false,
+   "price": 0.01928257,
+   "mcap_usd": 19280277.6880784,
+   "fdv_usd": 19280277.6880784,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 5341344.76158282,
+   "perp_vol_24h_usd": 5748309.702025,
+   "alpha_vol_24h_usd": 675331.8025926921,
+   "dex_liq_usd": 2327665.17,
+   "dex_vol_24h_usd": 674482.74,
+   "funding_rate": 5e-05,
+   "circ_supply": 999881120.0,
+   "total_supply": 999881120.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.27703671326713,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.29472212344992,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 8.522545294524512,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/GRIFFAINUSDT",
+    "dexscreener": "https://dexscreener.com/solana/KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP",
+    "explorer": "https://solscan.io/token/KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP"
+   }
+  },
+  {
+   "ticker": "TA",
+   "perp_symbol": "TAUSDT",
+   "chain": "bsc",
+   "address": "0x539ae81a166e5e80aed211731563e549c411b140",
+   "perp_onboard_date": "2025-07-21",
+   "is_new_perp": false,
+   "price": 0.04931844,
+   "mcap_usd": 19794385.420926154,
+   "fdv_usd": 49318440.0,
+   "fdv_to_mcap": 2.491536814669766,
+   "oi_usd": 5468501.435,
+   "perp_vol_24h_usd": 1570962.90691,
+   "alpha_vol_24h_usd": 349547.9440455665,
+   "dex_liq_usd": 228901.35,
+   "dex_vol_24h_usd": 348594.78,
+   "funding_rate": 5e-05,
+   "circ_supply": 401358709.2561353,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.2762652802152084,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 23.89021049897696,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 4.506558896005269,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.40135870925613526,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x539ae81a166e5e80aed211731563e549c411b140",
+    "explorer": "https://bscscan.com/token/0x539ae81a166e5e80aed211731563e549c411b140"
+   }
+  },
+  {
+   "ticker": "JCT",
+   "perp_symbol": "JCTUSDT",
+   "chain": "bsc",
+   "address": "0xea37a8de1de2d9d10772eeb569e28bfa5cb17707",
+   "perp_onboard_date": "2025-11-10",
+   "is_new_perp": false,
+   "price": 0.001742,
+   "mcap_usd": 20022003.625,
+   "fdv_usd": 87100000.0,
+   "fdv_to_mcap": 4.350213976149952,
+   "oi_usd": 5471533.873962,
+   "perp_vol_24h_usd": 783272.60512,
+   "alpha_vol_24h_usd": 197576.6903993787,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 11493687500.0,
+   "total_supply": 50000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.2732760405222432,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.22987375,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/JCTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xea37a8de1de2d9d10772eeb569e28bfa5cb17707",
+    "explorer": "https://bscscan.com/token/0xea37a8de1de2d9d10772eeb569e28bfa5cb17707"
+   }
+  },
+  {
+   "ticker": "BASED",
+   "perp_symbol": "BASEDUSDT",
+   "chain": "bsc",
+   "address": "0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+   "perp_onboard_date": "2026-03-30",
+   "is_new_perp": false,
+   "price": 0.06068,
+   "mcap_usd": 14259800.0,
+   "fdv_usd": 60680000.0,
+   "fdv_to_mcap": 4.25531914893617,
+   "oi_usd": 3854802.34719189,
+   "perp_vol_24h_usd": 2146805.85191,
+   "alpha_vol_24h_usd": 827988.4552131799,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 235000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.2703265366408989,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.235,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BASEDUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+    "explorer": "https://bscscan.com/token/0x1d28d989f9e3ccb8b15d0cec601734514f958e4d"
+   }
+  },
+  {
+   "ticker": "TAKE",
+   "perp_symbol": "TAKEUSDT",
+   "chain": "bsc",
+   "address": "0xe747e54783ba3f77a8e5251a3cba19ebe9c0e197",
+   "perp_onboard_date": "2025-09-03",
+   "is_new_perp": false,
+   "price": 0.06768,
+   "mcap_usd": 25496161.718075577,
+   "fdv_usd": 67680000.0,
+   "fdv_to_mcap": 2.6545172072711662,
+   "oi_usd": 5887620.10632,
+   "perp_vol_24h_usd": 2371115.69598,
+   "alpha_vol_24h_usd": 338547.26522130857,
+   "dex_liq_usd": 479431.51,
+   "dex_vol_24h_usd": 337884.88,
+   "funding_rate": 0.00032413,
+   "circ_supply": 376716337.442015,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.23092182154406227,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 12.280419587606998,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 7.017525306193043,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.376716337442015,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TAKEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xe747e54783ba3f77a8e5251a3cba19ebe9c0e197",
+    "explorer": "https://bscscan.com/token/0xe747e54783ba3f77a8e5251a3cba19ebe9c0e197"
+   }
+  },
+  {
+   "ticker": "ON",
+   "perp_symbol": "ONUSDT",
+   "chain": "bsc",
+   "address": "0x0e4f6209ed984b21edea43ace6e09559ed051d48",
+   "perp_onboard_date": "2025-10-24",
+   "is_new_perp": false,
+   "price": 0.1039,
+   "mcap_usd": 20397778.1867,
+   "fdv_usd": 103900000.0,
+   "fdv_to_mcap": 5.093692021209746,
+   "oi_usd": 4585476.47690752,
+   "perp_vol_24h_usd": 1242404.5274,
+   "alpha_vol_24h_usd": 399729.1009697694,
+   "dex_liq_usd": 779688.15,
+   "dex_vol_24h_usd": 399897.23,
+   "funding_rate": 5e-05,
+   "circ_supply": 196321253.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.22480274248189422,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.881167331974353,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 3.106809535539919,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.196321253,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ONUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0e4f6209ed984b21edea43ace6e09559ed051d48",
+    "explorer": "https://bscscan.com/token/0x0e4f6209ed984b21edea43ace6e09559ed051d48"
+   }
+  },
+  {
+   "ticker": "INX",
+   "perp_symbol": "INXUSDT",
+   "chain": "bsc",
+   "address": "0x45f55b46689402583073ff227b6ac20520052a24",
+   "perp_onboard_date": "2026-01-30",
+   "is_new_perp": false,
+   "price": 0.005738,
+   "mcap_usd": 11443293.4,
+   "fdv_usd": 57380000.0,
+   "fdv_to_mcap": 5.014290728576443,
+   "oi_usd": 2431231.74752,
+   "perp_vol_24h_usd": 1701932.896395,
+   "alpha_vol_24h_usd": 721.1358615195358,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 1994300000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.21245909394580412,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.19943,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/INXUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x45f55b46689402583073ff227b6ac20520052a24",
+    "explorer": "https://bscscan.com/token/0x45f55b46689402583073ff227b6ac20520052a24"
+   }
+  },
+  {
+   "ticker": "BTR",
+   "perp_symbol": "BTRUSDT",
+   "chain": "bsc",
+   "address": "0xfed13d0c40790220fbde712987079eda1ed75c51",
+   "perp_onboard_date": "2025-08-27",
+   "is_new_perp": false,
+   "price": 0.04653,
+   "mcap_usd": 22395567.5625,
+   "fdv_usd": 46530000.0,
+   "fdv_to_mcap": 2.077643259995412,
+   "oi_usd": 4658885.20046484,
+   "perp_vol_24h_usd": 3306524.08051,
+   "alpha_vol_24h_usd": 636384.1146342427,
+   "dex_liq_usd": 534062.96,
+   "dex_vol_24h_usd": 636388.44,
+   "funding_rate": 0.00017094,
+   "circ_supply": 481314583.3333333,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.2080271101620062,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 8.72347560007689,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 5.1957638961983665,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.4813145833333333,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BTRUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xfed13d0c40790220fbde712987079eda1ed75c51",
+    "explorer": "https://bscscan.com/token/0xfed13d0c40790220fbde712987079eda1ed75c51"
+   }
+  },
+  {
+   "ticker": "PLAY",
+   "perp_symbol": "PLAYUSDT",
+   "chain": "base",
+   "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "perp_onboard_date": "2025-07-31",
+   "is_new_perp": false,
+   "price": 0.02852867,
+   "mcap_usd": 31273838.188903145,
+   "fdv_usd": 142643350.0,
+   "fdv_to_mcap": 4.561107886355118,
+   "oi_usd": 5290644.76821,
+   "perp_vol_24h_usd": 1537612.50607,
+   "alpha_vol_24h_usd": 127331.59553922636,
+   "dex_liq_usd": 402532.6,
+   "dex_vol_24h_usd": 118129.03,
+   "funding_rate": 0.00014242,
+   "circ_supply": 1096224891.9736934,
+   "total_supply": 5000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.16917158476848784,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 13.143394518133439,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 13.01638137611051,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.21924497839473867,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PLAYUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x853a7c99227499dba9db8c3a02aa691afdebf841",
+    "explorer": "https://basescan.org/token/0x853a7c99227499dba9db8c3a02aa691afdebf841"
+   }
+  },
+  {
+   "ticker": "SOON",
+   "perp_symbol": "SOONUSDT",
+   "chain": "bsc",
+   "address": "0xb9e1fd5a02d3a33b25a14d661414e6ed6954a721",
+   "perp_onboard_date": "2025-05-23",
+   "is_new_perp": false,
+   "price": 0.3415,
+   "mcap_usd": 205843936.78964,
+   "fdv_usd": 340976217.9729969,
+   "fdv_to_mcap": 1.656479288585769,
+   "oi_usd": 17256114.44735292,
+   "perp_vol_24h_usd": 15029186.0935,
+   "alpha_vol_24h_usd": 752152.4437487811,
+   "dex_liq_usd": 729429.26,
+   "dex_vol_24h_usd": 751549.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 602764090.16,
+   "total_supply": 998466231.2532852,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.0838310552959722,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 23.657008833663898,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 19.99761305450476,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.6036900110316242,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SOONUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xb9e1fd5a02d3a33b25a14d661414e6ed6954a721",
+    "explorer": "https://bscscan.com/token/0xb9e1fd5a02d3a33b25a14d661414e6ed6954a721"
+   }
+  },
+  {
+   "ticker": "XAN",
+   "perp_symbol": "XANUSDT",
+   "chain": "bsc",
+   "address": "0x7427bd9542e64d1ac207a540cfce194b7390a07f",
+   "perp_onboard_date": "2025-09-29",
+   "is_new_perp": false,
+   "price": 0.012077,
+   "mcap_usd": 30192499.999999996,
+   "fdv_usd": 120769999.99999999,
+   "fdv_to_mcap": 4.0,
+   "oi_usd": 1966925.980019,
+   "perp_vol_24h_usd": 1520275.585096,
+   "alpha_vol_24h_usd": 212360.92276312006,
+   "dex_liq_usd": 471587.5,
+   "dex_vol_24h_usd": 209460.05,
+   "funding_rate": 5e-05,
+   "circ_supply": 2500000000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.06514617802497309,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.170861144578684,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 7.258069427062583,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.25,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/XANUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x7427bd9542e64d1ac207a540cfce194b7390a07f",
+    "explorer": "https://bscscan.com/token/0x7427bd9542e64d1ac207a540cfce194b7390a07f"
+   }
+  },
+  {
+   "ticker": "O",
+   "perp_symbol": "OUSDT",
+   "chain": "bsc",
+   "address": "0x500a02a20b0b0a3f3efccfc0559543f5743bd1c4",
+   "perp_onboard_date": "2026-06-24",
+   "is_new_perp": false,
+   "price": 0.50524392,
+   "mcap_usd": 84628356.6,
+   "fdv_usd": 505243919.99999994,
+   "fdv_to_mcap": 5.970149253731343,
+   "oi_usd": 4330473.8652,
+   "perp_vol_24h_usd": 673668.8888,
+   "alpha_vol_24h_usd": 105007.06851913384,
+   "dex_liq_usd": 2463884.18,
+   "dex_vol_24h_usd": 91136.34,
+   "funding_rate": 9.805e-05,
+   "circ_supply": 167500000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.05117048279299802,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.7575801250527936,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 7.391879998692069,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.1675,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/OUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x500a02a20b0b0a3f3efccfc0559543f5743bd1c4",
+    "explorer": "https://bscscan.com/token/0x500a02a20b0b0a3f3efccfc0559543f5743bd1c4"
+   }
+  },
+  {
+   "ticker": "HANA",
+   "perp_symbol": "HANAUSDT",
+   "chain": "bsc",
+   "address": "0x6261963ebe9ff014aad10ecc3b0238d4d04e8353",
+   "perp_onboard_date": "2025-09-26",
+   "is_new_perp": false,
+   "price": 0.01249932,
+   "mcap_usd": 11346003.194454076,
+   "fdv_usd": 12499320.0,
+   "fdv_to_mcap": 1.1016496105086295,
+   "oi_usd": 5564748.525,
+   "perp_vol_24h_usd": 2475601.10598,
+   "alpha_vol_24h_usd": 1132496.37306346,
+   "dex_liq_usd": 870918.0,
+   "dex_vol_24h_usd": 1132535.47,
+   "funding_rate": 6.102e-05,
+   "circ_supply": 907729636.0485271,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.49045892457707474,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 6.389520626511337,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.1858927791285865,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.9077296360485271,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/HANAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x6261963ebe9ff014aad10ecc3b0238d4d04e8353",
+    "explorer": "https://bscscan.com/token/0x6261963ebe9ff014aad10ecc3b0238d4d04e8353"
+   }
+  },
+  {
+   "ticker": "TRIA",
+   "perp_symbol": "TRIAUSDT",
+   "chain": "bsc",
+   "address": "0xb0b92de23baa85fb06208277e925ced53edab482",
+   "perp_onboard_date": "2026-02-06",
+   "is_new_perp": false,
+   "price": 0.003821,
+   "mcap_usd": 10906127.181067001,
+   "fdv_usd": 38210000.0,
+   "fdv_to_mcap": 3.5035351564882196,
+   "oi_usd": 3937250.14648,
+   "perp_vol_24h_usd": 3000763.63651,
+   "alpha_vol_24h_usd": 24524.554332710308,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 2854259927.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3610126749039799,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.2854259927,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TRIAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xb0b92de23baa85fb06208277e925ced53edab482",
+    "explorer": "https://bscscan.com/token/0xb0b92de23baa85fb06208277e925ced53edab482"
+   }
+  },
+  {
+   "ticker": "GUA",
+   "perp_symbol": "GUAUSDT",
+   "chain": "bsc",
+   "address": "0xa5c8e1513b6a08334b479fe4d71f1253259469be",
+   "perp_onboard_date": "2025-12-21",
+   "is_new_perp": false,
+   "price": 0.0356,
+   "mcap_usd": 12394859.574468084,
+   "fdv_usd": 35600000.0,
+   "fdv_to_mcap": 2.8721583964800788,
+   "oi_usd": 4173648.61210008,
+   "perp_vol_24h_usd": 933651.78552,
+   "alpha_vol_24h_usd": 666937.8104058389,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 348170212.7659574,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3367241546404683,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.3481702127659574,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/GUAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xa5c8e1513b6a08334b479fe4d71f1253259469be",
+    "explorer": "https://bscscan.com/token/0xa5c8e1513b6a08334b479fe4d71f1253259469be"
+   }
+  },
+  {
+   "ticker": "FIGHT",
+   "perp_symbol": "FIGHTUSDT",
+   "chain": "bsc",
+   "address": "0xb2d97c4ed2d0ef452654f5cab3da3735b5e6f3ab",
+   "perp_onboard_date": "2026-01-23",
+   "is_new_perp": false,
+   "price": 0.004203,
+   "mcap_usd": 12752309.174031,
+   "fdv_usd": 42030000.0,
+   "fdv_to_mcap": 3.295873666989704,
+   "oi_usd": 4152916.3806,
+   "perp_vol_24h_usd": 1441262.902325,
+   "alpha_vol_24h_usd": 242467.82053794272,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 6.2e-05,
+   "circ_supply": 3034096877.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.32565995098809736,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.3034096877,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FIGHTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xb2d97c4ed2d0ef452654f5cab3da3735b5e6f3ab",
+    "explorer": "https://bscscan.com/token/0xb2d97c4ed2d0ef452654f5cab3da3735b5e6f3ab"
+   }
+  },
+  {
+   "ticker": "TAC",
+   "perp_symbol": "TACUSDT",
+   "chain": "bsc",
+   "address": "0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
+   "perp_onboard_date": "2025-07-15",
+   "is_new_perp": false,
+   "price": 0.00153655,
+   "mcap_usd": 9230466.8433209,
+   "fdv_usd": 15556078.221209051,
+   "fdv_to_mcap": 1.685297015336263,
+   "oi_usd": 2847586.952295,
+   "perp_vol_24h_usd": 1606606.180895,
+   "alpha_vol_24h_usd": 428837.4436828492,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 0.0002855,
+   "circ_supply": 6007267478.0,
+   "total_supply": 10124029951.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.30849869249630574,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.5933672171136389,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TACUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
+    "explorer": "https://bscscan.com/token/0xb305e6954e4e0cd021c06ec355681abc8a00dbd7"
+   }
+  },
+  {
+   "ticker": "ARC",
+   "perp_symbol": "ARCUSDT",
+   "chain": "solana",
+   "address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+   "perp_onboard_date": "2025-01-17",
+   "is_new_perp": false,
+   "price": 0.07041328,
+   "mcap_usd": 70412037.64470275,
+   "fdv_usd": 70413161.63527632,
+   "fdv_to_mcap": 1.0000159630456833,
+   "oi_usd": 21635087.0271835,
+   "perp_vol_24h_usd": 1196958.63797,
+   "alpha_vol_24h_usd": 310740.41568324814,
+   "dex_liq_usd": 4973437.76,
+   "dex_vol_24h_usd": 300311.49,
+   "funding_rate": 5e-05,
+   "circ_supply": 999982356.235965,
+   "total_supply": 999998319.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.3072640382366658,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.350127230140204,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 3.98572374959746,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.9999840372091315,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ARCUSDT",
+    "dexscreener": "https://dexscreener.com/solana/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+    "explorer": "https://solscan.io/token/61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+   }
+  },
+  {
+   "ticker": "AIA",
+   "perp_symbol": "AIAUSDT",
+   "chain": "bsc",
+   "address": "0x53ec33cd4fa46b9eced9ca3f6db626c5ffcd55cc",
+   "perp_onboard_date": "2026-01-20",
+   "is_new_perp": false,
+   "price": 0.07299709,
+   "mcap_usd": 18812888.67417716,
+   "fdv_usd": 72997090.0,
+   "fdv_to_mcap": 3.8801638208914113,
+   "oi_usd": 5349217.4927,
+   "perp_vol_24h_usd": 5160201.9585,
+   "alpha_vol_24h_usd": 1274729.4446265649,
+   "dex_liq_usd": 711653.69,
+   "dex_vol_24h_usd": 1267543.03,
+   "funding_rate": 5e-05,
+   "circ_supply": 257721077.2946861,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.28433791244629075,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 7.5166019200996494,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 4.071027047105454,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.25772107729468613,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "circ_mismatch"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AIAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x53ec33cd4fa46b9eced9ca3f6db626c5ffcd55cc",
+    "explorer": "https://bscscan.com/token/0x53ec33cd4fa46b9eced9ca3f6db626c5ffcd55cc"
+   }
+  },
+  {
+   "ticker": "IDOL",
+   "perp_symbol": "IDOLUSDT",
+   "chain": "bsc",
+   "address": "0x3b4de3c7855c03bb9f50ea252cd2c9fa1125ab07",
+   "perp_onboard_date": "2025-07-04",
+   "is_new_perp": false,
+   "price": 0.01032,
+   "mcap_usd": 18417868.403885636,
+   "fdv_usd": 49536000.0,
+   "fdv_to_mcap": 2.6895620553760358,
+   "oi_usd": 5156270.5986,
+   "perp_vol_24h_usd": 1003256.47507,
+   "alpha_vol_24h_usd": 295552.4429663017,
+   "dex_liq_usd": 872213.01,
+   "dex_vol_24h_usd": 295440.86,
+   "funding_rate": 5e-05,
+   "circ_supply": 1784677170.919151,
+   "total_supply": 4800000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.27996022588108926,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.91171025825446,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 3.3957945934424916,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.3718077439414898,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/IDOLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x3b4de3c7855c03bb9f50ea252cd2c9fa1125ab07",
+    "explorer": "https://bscscan.com/token/0x3b4de3c7855c03bb9f50ea252cd2c9fa1125ab07"
+   }
+  },
+  {
+   "ticker": "哈基米",
+   "perp_symbol": "哈基米USDT",
+   "chain": "bsc",
+   "address": "0x82ec31d69b3c289e541b50e30681fd1acad24444",
+   "perp_onboard_date": "2026-09-06",
+   "is_new_perp": false,
+   "price": 0.02672434,
+   "mcap_usd": 26724340.0,
+   "fdv_usd": 26724340.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 5246063.78817456,
+   "perp_vol_24h_usd": 4344198.05375,
+   "alpha_vol_24h_usd": 750566.3587786439,
+   "dex_liq_usd": 2015932.92,
+   "dex_vol_24h_usd": 691328.53,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1963028380934594,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.602300769102258,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 6.283840265857392,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/哈基米USDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x82ec31d69b3c289e541b50e30681fd1acad24444",
+    "explorer": "https://bscscan.com/token/0x82ec31d69b3c289e541b50e30681fd1acad24444"
+   }
+  },
+  {
+   "ticker": "ARIA",
+   "perp_symbol": "ARIAUSDT",
+   "chain": "bsc",
+   "address": "0x5d3a12c42e5372b2cc3264ab3cdcf660a1555238",
+   "perp_onboard_date": "2025-09-03",
+   "is_new_perp": false,
+   "price": 0.03690295,
+   "mcap_usd": 16398265.153333332,
+   "fdv_usd": 36902950.0,
+   "fdv_to_mcap": 2.2504179347593127,
+   "oi_usd": 2999496.61912932,
+   "perp_vol_24h_usd": 1351949.88517,
+   "alpha_vol_24h_usd": 138751.58482950123,
+   "dex_liq_usd": 1301572.32,
+   "dex_vol_24h_usd": 137057.67,
+   "funding_rate": 5e-05,
+   "circ_supply": 444361904.7619048,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.18291548472245567,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.3045178305031255,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 9.864095056993161,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.4443619047619048,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ARIAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x5d3a12c42e5372b2cc3264ab3cdcf660a1555238",
+    "explorer": "https://bscscan.com/token/0x5d3a12c42e5372b2cc3264ab3cdcf660a1555238"
+   }
+  },
+  {
+   "ticker": "XPIN",
+   "perp_symbol": "XPINUSDT",
+   "chain": "bsc",
+   "address": "0xd955c9ba56fb1ab30e34766e252a97ccce3d31a6",
+   "perp_onboard_date": "2025-09-12",
+   "is_new_perp": false,
+   "price": 0.0008795,
+   "mcap_usd": 47586641.31536055,
+   "fdv_usd": 87950000.0,
+   "fdv_to_mcap": 1.8482077652244497,
+   "oi_usd": 7914943.862247,
+   "perp_vol_24h_usd": 861647.447186,
+   "alpha_vol_24h_usd": 145390.25444462613,
+   "dex_liq_usd": 651707.23,
+   "dex_vol_24h_usd": 145189.47,
+   "funding_rate": 5e-05,
+   "circ_supply": 54106471080.56914,
+   "total_supply": 100000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.16632701202411035,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 12.144937938231866,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 5.934641452895998,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.5410647108056914,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/XPINUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xd955c9ba56fb1ab30e34766e252a97ccce3d31a6",
+    "explorer": "https://bscscan.com/token/0xd955c9ba56fb1ab30e34766e252a97ccce3d31a6"
+   }
+  },
+  {
+   "ticker": "RECALL",
+   "perp_symbol": "RECALLUSDT",
+   "chain": "base",
+   "address": "0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+   "perp_onboard_date": "2025-10-15",
+   "is_new_perp": false,
+   "price": 0.04815379,
+   "mcap_usd": 13099619.343521608,
+   "fdv_usd": 48153790.0,
+   "fdv_to_mcap": 3.6759686474259547,
+   "oi_usd": 1679901.2395,
+   "perp_vol_24h_usd": 752045.95945,
+   "alpha_vol_24h_usd": 76604.69960483744,
+   "dex_liq_usd": 516777.08,
+   "dex_vol_24h_usd": 76788.59,
+   "funding_rate": 5e-05,
+   "circ_supply": 272037140.6595744,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.12824046221852942,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.250727063011386,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 9.793720127560618,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.2720371406595744,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/RECALLUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+    "explorer": "https://basescan.org/token/0x1f16e03c1a5908818f47f6ee7bb16690b40d0671"
+   }
+  },
+  {
+   "ticker": "GOAT",
+   "perp_symbol": "GOATUSDT",
+   "chain": "solana",
+   "address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+   "perp_onboard_date": "2024-10-24",
+   "is_new_perp": false,
+   "price": 0.0181369,
+   "mcap_usd": 18136514.13201185,
+   "fdv_usd": 18136900.0,
+   "fdv_to_mcap": 1.0000212757526248,
+   "oi_usd": 1829241.33684,
+   "perp_vol_24h_usd": 993871.32508,
+   "alpha_vol_24h_usd": 69361.58920102965,
+   "dex_liq_usd": 1759089.07,
+   "dex_vol_24h_usd": 66621.21,
+   "funding_rate": 5e-05,
+   "circ_supply": 999978724.700023,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.10085958765423936,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.0398798833080123,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 14.918241879425485,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.999978724700023,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/GOATUSDT",
+    "dexscreener": "https://dexscreener.com/solana/CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+    "explorer": "https://solscan.io/token/CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump"
+   }
+  },
+  {
+   "ticker": "MAGMA",
+   "perp_symbol": "MAGMAUSDT",
+   "chain": "sui",
+   "address": "0x9f854b3ad20f8161ec0886f15f4a1752bf75d22261556f14cc8d3a1c5d50e529::magma::MAGMA",
+   "perp_onboard_date": "2025-12-31",
+   "is_new_perp": false,
+   "price": 0.20244605,
+   "mcap_usd": 60432299.606382966,
+   "fdv_usd": 202446050.0,
+   "fdv_to_mcap": 3.349964362081255,
+   "oi_usd": 5561575.43925,
+   "perp_vol_24h_usd": 17138484.343,
+   "alpha_vol_24h_usd": 2492194.3748959578,
+   "dex_liq_usd": 1462316.98,
+   "dex_vol_24h_usd": 2460859.84,
+   "funding_rate": 3.497e-05,
+   "circ_supply": 298510638.2978723,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.09202984952541135,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.8032625725579687,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 6.964429287854118,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.2985106382978723,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MAGMAUSDT",
+    "dexscreener": "https://dexscreener.com/sui/0x9f854b3ad20f8161ec0886f15f4a1752bf75d22261556f14cc8d3a1c5d50e529::magma::MAGMA",
+    "explorer": "https://suivision.xyz/coin/0x9f854b3ad20f8161ec0886f15f4a1752bf75d22261556f14cc8d3a1c5d50e529::magma::MAGMA"
+   }
+  },
+  {
+   "ticker": "JELLYJELLY",
+   "perp_symbol": "JELLYJELLYUSDT",
+   "chain": "solana",
+   "address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+   "perp_onboard_date": "2025-03-26",
+   "is_new_perp": false,
+   "price": 0.05439,
+   "mcap_usd": 54389950.994610004,
+   "fdv_usd": 54389950.994610004,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 4620385.46693099,
+   "perp_vol_24h_usd": 1183486.24742,
+   "alpha_vol_24h_usd": 140820.5332784269,
+   "dex_liq_usd": 5320191.37,
+   "dex_vol_24h_usd": 140014.03,
+   "funding_rate": 5e-05,
+   "circ_supply": 999999099.0,
+   "total_supply": 999999099.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08494924857330477,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.8684622686666608,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 8.452626121967919,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/JELLYJELLYUSDT",
+    "dexscreener": "https://dexscreener.com/solana/FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+    "explorer": "https://solscan.io/token/FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
+   }
+  },
+  {
+   "ticker": "PRL",
+   "perp_symbol": "PRLUSDT",
+   "chain": "bsc",
+   "address": "0xd20fb09a49a8e75fef536a2dbc68222900287bac",
+   "perp_onboard_date": "2026-04-01",
+   "is_new_perp": false,
+   "price": 0.11384998,
+   "mcap_usd": 26918089.73997371,
+   "fdv_usd": 113849980.0,
+   "fdv_to_mcap": 4.229497007394671,
+   "oi_usd": 2136267.7112,
+   "perp_vol_24h_usd": 1113401.7932,
+   "alpha_vol_24h_usd": 567056.816091246,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 236434734.0243161,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.07936178725296449,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.2364347340243161,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PRLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xd20fb09a49a8e75fef536a2dbc68222900287bac",
+    "explorer": "https://bscscan.com/token/0xd20fb09a49a8e75fef536a2dbc68222900287bac"
+   }
+  },
+  {
+   "ticker": "PHAROS",
+   "perp_symbol": "PHAROSUSDT",
+   "chain": "base",
+   "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
+   "perp_onboard_date": "2026-05-14",
+   "is_new_perp": false,
+   "price": 0.7252,
+   "mcap_usd": 98337120.0,
+   "fdv_usd": 725200000.0,
+   "fdv_to_mcap": 7.374631268436578,
+   "oi_usd": 7019976.11737136,
+   "perp_vol_24h_usd": 4673173.6657,
+   "alpha_vol_24h_usd": 2254991.025064333,
+   "dex_liq_usd": 1009768.33,
+   "dex_vol_24h_usd": 2205886.85,
+   "funding_rate": 0.00018425,
+   "circ_supply": 135600000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.07138683863602432,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 6.952066042090427,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.1185010761998058,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.1356,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PHAROSUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x8b7dde054be9d180c1be7fae0874697374a49832",
+    "explorer": "https://basescan.org/token/0x8b7dde054be9d180c1be7fae0874697374a49832"
+   }
+  },
+  {
+   "ticker": "Q",
+   "perp_symbol": "QUSDT",
+   "chain": "bsc",
+   "address": "0xc07e1300dc138601fa6b0b59f8d0fa477e690589",
+   "perp_onboard_date": "2025-09-02",
+   "is_new_perp": false,
+   "price": 0.02107,
+   "mcap_usd": 98427858.16391435,
+   "fdv_usd": 210699999.99999997,
+   "fdv_to_mcap": 2.1406541189702213,
+   "oi_usd": 6541129.751682,
+   "perp_vol_24h_usd": 4087201.516445,
+   "alpha_vol_24h_usd": 749210.4395415095,
+   "dex_liq_usd": 951588.07,
+   "dex_vol_24h_usd": 748656.91,
+   "funding_rate": 5e-05,
+   "circ_supply": 4671469300.6129265,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.06645608137473534,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 6.873908950626084,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 5.459378604339603,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.46714693006129265,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/QUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xc07e1300dc138601fa6b0b59f8d0fa477e690589",
+    "explorer": "https://bscscan.com/token/0xc07e1300dc138601fa6b0b59f8d0fa477e690589"
+   }
+  },
+  {
+   "ticker": "BIRB",
+   "perp_symbol": "BIRBUSDT",
+   "chain": "solana",
+   "address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "perp_onboard_date": "2026-01-29",
+   "is_new_perp": false,
+   "price": 0.06308,
+   "mcap_usd": 17977800.0,
+   "fdv_usd": 63080000.0,
+   "fdv_to_mcap": 3.508771929824561,
+   "oi_usd": 1180689.07704,
+   "perp_vol_24h_usd": 808856.50212,
+   "alpha_vol_24h_usd": 135589.20823152157,
+   "dex_liq_usd": 1265992.63,
+   "dex_vol_24h_usd": 135578.5,
+   "funding_rate": 5e-05,
+   "circ_supply": 285000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.06567483657844675,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.9326192341577849,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 5.965964383143345,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.285,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BIRBUSDT",
+    "dexscreener": "https://dexscreener.com/solana/G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+    "explorer": "https://solscan.io/token/G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+   }
+  },
+  {
+   "ticker": "B",
+   "perp_symbol": "BUSDT",
+   "chain": "bsc",
+   "address": "0x6bdcce4a559076e37755a78ce0c06214e59e4444",
+   "perp_onboard_date": "2025-05-22",
+   "is_new_perp": false,
+   "price": 0.17415115,
+   "mcap_usd": 174151150.0,
+   "fdv_usd": 174151150.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 10077951.02082782,
+   "perp_vol_24h_usd": 1269041.5297,
+   "alpha_vol_24h_usd": 1137534.704895139,
+   "dex_liq_usd": 2686118.41,
+   "dex_vol_24h_usd": 158201.5,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.05786898921326572,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.751864021820177,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 8.02167823756412,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x6bdcce4a559076e37755a78ce0c06214e59e4444",
+    "explorer": "https://bscscan.com/token/0x6bdcce4a559076e37755a78ce0c06214e59e4444"
+   }
+  },
+  {
+   "ticker": "CT",
+   "perp_symbol": "CTUSDT",
+   "chain": "bsc",
+   "address": "0x0a092e544da31150b439a1aaa1a3a2214a867f46",
+   "perp_onboard_date": "2026-10-01",
+   "is_new_perp": true,
+   "price": 0.37978431,
+   "mcap_usd": 72159018.9,
+   "fdv_usd": 379784310.0,
+   "fdv_to_mcap": 5.263157894736842,
+   "oi_usd": 3563734.37896,
+   "perp_vol_24h_usd": 40021983.64512,
+   "alpha_vol_24h_usd": 13079971.00315354,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": -0.0001792,
+   "circ_supply": 190000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.049387234378819964,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.19,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0a092e544da31150b439a1aaa1a3a2214a867f46",
+    "explorer": "https://bscscan.com/token/0x0a092e544da31150b439a1aaa1a3a2214a867f46"
+   }
+  },
+  {
+   "ticker": "POPCAT",
+   "perp_symbol": "POPCATUSDT",
+   "chain": "solana",
+   "address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
+   "perp_onboard_date": "2024-08-22",
+   "is_new_perp": false,
+   "price": 0.05322687,
+   "mcap_usd": 52158731.33602261,
+   "fdv_usd": 52160907.2355192,
+   "fdv_to_mcap": 1.0000417168792426,
+   "oi_usd": 2312176.73239,
+   "perp_vol_24h_usd": 2046351.35721,
+   "alpha_vol_24h_usd": 388332.6097463649,
+   "dex_liq_usd": 4132932.6,
+   "dex_vol_24h_usd": 305081.49,
+   "funding_rate": 5e-05,
+   "circ_supply": 979932341.2408546,
+   "total_supply": 979973220.96,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04432961985778077,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.5594518363038391,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 6.7075565849963565,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.9999582848609828,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/POPCATUSDT",
+    "dexscreener": "https://dexscreener.com/solana/7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
+    "explorer": "https://solscan.io/token/7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr"
+   }
+  },
+  {
+   "ticker": "IRYS",
+   "perp_symbol": "IRYSUSDT",
+   "chain": "bsc",
+   "address": "0x91152b4ef635403efbae860edd0f8c321d7c035d",
+   "perp_onboard_date": "2025-11-26",
+   "is_new_perp": false,
+   "price": 0.01572,
+   "mcap_usd": 40350302.90664,
+   "fdv_usd": 157200000.0,
+   "fdv_to_mcap": 3.8958815343646735,
+   "oi_usd": 1742423.37841,
+   "perp_vol_24h_usd": 1235777.79212,
+   "alpha_vol_24h_usd": 116982.75181096481,
+   "dex_liq_usd": 391459.06,
+   "dex_vol_24h_usd": 80849.52,
+   "funding_rate": 5e-05,
+   "circ_supply": 2566813162.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04318241135491621,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.4510998887342135,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 15.284911921802381,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.2566813162,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/IRYSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x91152b4ef635403efbae860edd0f8c321d7c035d",
+    "explorer": "https://bscscan.com/token/0x91152b4ef635403efbae860edd0f8c321d7c035d"
+   }
+  },
+  {
+   "ticker": "DOS",
+   "perp_symbol": "DOSUSDT",
+   "chain": "bsc",
+   "address": "0xb0f09ea9ae0515c3551080d4a745c8115aa30e37",
+   "perp_onboard_date": "2026-08-11",
+   "is_new_perp": false,
+   "price": 0.21059419,
+   "mcap_usd": 48261168.54166665,
+   "fdv_usd": 210594190.0,
+   "fdv_to_mcap": 4.363636363636365,
+   "oi_usd": 1960065.277,
+   "perp_vol_24h_usd": 1114689.5616,
+   "alpha_vol_24h_usd": 404269.4502859709,
+   "dex_liq_usd": 804266.93,
+   "dex_vol_24h_usd": 404303.28,
+   "funding_rate": 5e-05,
+   "circ_supply": 229166666.6666666,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04061371359683847,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.437083017947785,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.7570628702294964,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.2291666666666666,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/DOSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xb0f09ea9ae0515c3551080d4a745c8115aa30e37",
+    "explorer": "https://bscscan.com/token/0xb0f09ea9ae0515c3551080d4a745c8115aa30e37"
+   }
+  },
+  {
+   "ticker": "SQD",
+   "perp_symbol": "SQDUSDT",
+   "chain": "bsc",
+   "address": "0xe50e3d1a46070444f44df911359033f2937fcc13",
+   "perp_onboard_date": "2025-06-11",
+   "is_new_perp": false,
+   "price": 0.02874,
+   "mcap_usd": 34205401.68108384,
+   "fdv_usd": 38425380.0,
+   "fdv_to_mcap": 1.123371693110386,
+   "oi_usd": 1340599.82976684,
+   "perp_vol_24h_usd": 3926188.95296,
+   "alpha_vol_24h_usd": 588008.829952968,
+   "dex_liq_usd": 342696.09,
+   "dex_vol_24h_usd": 587777.92,
+   "funding_rate": 5e-05,
+   "circ_supply": 1190167073.1066055,
+   "total_supply": 1337000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.03919263519446445,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.911920412534733,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 6.679714938866706,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.8901773172076332,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SQDUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xe50e3d1a46070444f44df911359033f2937fcc13",
+    "explorer": "https://bscscan.com/token/0xe50e3d1a46070444f44df911359033f2937fcc13"
+   }
+  },
+  {
+   "ticker": "MEW",
+   "perp_symbol": "MEWUSDT",
+   "chain": "solana",
+   "address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+   "perp_onboard_date": "2024-06-17",
+   "is_new_perp": false,
+   "price": 0.00052231,
+   "mcap_usd": 46425764.74823857,
+   "fdv_usd": 46427555.55509128,
+   "fdv_to_mcap": 1.0000385735563522,
+   "oi_usd": 1724310.7836552,
+   "perp_vol_24h_usd": 2406926.6168412,
+   "alpha_vol_24h_usd": 420924.30183848005,
+   "dex_liq_usd": 10623834.6,
+   "dex_vol_24h_usd": 417748.66,
+   "funding_rate": 5e-05,
+   "circ_supply": 88885460259.68979,
+   "total_supply": 88888888888.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.03714124674102696,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.16230587622808057,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 5.761662088494072,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.9999614279315098,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MEWUSDT",
+    "dexscreener": "https://dexscreener.com/solana/MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+    "explorer": "https://solscan.io/token/MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"
+   }
+  },
+  {
+   "ticker": "ZORA",
+   "perp_symbol": "ZORAUSDT",
+   "chain": "base",
+   "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+   "perp_onboard_date": "2025-07-25",
+   "is_new_perp": false,
+   "price": 0.007546,
+   "mcap_usd": 49110423.335227266,
+   "fdv_usd": 75460000.0,
+   "fdv_to_mcap": 1.536537355520452,
+   "oi_usd": 1789627.10254345,
+   "perp_vol_24h_usd": 1782110.643312,
+   "alpha_vol_24h_usd": 234122.15655100532,
+   "dex_liq_usd": 107244.89,
+   "dex_vol_24h_usd": 192496.71,
+   "funding_rate": 5e-05,
+   "circ_supply": 6508139853.59492,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.03644088120209172,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 16.68729486825386,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 9.257875853109386,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.650813985359492,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ZORAUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x1111111111166b7fe7bd91427724b487980afc69",
+    "explorer": "https://basescan.org/token/0x1111111111166b7fe7bd91427724b487980afc69"
+   }
+  },
+  {
+   "ticker": "TOSHI",
+   "perp_symbol": "TOSHIUSDT",
+   "chain": "bsc",
+   "address": "0x6a2608dabe09bc1128eec7275b92dfb939d5db3f",
+   "perp_onboard_date": "2025-09-17",
+   "is_new_perp": false,
+   "price": 0.00012222,
+   "mcap_usd": 51412994.3953963,
+   "fdv_usd": 51416731.800000004,
+   "fdv_to_mcap": 1.0000726937741646,
+   "oi_usd": 850133.98688065,
+   "perp_vol_24h_usd": 756960.1280937,
+   "alpha_vol_24h_usd": 67773.85822788629,
+   "dex_liq_usd": 403792.74,
+   "dex_vol_24h_usd": 66860.38,
+   "funding_rate": 5e-05,
+   "circ_supply": 420659420679.07294,
+   "total_supply": 420690000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.016535391429307104,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.1053721443348636,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 11.321505024256517,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.999927311509836,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TOSHIUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x6a2608dabe09bc1128eec7275b92dfb939d5db3f",
+    "explorer": "https://bscscan.com/token/0x6a2608dabe09bc1128eec7275b92dfb939d5db3f"
+   }
+  },
+  {
+   "ticker": "SPX",
+   "perp_symbol": "SPXUSDT",
+   "chain": "ethereum",
+   "address": "0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+   "perp_onboard_date": "2024-12-10",
+   "is_new_perp": false,
+   "price": 0.42570425,
+   "mcap_usd": 396327715.1634318,
+   "fdv_usd": 425704250.0,
+   "fdv_to_mcap": 1.0741218282563316,
+   "oi_usd": 4754499.1536,
+   "perp_vol_24h_usd": 8954163.2822,
+   "alpha_vol_24h_usd": 1067310.7855924454,
+   "dex_liq_usd": 12459273.95,
+   "dex_vol_24h_usd": 1056069.36,
+   "funding_rate": 5e-05,
+   "circ_supply": 930993090.07,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.011996383224522688,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.3816032276583821,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 8.478764389301094,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.9309930900700001,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SPXUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+    "explorer": "https://etherscan.io/token/0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c"
+   }
+  },
+  {
+   "ticker": "B2",
+   "perp_symbol": "B2USDT",
+   "chain": "bsc",
+   "address": "0x783c3f003f172c6ac5ac700218a357d2d66ee2a2",
+   "perp_onboard_date": "2025-05-06",
+   "is_new_perp": false,
+   "price": 0.4836,
+   "mcap_usd": 44538102.92798408,
+   "fdv_usd": 101556000.0,
+   "fdv_to_mcap": 2.280204888030616,
+   "oi_usd": 8020657.25411236,
+   "perp_vol_24h_usd": 1160953.6324,
+   "alpha_vol_24h_usd": 553526.2301067098,
+   "dex_liq_usd": 835182.15,
+   "dex_vol_24h_usd": 551097.47,
+   "funding_rate": 5e-05,
+   "circ_supply": 92096987.0305709,
+   "total_supply": 210000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.18008529162280143,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 9.603482610484862,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.106621234171153,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.43855708109795666,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/B2USDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2",
+    "explorer": "https://bscscan.com/token/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2"
+   }
+  },
+  {
+   "ticker": "FOLKS",
+   "perp_symbol": "FOLKSUSDT",
+   "chain": "bsc",
+   "address": "0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
+   "perp_onboard_date": "2025-11-06",
+   "is_new_perp": false,
+   "price": 2.44064973,
+   "mcap_usd": 43895567.41596009,
+   "fdv_usd": 122032486.5,
+   "fdv_to_mcap": 2.7800639946991534,
+   "oi_usd": 6469405.8568,
+   "perp_vol_24h_usd": 992369.8401,
+   "alpha_vol_24h_usd": 78539.9378745141,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 17985197.497373,
+   "total_supply": 50000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.14738175714862212,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.35970394994746,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FOLKSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
+    "explorer": "https://bscscan.com/token/0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b"
+   }
+  },
+  {
+   "ticker": "APR",
+   "perp_symbol": "APRUSDT",
+   "chain": "bsc",
+   "address": "0x299ad4299da5b2b93fba4c96967b040c7f611099",
+   "perp_onboard_date": "2025-10-23",
+   "is_new_perp": false,
+   "price": 0.1364,
+   "mcap_usd": 37893625.0,
+   "fdv_usd": 136400000.0,
+   "fdv_to_mcap": 3.5995500562429696,
+   "oi_usd": 5428748.2348,
+   "perp_vol_24h_usd": 2085891.5119,
+   "alpha_vol_24h_usd": 255819.46519810444,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 277812500.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.14326283734533182,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.2778125,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/APRUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x299ad4299da5b2b93fba4c96967b040c7f611099",
+    "explorer": "https://bscscan.com/token/0x299ad4299da5b2b93fba4c96967b040c7f611099"
+   }
+  },
+  {
+   "ticker": "PONS",
+   "perp_symbol": "PONSUSDT",
+   "chain": "robinhood",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "perp_onboard_date": "2026-09-06",
+   "is_new_perp": false,
+   "price": 0.37757906,
+   "mcap_usd": 256730627.47555992,
+   "fdv_usd": 377579060.0,
+   "fdv_to_mcap": 1.4707207461483907,
+   "oi_usd": 35800124.535,
+   "perp_vol_24h_usd": 52751669.7312,
+   "alpha_vol_24h_usd": 12955359.567914955,
+   "dex_liq_usd": null,
+   "dex_vol_24h_usd": null,
+   "funding_rate": 0.00011275,
+   "circ_supply": 679938732.5016379,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1394462549600089,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.6799387325016379,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PONSUSDT"
+   }
+  },
+  {
+   "ticker": "ZEREBRO",
+   "perp_symbol": "ZEREBROUSDT",
+   "chain": "solana",
+   "address": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+   "perp_onboard_date": "2025-01-02",
+   "is_new_perp": false,
+   "price": 0.031006,
+   "mcap_usd": 31004322.574399374,
+   "fdv_usd": 31006000.0,
+   "fdv_to_mcap": 1.0000541029592438,
+   "oi_usd": 4251015.165988,
+   "perp_vol_24h_usd": 743353.30006,
+   "alpha_vol_24h_usd": 886117.7935255109,
+   "dex_liq_usd": 3235646.48,
+   "dex_vol_24h_usd": 506641.74,
+   "funding_rate": 5e-05,
+   "circ_supply": 999945899.967728,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1371104030990218,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.3138070528607315,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.4672168543791912,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.999945899967728,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ZEREBROUSDT",
+    "dexscreener": "https://dexscreener.com/solana/8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+    "explorer": "https://solscan.io/token/8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn"
+   }
+  },
+  {
+   "ticker": "SKYAI",
+   "perp_symbol": "SKYAIUSDT",
+   "chain": "bsc",
+   "address": "0x92aa03137385f18539301349dcfc9ebc923ffb10",
+   "perp_onboard_date": "2025-05-13",
+   "is_new_perp": false,
+   "price": 0.03515298,
+   "mcap_usd": 35152980.0,
+   "fdv_usd": 35152980.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 4757210.81737255,
+   "perp_vol_24h_usd": 8557278.98495,
+   "alpha_vol_24h_usd": 1978084.5181297867,
+   "dex_liq_usd": 5454277.52,
+   "dex_vol_24h_usd": 1919120.31,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.13532880618862328,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.8721981600548537,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 4.458959107649692,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SKYAIUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x92aa03137385f18539301349dcfc9ebc923ffb10",
+    "explorer": "https://bscscan.com/token/0x92aa03137385f18539301349dcfc9ebc923ffb10"
+   }
+  },
+  {
+   "ticker": "IN",
+   "perp_symbol": "INUSDT",
+   "chain": "bsc",
+   "address": "0x61fac5f038515572d6f42d4bcb6b581642753d50",
+   "perp_onboard_date": "2025-08-07",
+   "is_new_perp": false,
+   "price": 0.03646659,
+   "mcap_usd": 16257164.531274006,
+   "fdv_usd": 36466590.0,
+   "fdv_to_mcap": 2.2431088723897084,
+   "oi_usd": 2160585.46877129,
+   "perp_vol_24h_usd": 921596.93784,
+   "alpha_vol_24h_usd": 384831.9553960734,
+   "dex_liq_usd": 1190199.78,
+   "dex_vol_24h_usd": 382981.17,
+   "funding_rate": 5e-05,
+   "circ_supply": 445809836.6552509,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.13290051070190984,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.8153132819191833,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.4063766316239517,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.4458098366552509,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/INUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x61fac5f038515572d6f42d4bcb6b581642753d50",
+    "explorer": "https://bscscan.com/token/0x61fac5f038515572d6f42d4bcb6b581642753d50"
+   }
+  },
+  {
+   "ticker": "ALCH",
+   "perp_symbol": "ALCHUSDT",
+   "chain": "solana",
+   "address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+   "perp_onboard_date": "2025-01-07",
+   "is_new_perp": false,
+   "price": 0.04839348,
+   "mcap_usd": 41134458.0,
+   "fdv_usd": 48393480.0,
+   "fdv_to_mcap": 1.1764705882352942,
+   "oi_usd": 4965178.34937579,
+   "perp_vol_24h_usd": 1181699.04696,
+   "alpha_vol_24h_usd": 240026.0034733471,
+   "dex_liq_usd": 3487698.93,
+   "dex_vol_24h_usd": 238825.58,
+   "funding_rate": 5e-05,
+   "circ_supply": 850000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.12070605985317201,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.4236258487414193,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 4.947958451351819,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.85,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ALCHUSDT",
+    "dexscreener": "https://dexscreener.com/solana/HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
+    "explorer": "https://solscan.io/token/HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+   }
+  },
+  {
+   "ticker": "POWER",
+   "perp_symbol": "POWERUSDT",
+   "chain": "bsc",
+   "address": "0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223",
+   "perp_onboard_date": "2025-12-06",
+   "is_new_perp": false,
+   "price": 0.08253,
+   "mcap_usd": 31991651.373583406,
+   "fdv_usd": 82530000.0,
+   "fdv_to_mcap": 2.5797355390083996,
+   "oi_usd": 3525287.02823,
+   "perp_vol_24h_usd": 2537985.31326,
+   "alpha_vol_24h_usd": 276350.931233264,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 0.0002033,
+   "circ_supply": 387636633.6312057,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.11019396864086076,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.38763663363120565,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/POWERUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223",
+    "explorer": "https://bscscan.com/token/0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223"
+   }
+  },
+  {
+   "ticker": "SLX",
+   "perp_symbol": "SLXUSDT",
+   "chain": "bsc",
+   "address": "0x02bcc4c181b83a8c0a342bc003389cbecb4bc54d",
+   "perp_onboard_date": "2026-06-01",
+   "is_new_perp": false,
+   "price": 0.05989,
+   "mcap_usd": 25031600.037247084,
+   "fdv_usd": 59890000.0,
+   "fdv_to_mcap": 2.392575780648601,
+   "oi_usd": 2569501.1110906,
+   "perp_vol_24h_usd": 2657014.54846,
+   "alpha_vol_24h_usd": 53178.5480071983,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 417959593.2083334,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.10265029431866823,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.41795959320833337,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SLXUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x02bcc4c181b83a8c0a342bc003389cbecb4bc54d",
+    "explorer": "https://bscscan.com/token/0x02bcc4c181b83a8c0a342bc003389cbecb4bc54d"
+   }
+  },
+  {
+   "ticker": "ELSA",
+   "perp_symbol": "ELSAUSDT",
+   "chain": "base",
+   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "perp_onboard_date": "2026-01-22",
+   "is_new_perp": false,
+   "price": 0.054143,
+   "mcap_usd": 13841476.787522,
+   "fdv_usd": 54143000.0,
+   "fdv_to_mcap": 3.911649084208237,
+   "oi_usd": 1227572.45143876,
+   "perp_vol_24h_usd": 494104.59966,
+   "alpha_vol_24h_usd": 167004.8530745136,
+   "dex_liq_usd": 383045.16,
+   "dex_vol_24h_usd": 165893.63,
+   "funding_rate": 5e-05,
+   "circ_supply": 255646654.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08868796807472223,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.204772125142529,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.978442268458409,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.255646654,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ELSAUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x29cc30f9d113b356ce408667aa6433589cecbdca",
+    "explorer": "https://basescan.org/token/0x29cc30f9d113b356ce408667aa6433589cecbdca"
+   }
+  },
+  {
+   "ticker": "AIOT",
+   "perp_symbol": "AIOTUSDT",
+   "chain": "bsc",
+   "address": "0x55ad16bd573b3365f43a9daeb0cc66a73821b4a5",
+   "perp_onboard_date": "2025-04-30",
+   "is_new_perp": false,
+   "price": 0.05773457,
+   "mcap_usd": 30325082.83476543,
+   "fdv_usd": 57734570.0,
+   "fdv_to_mcap": 1.9038553106213332,
+   "oi_usd": 2563127.3365353,
+   "perp_vol_24h_usd": 800309.15533,
+   "alpha_vol_24h_usd": 348788.9824330027,
+   "dex_liq_usd": 1667617.43,
+   "dex_vol_24h_usd": 347331.56,
+   "funding_rate": 5e-05,
+   "circ_supply": 525249999.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08452169283431823,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.5369996081986863,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.304164802444097,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.525249999,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AIOTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x55ad16bd573b3365f43a9daeb0cc66a73821b4a5",
+    "explorer": "https://bscscan.com/token/0x55ad16bd573b3365f43a9daeb0cc66a73821b4a5"
+   }
+  },
+  {
+   "ticker": "AGT",
+   "perp_symbol": "AGTUSDT",
+   "chain": "bsc",
+   "address": "0x5dbde81fce337ff4bcaaee4ca3466c00aecae274",
+   "perp_onboard_date": "2025-05-20",
+   "is_new_perp": false,
+   "price": 0.02508513,
+   "mcap_usd": 86108810.1483376,
+   "fdv_usd": 125425650.0,
+   "fdv_to_mcap": 1.4565948569482288,
+   "oi_usd": 6398345.54418393,
+   "perp_vol_24h_usd": 3623846.740614,
+   "alpha_vol_24h_usd": 1875203.4233000267,
+   "dex_liq_usd": 1724859.82,
+   "dex_vol_24h_usd": 1874959.68,
+   "funding_rate": 0.00020666,
+   "circ_supply": 3432663500.182682,
+   "total_supply": 5000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.07430535311266817,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.70948726962863,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.9327598237280494,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.6865327000365364,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AGTUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x5dbde81fce337ff4bcaaee4ca3466c00aecae274",
+    "explorer": "https://bscscan.com/token/0x5dbde81fce337ff4bcaaee4ca3466c00aecae274"
+   }
+  },
+  {
+   "ticker": "TAG",
+   "perp_symbol": "TAGUSDT",
+   "chain": "bsc",
+   "address": "0x208bf3e7da9639f1eaefa2de78c23396b0682025",
+   "perp_onboard_date": "2025-07-25",
+   "is_new_perp": false,
+   "price": 0.0007571,
+   "mcap_usd": 82073101.9109174,
+   "fdv_usd": 306913803.68,
+   "fdv_to_mcap": 3.7395175341749107,
+   "oi_usd": 6024387.09152965,
+   "perp_vol_24h_usd": 1387667.4793193,
+   "alpha_vol_24h_usd": 674752.0531525956,
+   "dex_liq_usd": 2320790.64,
+   "dex_vol_24h_usd": 700347.46,
+   "funding_rate": 5e-05,
+   "circ_supply": 108404572594.0,
+   "total_supply": 405380800000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.07340269773242582,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.595833931633596,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.9813986036578188,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.26741417598958805,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TAGUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x208bf3e7da9639f1eaefa2de78c23396b0682025",
+    "explorer": "https://bscscan.com/token/0x208bf3e7da9639f1eaefa2de78c23396b0682025"
+   }
+  },
+  {
+   "ticker": "UAI",
+   "perp_symbol": "UAIUSDT",
+   "chain": "bsc",
+   "address": "0x3e5d4f8aee0d9b3082d5f6da5d6e225d17ba9ea0",
+   "perp_onboard_date": "2025-11-06",
+   "is_new_perp": false,
+   "price": 0.2913,
+   "mcap_usd": 107629152.12765959,
+   "fdv_usd": 291300000.0,
+   "fdv_to_mcap": 2.706515792807578,
+   "oi_usd": 7112385.04647762,
+   "perp_vol_24h_usd": 3516836.9868,
+   "alpha_vol_24h_usd": 471786.6138481626,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 369478723.4042554,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.06608232905190572,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.3694787234042554,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/UAIUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x3e5d4f8aee0d9b3082d5f6da5d6e225d17ba9ea0",
+    "explorer": "https://bscscan.com/token/0x3e5d4f8aee0d9b3082d5f6da5d6e225d17ba9ea0"
+   }
+  },
+  {
+   "ticker": "ICNT",
+   "perp_symbol": "ICNTUSDT",
+   "chain": "base",
+   "address": "0xe0cd4cacddcbf4f36e845407ce53e87717b6601d",
+   "perp_onboard_date": "2025-07-03",
+   "is_new_perp": false,
+   "price": 0.09815,
+   "mcap_usd": 24832551.56135,
+   "fdv_usd": 68705000.0,
+   "fdv_to_mcap": 2.766731394084133,
+   "oi_usd": 1503928.6278666,
+   "perp_vol_24h_usd": 696609.7989,
+   "alpha_vol_24h_usd": 715.3120130490358,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 253006129.0,
+   "total_supply": 700000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.060562790905762255,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.36143732714285715,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/ICNTUSDT",
+    "dexscreener": "https://dexscreener.com/base/0xe0cd4cacddcbf4f36e845407ce53e87717b6601d",
+    "explorer": "https://basescan.org/token/0xe0cd4cacddcbf4f36e845407ce53e87717b6601d"
+   }
+  },
+  {
+   "ticker": "SPACE",
+   "perp_symbol": "SPACEUSDT",
+   "chain": "bsc",
+   "address": "0x87acfa3fd7a6e0d48677d070644d76905c2bdc00",
+   "perp_onboard_date": "2026-01-23",
+   "is_new_perp": false,
+   "price": 0.005012,
+   "mcap_usd": 31717784.65727642,
+   "fdv_usd": 105252000.0,
+   "fdv_to_mcap": 3.3183906485680104,
+   "oi_usd": 1779201.0233082,
+   "perp_vol_24h_usd": 1248372.066495,
+   "alpha_vol_24h_usd": 393651.18362834695,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 6328368846.224346,
+   "total_supply": 21000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.05609474440075786,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.3013508974392546,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SPACEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x87acfa3fd7a6e0d48677d070644d76905c2bdc00",
+    "explorer": "https://bscscan.com/token/0x87acfa3fd7a6e0d48677d070644d76905c2bdc00"
+   }
+  },
+  {
+   "ticker": "DATAIP",
+   "perp_symbol": "DATAIPUSDT",
+   "chain": "bsc",
+   "address": "0xa37eded373c5cdf88644db7c6b89f222e756afb2",
+   "perp_onboard_date": "2026-07-03",
+   "is_new_perp": false,
+   "price": 0.20788604,
+   "mcap_usd": 74766367.49801148,
+   "fdv_usd": 214783246.44717696,
+   "fdv_to_mcap": 2.8727254464099707,
+   "oi_usd": 4109054.22250408,
+   "perp_vol_24h_usd": 4294840.5448,
+   "alpha_vol_24h_usd": 306279.18079804495,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 359650737.0,
+   "total_supply": 1033177824.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.05495859114211167,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.3481014871259955,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/DATAIPUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xa37eded373c5cdf88644db7c6b89f222e756afb2",
+    "explorer": "https://bscscan.com/token/0xa37eded373c5cdf88644db7c6b89f222e756afb2"
+   }
+  },
+  {
+   "ticker": "EDGE",
+   "perp_symbol": "EDGEUSDT",
+   "chain": "bsc",
+   "address": "0x70f2eadf1ca1969ff42b0c78e9da519e8937cbaf",
+   "perp_onboard_date": "2026-03-19",
+   "is_new_perp": false,
+   "price": 0.4552,
+   "mcap_usd": 159320000.0,
+   "fdv_usd": 455200000.0,
+   "fdv_to_mcap": 2.857142857142857,
+   "oi_usd": 7379834.5648,
+   "perp_vol_24h_usd": 3736307.162,
+   "alpha_vol_24h_usd": 1182661.7259452567,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 350000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04632082955561135,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.35,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/EDGEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x70f2eadf1ca1969ff42b0c78e9da519e8937cbaf",
+    "explorer": "https://bscscan.com/token/0x70f2eadf1ca1969ff42b0c78e9da519e8937cbaf"
+   }
+  },
+  {
+   "ticker": "COAI",
+   "perp_symbol": "COAIUSDT",
+   "chain": "bsc",
+   "address": "0x0a8d6c86e1bce73fe4d0bd531e1a567306836ea5",
+   "perp_onboard_date": "2025-09-25",
+   "is_new_perp": false,
+   "price": 0.33139093,
+   "mcap_usd": 103442351.18095477,
+   "fdv_usd": 331390930.0,
+   "fdv_to_mcap": 3.2036291346499657,
+   "oi_usd": 3880247.53195227,
+   "perp_vol_24h_usd": 2251554.0602,
+   "alpha_vol_24h_usd": 972565.554723071,
+   "dex_liq_usd": 1930900.73,
+   "dex_vol_24h_usd": 965348.01,
+   "funding_rate": 5e-05,
+   "circ_supply": 312145993.7993921,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.03751120781433552,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.009553091811338,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.332375513158203,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.3121459937993921,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/COAIUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0a8d6c86e1bce73fe4d0bd531e1a567306836ea5",
+    "explorer": "https://bscscan.com/token/0x0a8d6c86e1bce73fe4d0bd531e1a567306836ea5"
+   }
+  },
+  {
+   "ticker": "PIEVERSE",
+   "perp_symbol": "PIEVERSEUSDT",
+   "chain": "bsc",
+   "address": "0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9",
+   "perp_onboard_date": "2025-11-14",
+   "is_new_perp": false,
+   "price": 1.3322,
+   "mcap_usd": 405654900.0,
+   "fdv_usd": 1332200000.0,
+   "fdv_to_mcap": 3.284072249589491,
+   "oi_usd": 15110164.0952,
+   "perp_vol_24h_usd": 3240800.2235,
+   "alpha_vol_24h_usd": 1181031.744097187,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 9.975e-05,
+   "circ_supply": 304500000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.03724881443611306,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.3045,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/PIEVERSEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9",
+    "explorer": "https://bscscan.com/token/0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9"
+   }
+  },
+  {
+   "ticker": "CTR",
+   "perp_symbol": "CTRUSDT",
+   "chain": "base",
+   "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+   "perp_onboard_date": "2026-05-28",
+   "is_new_perp": false,
+   "price": 0.012832,
+   "mcap_usd": 76973650.24,
+   "fdv_usd": 128320000.0,
+   "fdv_to_mcap": 1.667063983582754,
+   "oi_usd": 2445744.11504,
+   "perp_vol_24h_usd": 838582.999962,
+   "alpha_vol_24h_usd": 421111.2924547096,
+   "dex_liq_usd": 586377.68,
+   "dex_vol_24h_usd": 420896.95,
+   "funding_rate": 0.00041547,
+   "circ_supply": 5998570000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.031773783722277585,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.170936579714289,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.9923712917425511,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.599857,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CTRUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x11030f79109269d796fd0fb956d6244e502757f7",
+    "explorer": "https://basescan.org/token/0x11030f79109269d796fd0fb956d6244e502757f7"
+   }
+  },
+  {
+   "ticker": "BAS",
+   "perp_symbol": "BASUSDT",
+   "chain": "bsc",
+   "address": "0x0f0df6cb17ee5e883eddfef9153fc6036bdb4e37",
+   "perp_onboard_date": "2025-08-26",
+   "is_new_perp": false,
+   "price": 0.02332957,
+   "mcap_usd": 105760717.33333333,
+   "fdv_usd": 233295700.0,
+   "fdv_to_mcap": 2.2058823529411766,
+   "oi_usd": 2211054.39027744,
+   "perp_vol_24h_usd": 881823.115702,
+   "alpha_vol_24h_usd": 482483.13175185956,
+   "dex_liq_usd": 2055203.37,
+   "dex_vol_24h_usd": 481656.23,
+   "funding_rate": 6.076e-05,
+   "circ_supply": 4533333333.333333,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.02090619698908346,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.0758324079029902,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.830814304430361,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.4533333333333333,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BASUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0f0df6cb17ee5e883eddfef9153fc6036bdb4e37",
+    "explorer": "https://bscscan.com/token/0x0f0df6cb17ee5e883eddfef9153fc6036bdb4e37"
+   }
+  },
+  {
+   "ticker": "MOG",
+   "perp_symbol": "1000000MOGUSDT",
+   "chain": "ethereum",
+   "address": "0xaaee1a9723aadb7afa2810263653a34ba2c21c7a",
+   "perp_onboard_date": "2024-11-07",
+   "is_new_perp": false,
+   "price": 1.1999309e-07,
+   "mcap_usd": 46865404.35037834,
+   "fdv_usd": 50479893.0321,
+   "fdv_to_mcap": 1.0771248798943196,
+   "oi_usd": 977740.39721823,
+   "perp_vol_24h_usd": 1652121.0094,
+   "alpha_vol_24h_usd": 410890.76800482225,
+   "dex_liq_usd": 5962200.13,
+   "dex_vol_24h_usd": 410537.17,
+   "funding_rate": 5e-05,
+   "circ_supply": 390567526433216.7,
+   "total_supply": 420690000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.020862732558720294,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.16398986546904623,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 4.024290929369441,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.9283974575892384,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/1000000MOGUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0xaaee1a9723aadb7afa2810263653a34ba2c21c7a",
+    "explorer": "https://etherscan.io/token/0xaaee1a9723aadb7afa2810263653a34ba2c21c7a"
+   }
+  },
+  {
+   "ticker": "CROSS",
+   "perp_symbol": "CROSSUSDT",
+   "chain": "bsc",
+   "address": "0x6bf62ca91e397b5a7d1d6bce97d9092065d7a510",
+   "perp_onboard_date": "2025-07-10",
+   "is_new_perp": false,
+   "price": 0.14665593,
+   "mcap_usd": 77468456.4212246,
+   "fdv_usd": 144488779.1902377,
+   "fdv_to_mcap": 1.8651304784569203,
+   "oi_usd": 1487339.66094,
+   "perp_vol_24h_usd": 2130265.35659,
+   "alpha_vol_24h_usd": 1114332.5876524616,
+   "dex_liq_usd": 1260956.95,
+   "dex_vol_24h_usd": 1114357.58,
+   "funding_rate": 5e-05,
+   "circ_supply": 528232690.0877762,
+   "total_supply": 985222890.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.019199293875855554,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.1795324661480315,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 1.9116533102327888,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.5361555191716832,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CROSSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x6bf62ca91e397b5a7d1d6bce97d9092065d7a510",
+    "explorer": "https://bscscan.com/token/0x6bf62ca91e397b5a7d1d6bce97d9092065d7a510"
+   }
+  },
+  {
+   "ticker": "TAIKO",
+   "perp_symbol": "TAIKOUSDT",
+   "chain": "bsc",
+   "address": "0x30c60b20c25b2810ca524810467a0c342294fc61",
+   "perp_onboard_date": "2025-06-11",
+   "is_new_perp": false,
+   "price": 0.09059363,
+   "mcap_usd": 78702292.93041205,
+   "fdv_usd": 90593630.0,
+   "fdv_to_mcap": 1.1510926381789433,
+   "oi_usd": 1456285.2630474,
+   "perp_vol_24h_usd": 775276.61255,
+   "alpha_vol_24h_usd": 94.62135529504748,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 868739810.1876706,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.018503720906010143,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.8687398101876705,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/TAIKOUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x30c60b20c25b2810ca524810467a0c342294fc61",
+    "explorer": "https://bscscan.com/token/0x30c60b20c25b2810ca524810467a0c342294fc61"
+   }
+  },
+  {
+   "ticker": "STABLE",
+   "perp_symbol": "STABLEUSDT",
+   "chain": "bsc",
+   "address": "0x011ebe7d75e2c9d1e0bd0be0bef5c36f0a90075f",
+   "perp_onboard_date": "2025-11-06",
+   "is_new_perp": false,
+   "price": 0.028,
+   "mcap_usd": 754632224.9480001,
+   "fdv_usd": 2800000000.0,
+   "fdv_to_mcap": 3.7104166870066293,
+   "oi_usd": 3850548.59624,
+   "perp_vol_24h_usd": 3335822.974162,
+   "alpha_vol_24h_usd": 866214.5940663528,
+   "dex_liq_usd": 890096.33,
+   "dex_vol_24h_usd": 864043.08,
+   "funding_rate": 0.00017874,
+   "circ_supply": 26951150891.0,
+   "total_supply": 100000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.005102549916292446,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.32599086914559,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 3.860713720619116,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.26951150891,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/STABLEUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x011ebe7d75e2c9d1e0bd0be0bef5c36f0a90075f",
+    "explorer": "https://bscscan.com/token/0x011ebe7d75e2c9d1e0bd0be0bef5c36f0a90075f"
+   }
+  },
+  {
+   "ticker": "UB",
+   "perp_symbol": "UBUSDT",
+   "chain": "bsc",
+   "address": "0x40b8129b786d766267a7a118cf8c07e31cdb6fde",
+   "perp_onboard_date": "2025-09-12",
+   "is_new_perp": false,
+   "price": 0.13776004,
+   "mcap_usd": 645750187.5,
+   "fdv_usd": 1377600400.0,
+   "fdv_to_mcap": 2.1333333333333333,
+   "oi_usd": 2624735.27710611,
+   "perp_vol_24h_usd": 3129922.54939,
+   "alpha_vol_24h_usd": 1553393.4297941641,
+   "dex_liq_usd": 3941090.32,
+   "dex_vol_24h_usd": 1539846.27,
+   "funding_rate": 5e-05,
+   "circ_supply": 4687500000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.004064629523791056,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.6659921656162678,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.03262014550972,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.46875,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/UBUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x40b8129b786d766267a7a118cf8c07e31cdb6fde",
+    "explorer": "https://bscscan.com/token/0x40b8129b786d766267a7a118cf8c07e31cdb6fde"
+   }
+  }
+ ],
+ "unmatched": [],
+ "errors": []
+}
