@@ -47,6 +47,7 @@ summary{cursor:pointer;font-weight:600}
 ul{margin:6px 0;padding-left:20px}
 .disc{color:var(--muted);font-size:12px;margin-top:22px}
 #err{display:none;background:var(--alert-bg);color:var(--alert-fg);padding:10px 14px;border-radius:8px;margin:12px 0}
+#err.note{background:var(--head);color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
@@ -184,6 +185,26 @@ function renderMethod() {
   $("#methodBody").innerHTML = h;
 }
 
+// 数据源失败提示：CoinGecko 限速属预期（仅影响流通量核对）→ 灰色说明；其他源失败 → 红色
+const SRC = {
+  coingecko:  ["CoinGecko", "流通量交叉核对（circ_mismatch）暂缺部分币，下次运行会补齐", true],
+  dexscreener:["DexScreener", "相关链上币的 DEX 流动性/成交额显示为 —", false],
+  oi:         ["Binance 持仓量", "相关币的 OI 显示为 —", false],
+};
+function showErrors(errs) {
+  const e = $("#err"); if (!errs.length) return;
+  const by = {};
+  errs.forEach(x => { const k = String(x).split(/[ :]/)[0]; (by[k] = by[k] || []).push(x); });
+  const lines = Object.entries(by).map(([k, v]) => {
+    const [name, eff] = SRC[k] || [k, "相关字段显示为 —", false];
+    return `${name}：${v.length} 次请求失败（${eff}）`;
+  });
+  const soft = Object.keys(by).every(k => SRC[k]?.[2]);
+  e.className = soft ? "note" : "";
+  e.style.display = "block";
+  e.innerHTML = lines.map(esc).join("<br>");
+}
+
 function init(d) {
   DATA = d;
   $("#stage").textContent = `· 阶段 ${d.stage || "A"}`;
@@ -199,10 +220,7 @@ function init(d) {
   $("#unmatched").innerHTML = (d.unmatched||[]).length
     ? "<ul>" + d.unmatched.map(u => `<li><b>${esc(u.perp_symbol)}</b> — ${esc(u.reason)}${u.detail?"：" + esc(u.detail):""}</li>`).join("") + "</ul>"
     : "无";
-  if ((d.errors||[]).length) {
-    const e = $("#err"); e.style.display = "block";
-    e.textContent = `本次更新有 ${d.errors.length} 个数据源请求失败，相关字段显示为 "—"。`;
-  }
+  showErrors(d.errors || []);
   renderMethod(); render();
 }
 
