@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T05:17:55Z",
+ "generated_at": "2026-10-27T12:23:25Z",
  "stage": "A",
  "thresholds": {
   "stage_a": {
@@ -46,8 +46,8 @@
  },
  "summary": {
   "n_universe": 136,
-  "n_alert": 56,
-  "n_warn": 50,
+  "n_alert": 57,
+  "n_warn": 48,
   "n_unmatched": 0
  },
  "tokens": [
@@ -58,29 +58,29 @@
    "address": "0x302dfaf2cdbe51a18d97186a7384e87cf599877d",
    "perp_onboard_date": "2025-10-06",
    "is_new_perp": false,
-   "price": 0.01382,
-   "mcap_usd": 3532925.0374000003,
-   "fdv_usd": 13820000.0,
-   "fdv_to_mcap": 3.9117727813921035,
-   "oi_usd": 7641295.39488,
-   "perp_vol_24h_usd": 1776905.63027,
-   "alpha_vol_24h_usd": 45978.0842469876,
-   "dex_liq_usd": 39511.8,
-   "dex_vol_24h_usd": 45979.65,
-   "funding_rate": 5.735e-05,
+   "price": 0.01415,
+   "mcap_usd": 3617285.7654999997,
+   "fdv_usd": 14150000.0,
+   "fdv_to_mcap": 3.911772781392104,
+   "oi_usd": 7773417.1098,
+   "perp_vol_24h_usd": 1750698.47647,
+   "alpha_vol_24h_usd": 39419.7525048771,
+   "dex_liq_usd": 39943.58,
+   "dex_vol_24h_usd": 39336.97,
+   "funding_rate": 0.00019815,
    "circ_supply": 255638570.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 2.162880704795109,
+     "value": 2.1489640613797394,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 193.3927433040256,
+     "value": 194.60992504427495,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 38.64547969090674,
+     "value": 44.50516845781462,
      "level": "alert"
     },
     "float_ratio": {
@@ -108,29 +108,29 @@
    "address": "0xea37a8de1de2d9d10772eeb569e28bfa5cb17707",
    "perp_onboard_date": "2025-11-10",
    "is_new_perp": false,
-   "price": 0.007578,
-   "mcap_usd": 87099163.875,
-   "fdv_usd": 378900000.0,
+   "price": 0.00720676,
+   "mcap_usd": 82832247.3275,
+   "fdv_usd": 360338000.0,
    "fdv_to_mcap": 4.350213976149952,
-   "oi_usd": 33152185.061268,
-   "perp_vol_24h_usd": 241204741.575068,
-   "alpha_vol_24h_usd": 20875585.512219306,
-   "dex_liq_usd": 23987.18,
-   "dex_vol_24h_usd": 422146.23,
-   "funding_rate": 0.00052481,
+   "oi_usd": 30895663.31435946,
+   "perp_vol_24h_usd": 193078719.99831,
+   "alpha_vol_24h_usd": 19239253.858049016,
+   "dex_liq_usd": 24370.43,
+   "dex_vol_24h_usd": 341225.8,
+   "funding_rate": 0.00035242,
    "circ_supply": 11493687500.0,
    "total_supply": 50000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.38062575559102063,
+     "value": 0.3729907652053069,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 1382.0793049148754,
+     "value": 1267.7520796456797,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 571.3772253161375,
+     "value": 565.8385737488491,
      "level": "alert"
     },
     "float_ratio": {
@@ -156,29 +156,29 @@
    "address": "0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715",
    "perp_onboard_date": "2026-06-23",
    "is_new_perp": false,
-   "price": 0.22535333,
-   "mcap_usd": 48381098.07962679,
-   "fdv_usd": 225353330.0,
+   "price": 0.2342,
+   "mcap_usd": 50280389.3346,
+   "fdv_usd": 234200000.0,
    "fdv_to_mcap": 4.657879604739603,
-   "oi_usd": 10210053.1932,
-   "perp_vol_24h_usd": 4009658.7499,
-   "alpha_vol_24h_usd": 642123.7880317408,
-   "dex_liq_usd": 17958.53,
-   "dex_vol_24h_usd": 29367.45,
-   "funding_rate": 0.00028074,
+   "oi_usd": 10660616.2464,
+   "perp_vol_24h_usd": 4270576.9281,
+   "alpha_vol_24h_usd": 751353.065841719,
+   "dex_liq_usd": 18136.68,
+   "dex_vol_24h_usd": 32222.31,
+   "funding_rate": 0.00047233,
    "circ_supply": 214689963.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.21103392850646022,
+     "value": 0.21202334324535535,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 568.535018913018,
+     "value": 587.7931488232687,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 136.53411344532807,
+     "value": 132.53478500144774,
      "level": "alert"
     },
     "float_ratio": {
@@ -198,35 +198,85 @@
    }
   },
   {
+   "ticker": "AIN",
+   "perp_symbol": "AINUSDT",
+   "chain": "bsc",
+   "address": "0x9558a9254890b2a8b057a789f413631b9084f4a3",
+   "perp_onboard_date": "2025-07-10",
+   "is_new_perp": false,
+   "price": 0.1420549,
+   "mcap_usd": 61225612.64096021,
+   "fdv_usd": 142054900.0,
+   "fdv_to_mcap": 2.3201874815535066,
+   "oi_usd": 53714754.3780694,
+   "perp_vol_24h_usd": 400907721.23722,
+   "alpha_vol_24h_usd": 27375351.26496827,
+   "dex_liq_usd": 876086.03,
+   "dex_vol_24h_usd": 16929736.42,
+   "funding_rate": 0.00140124,
+   "circ_supply": 430999653.239418,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.8773248982099036,
+     "level": "alert"
+    },
+    "oi_to_dex_liq": {
+     "value": 61.31219142721566,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 23.68068298828364,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.430999653239418,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 2,
+    "warn": 1
+   },
+   "flags": [
+    "circ_mismatch"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AINUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x9558a9254890b2a8b057a789f413631b9084f4a3",
+    "explorer": "https://bscscan.com/token/0x9558a9254890b2a8b057a789f413631b9084f4a3"
+   }
+  },
+  {
    "ticker": "ESPORTS",
    "perp_symbol": "ESPORTSUSDT",
    "chain": "bsc",
    "address": "0xf39e4b21c84e737df08e2c3b32541d856f508e48",
    "perp_onboard_date": "2025-07-29",
    "is_new_perp": false,
-   "price": 0.007942,
-   "mcap_usd": 7147719.387111592,
-   "fdv_usd": 7147799.999999999,
+   "price": 0.00782491,
+   "mcap_usd": 7042339.57559851,
+   "fdv_usd": 7042418.999999999,
    "fdv_to_mcap": 1.0000112781271957,
-   "oi_usd": 4380519.201864,
-   "perp_vol_24h_usd": 3362254.267486,
-   "alpha_vol_24h_usd": 30530.110810697177,
-   "dex_liq_usd": 56245.23,
-   "dex_vol_24h_usd": 27429.17,
-   "funding_rate": -0.00010862,
+   "oi_usd": 4309087.15908,
+   "perp_vol_24h_usd": 3101333.941691,
+   "alpha_vol_24h_usd": 31512.79994232424,
+   "dex_liq_usd": 59649.42,
+   "dex_vol_24h_usd": 28659.44,
+   "funding_rate": 0.00048236,
    "circ_supply": 899989849.7999991,
    "total_supply": 900000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.6128555088162432,
+     "value": 0.6118828995424836,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 77.88250135814184,
+     "value": 72.24021891713281,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 122.5795117929562,
+     "value": 108.21334756335087,
      "level": "alert"
     },
     "float_ratio": {
@@ -252,33 +302,33 @@
    "address": "0x7ec43cf65f1663f820427c62a5780b8f2e25593a",
    "perp_onboard_date": "2025-10-17",
    "is_new_perp": false,
-   "price": 0.04078,
-   "mcap_usd": 29487201.833096553,
-   "fdv_usd": 40780000.0,
-   "fdv_to_mcap": 1.3829728650016688,
-   "oi_usd": 9559317.0002,
-   "perp_vol_24h_usd": 11879100.25312,
-   "alpha_vol_24h_usd": 1239384.2577656591,
-   "dex_liq_usd": 87079.14,
-   "dex_vol_24h_usd": 5.05,
+   "price": 0.04127126,
+   "mcap_usd": 29842986.830613244,
+   "fdv_usd": 41271260.0,
+   "fdv_to_mcap": 1.3829466947880538,
+   "oi_usd": 9601143.49069983,
+   "perp_vol_24h_usd": 11433011.75136,
+   "alpha_vol_24h_usd": 1281156.4900064296,
+   "dex_liq_usd": 87719.9,
+   "dex_vol_24h_usd": 4.88,
    "funding_rate": 5e-05,
-   "circ_supply": 723079986.0984932,
+   "circ_supply": 723093669.3140274,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.32418528737679625,
+     "value": 0.32172193571626273,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 109.77734736700431,
+     "value": 109.4522849513033,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 2352297.0798257426,
+     "value": 2342830.2769180327,
      "level": "alert"
     },
     "float_ratio": {
-     "value": 0.7230799860984932,
+     "value": 0.7230936693140274,
      "level": "ok"
     }
    },
@@ -300,29 +350,29 @@
    "address": "0x81d3a238b02827f62b9f390f947d36d4a5bf89d2",
    "perp_onboard_date": "2025-10-14",
    "is_new_perp": false,
-   "price": 0.05688,
-   "mcap_usd": 14669871.523053018,
-   "fdv_usd": 56880000.0,
-   "fdv_to_mcap": 3.8773345704231788,
-   "oi_usd": 4462654.83357,
-   "perp_vol_24h_usd": 1347715.09154,
-   "alpha_vol_24h_usd": 692585.6832788654,
-   "dex_liq_usd": 23464.05,
-   "dex_vol_24h_usd": 593.42,
-   "funding_rate": 6.393e-05,
+   "price": 0.05828,
+   "mcap_usd": 15030944.31018864,
+   "fdv_usd": 58280000.0,
+   "fdv_to_mcap": 3.877334570423179,
+   "oi_usd": 4590889.99652,
+   "perp_vol_24h_usd": 2829455.76119,
+   "alpha_vol_24h_usd": 1297385.779918266,
+   "dex_liq_usd": 23707.44,
+   "dex_vol_24h_usd": 1418.96,
+   "funding_rate": 0.00026474,
    "circ_supply": 257909133.668302,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3042054476453421,
+     "value": 0.3054292466114781,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 190.19115768889003,
+     "value": 193.6476480176687,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 2271.098196117421,
+     "value": 1994.034899637763,
      "level": "alert"
     },
     "float_ratio": {
@@ -348,29 +398,29 @@
    "address": "0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36",
    "perp_onboard_date": "2025-11-12",
    "is_new_perp": false,
-   "price": 0.07962,
-   "mcap_usd": 28107186.94692,
-   "fdv_usd": 79620000.0,
+   "price": 0.08602886,
+   "mcap_usd": 30369621.33698076,
+   "fdv_usd": 86028860.0,
    "fdv_to_mcap": 2.832727449757287,
-   "oi_usd": 7765442.48700396,
-   "perp_vol_24h_usd": 44522894.7014,
-   "alpha_vol_24h_usd": 1187155.2071104236,
-   "dex_liq_usd": 52642.73,
-   "dex_vol_24h_usd": 127057.23,
-   "funding_rate": 0.00011401,
+   "oi_usd": 8167929.08587985,
+   "perp_vol_24h_usd": 55223518.64856,
+   "alpha_vol_24h_usd": 1714487.3238280285,
+   "dex_liq_usd": 56072.17,
+   "dex_vol_24h_usd": 196511.45,
+   "funding_rate": 0.00015798,
    "circ_supply": 353016666.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.2762796042759057,
+     "value": 0.26895063969513017,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 147.51215385303837,
+     "value": 145.66814670949688,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 350.4160660625137,
+     "value": 281.01934339479965,
      "level": "alert"
     },
     "float_ratio": {
@@ -396,29 +446,29 @@
    "address": "0x99991c6aabba5a096f24f250b73580f5179b9999",
    "perp_onboard_date": "2026-06-27",
    "is_new_perp": false,
-   "price": 0.09636612,
-   "mcap_usd": 150331147.2,
-   "fdv_usd": 963661200.0,
+   "price": 0.09809771,
+   "mcap_usd": 153032427.6,
+   "fdv_usd": 980977100.0,
    "fdv_to_mcap": 6.410256410256411,
-   "oi_usd": 24120406.30343992,
-   "perp_vol_24h_usd": 205833473.16301,
-   "alpha_vol_24h_usd": 20639549.011828687,
-   "dex_liq_usd": 35871.38,
-   "dex_vol_24h_usd": 638554.23,
-   "funding_rate": 0.00033393,
+   "oi_usd": 25245830.45773227,
+   "perp_vol_24h_usd": 123226366.62003,
+   "alpha_vol_24h_usd": 16091913.639860861,
+   "dex_liq_usd": 38238.33,
+   "dex_vol_24h_usd": 547521.87,
+   "funding_rate": 0.00024614,
    "circ_supply": 1560000000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1604484948907509,
+     "value": 0.16497046314733016,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 672.4136708272702,
+     "value": 660.2231440999717,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 322.3429796448299,
+     "value": 225.0619991125286,
      "level": "alert"
     },
     "float_ratio": {
@@ -444,29 +494,29 @@
    "address": "0x46f2564e0fa8248d15125e7e54173cfbdef91be7",
    "perp_onboard_date": "2026-07-31",
    "is_new_perp": false,
-   "price": 0.20973362,
-   "mcap_usd": 37377116.68006736,
-   "fdv_usd": 209733620.0,
+   "price": 0.2129,
+   "mcap_usd": 37941404.6312,
+   "fdv_usd": 212900000.0,
    "fdv_to_mcap": 5.611284085801292,
-   "oi_usd": 5981287.91870138,
-   "perp_vol_24h_usd": 10131417.7503,
-   "alpha_vol_24h_usd": 1079016.637282508,
-   "dex_liq_usd": 25327.41,
-   "dex_vol_24h_usd": 55459.29,
+   "oi_usd": 6105054.6346647,
+   "perp_vol_24h_usd": 5318911.5573,
+   "alpha_vol_24h_usd": 678601.2945719997,
+   "dex_liq_usd": 25336.43,
+   "dex_vol_24h_usd": 28105.41,
    "funding_rate": 5e-05,
    "circ_supply": 178212328.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.16002539655208634,
+     "value": 0.16090744910493873,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 236.15868810515482,
+     "value": 240.9595446029571,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 182.682067338042,
+     "value": 189.24867337996494,
      "level": "alert"
     },
     "float_ratio": {
@@ -492,29 +542,29 @@
    "address": "0x30117e4bc17d7b044194b76a38365c53b72f7d49",
    "perp_onboard_date": "2026-01-29",
    "is_new_perp": false,
-   "price": 0.02100378,
-   "mcap_usd": 44528013.6,
-   "fdv_usd": 210037800.0,
+   "price": 0.02122,
+   "mcap_usd": 44986400.0,
+   "fdv_usd": 212200000.0,
    "fdv_to_mcap": 4.716981132075472,
-   "oi_usd": 4794022.72047696,
-   "perp_vol_24h_usd": 2509256.68192,
-   "alpha_vol_24h_usd": 1167223.1168709903,
-   "dex_liq_usd": 28001.8,
-   "dex_vol_24h_usd": 4533.09,
-   "funding_rate": 5e-05,
+   "oi_usd": 4892308.32708,
+   "perp_vol_24h_usd": 2194379.11167,
+   "alpha_vol_24h_usd": 1033678.2759328431,
+   "dex_liq_usd": 28026.97,
+   "dex_vol_24h_usd": 3221.46,
+   "funding_rate": 0.00026791,
    "circ_supply": 2120000000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.10766307169105248,
+     "value": 0.10875082974143296,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 171.2040911826011,
+     "value": 174.55716144413756,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 553.5422155571586,
+     "value": 681.1753402711814,
      "level": "alert"
     },
     "float_ratio": {
@@ -540,29 +590,29 @@
    "address": "0x595deaad1eb5476ff1e649fdb7efc36f1e4679cc",
    "perp_onboard_date": "2026-03-25",
    "is_new_perp": false,
-   "price": 0.09811,
-   "mcap_usd": 25193012.89874,
-   "fdv_usd": 98110000.0,
-   "fdv_to_mcap": 3.8943337342913384,
-   "oi_usd": 4758364.5131716,
-   "perp_vol_24h_usd": 1825646.86571,
-   "alpha_vol_24h_usd": 1772992.6584483772,
-   "dex_liq_usd": 15173.97,
-   "dex_vol_24h_usd": 8224.43,
+   "price": 0.09735,
+   "mcap_usd": 24997857.564900003,
+   "fdv_usd": 97350000.0,
+   "fdv_to_mcap": 3.894333734291338,
+   "oi_usd": 4677811.1847,
+   "perp_vol_24h_usd": 1560625.68885,
+   "alpha_vol_24h_usd": 1465599.6387702054,
+   "dex_liq_usd": 15053.35,
+   "dex_vol_24h_usd": 5920.82,
    "funding_rate": 5e-05,
    "circ_supply": 256783334.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.18887635759554525,
+     "value": 0.18712848381327724,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 313.5873151964582,
+     "value": 310.74884890738605,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 221.97852808158135,
+     "value": 263.58269443252794,
      "level": "alert"
     },
     "float_ratio": {
@@ -588,29 +638,29 @@
    "address": "0x5506599c722389a60580b5213ea1da60d64754a1",
    "perp_onboard_date": "2026-06-04",
    "is_new_perp": false,
-   "price": 0.18011399,
-   "mcap_usd": 49292696.213250004,
-   "fdv_usd": 180113990.0,
+   "price": 0.17523,
+   "mcap_usd": 47956070.25,
+   "fdv_usd": 175230000.0,
    "fdv_to_mcap": 3.6539691239609025,
-   "oi_usd": 7514754.11031,
-   "perp_vol_24h_usd": 863233.64779,
-   "alpha_vol_24h_usd": 243934.71833297817,
-   "dex_liq_usd": 11814.67,
-   "dex_vol_24h_usd": 79.52,
-   "funding_rate": 6.044e-05,
+   "oi_usd": 7328717.16996342,
+   "perp_vol_24h_usd": 971800.64438,
+   "alpha_vol_24h_usd": 235768.532160502,
+   "dex_liq_usd": 11694.84,
+   "dex_vol_24h_usd": 446.56,
+   "funding_rate": 0.0001313,
    "circ_supply": 273675000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1524516751487823,
+     "value": 0.1528214703948437,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 636.05281487422,
+     "value": 626.6624571147122,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 10855.553920900402,
+     "value": 2176.1927722590467,
      "level": "alert"
     },
     "float_ratio": {
@@ -630,87 +680,39 @@
    }
   },
   {
-   "ticker": "BULLA",
-   "perp_symbol": "BULLAUSDT",
-   "chain": "bsc",
-   "address": "0x595e21b20e78674f8a64c1566a20b2b316bc3511",
-   "perp_onboard_date": "2025-07-04",
-   "is_new_perp": false,
-   "price": 0.14299034,
-   "mcap_usd": 142990340.0,
-   "fdv_usd": 142990340.0,
-   "fdv_to_mcap": 1.0,
-   "oi_usd": 20253513.1503808,
-   "perp_vol_24h_usd": 265343108.745759,
-   "alpha_vol_24h_usd": 3019633.046601084,
-   "dex_liq_usd": 90123.22,
-   "dex_vol_24h_usd": 2677203.13,
-   "funding_rate": 9.405e-05,
-   "circ_supply": 1000000000.0,
-   "total_supply": 1000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.14164252739297495,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 224.73135281208107,
-     "level": "alert"
-    },
-    "perp_to_spot_vol": {
-     "value": 99.11205682243433,
-     "level": "alert"
-    },
-    "float_ratio": {
-     "value": 1.0,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 2,
-    "warn": 0
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/BULLAUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0x595e21b20e78674f8a64c1566a20b2b316bc3511",
-    "explorer": "https://bscscan.com/token/0x595e21b20e78674f8a64c1566a20b2b316bc3511"
-   }
-  },
-  {
    "ticker": "ACU",
    "perp_symbol": "ACUUSDT",
    "chain": "bsc",
    "address": "0x6ef2ffb38d64afe18ce782da280b300e358cfeaf",
    "perp_onboard_date": "2026-01-21",
    "is_new_perp": false,
-   "price": 0.11606713,
-   "mcap_usd": 49437873.84329336,
-   "fdv_usd": 119998863.05705312,
-   "fdv_to_mcap": 2.4272658536534517,
-   "oi_usd": 2302355.3378,
-   "perp_vol_24h_usd": 1416354.20534,
-   "alpha_vol_24h_usd": 439729.8177679309,
-   "dex_liq_usd": 12154.71,
-   "dex_vol_24h_usd": 1360.64,
-   "funding_rate": 5e-05,
-   "circ_supply": 425942072.0,
-   "total_supply": 1033874647.0,
+   "price": 0.12262497,
+   "mcap_usd": 52269600.27282708,
+   "fdv_usd": 126783814.49654543,
+   "fdv_to_mcap": 2.42557459469334,
+   "oi_usd": 2462984.2765346,
+   "perp_vol_24h_usd": 2412854.62099,
+   "alpha_vol_24h_usd": 731996.8362628884,
+   "dex_liq_usd": 12434.1,
+   "dex_vol_24h_usd": 2597.05,
+   "funding_rate": 0.00015826,
+   "circ_supply": 426255764.0,
+   "total_supply": 1033915152.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.04657067868852804,
+     "value": 0.04712077887871297,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 189.4208366797727,
+     "value": 198.08303588796937,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 1040.9470582519991,
+     "value": 929.0751510329027,
      "level": "alert"
     },
     "float_ratio": {
-     "value": 0.41198618540067555,
+     "value": 0.41227344736698474,
      "level": "ok"
     }
    },
@@ -732,29 +734,29 @@
    "address": "0xf091867ec603a6628ed83d274e835539d82e9cc8",
    "perp_onboard_date": "2024-02-02",
    "is_new_perp": false,
-   "price": 0.03876807,
-   "mcap_usd": 64189020.400312506,
-   "fdv_usd": 81412947.0,
+   "price": 0.03861943,
+   "mcap_usd": 63942914.3653125,
+   "fdv_usd": 81100803.0,
    "fdv_to_mcap": 1.2683313515655965,
-   "oi_usd": 2755080.43245,
-   "perp_vol_24h_usd": 1039278.35671,
-   "alpha_vol_24h_usd": 521.366864812894,
-   "dex_liq_usd": 20768.96,
-   "dex_vol_24h_usd": 521.94,
+   "oi_usd": 2734332.93368899,
+   "perp_vol_24h_usd": 979030.83363,
+   "alpha_vol_24h_usd": 323.2535837341984,
+   "dex_liq_usd": 20798.05,
+   "dex_vol_24h_usd": 323.56,
    "funding_rate": 5e-05,
    "circ_supply": 1655718750.0,
    "total_supply": 2100000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.0429213659169129,
+     "value": 0.042762094296601216,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 132.65375023352158,
+     "value": 131.47063949211537,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 1991.18357801663,
+     "value": 3025.8092274384967,
      "level": "alert"
     },
     "float_ratio": {
@@ -780,29 +782,29 @@
    "address": "0xff7d6a96ae471bbcd7713af9cb1feeb16cf56b41",
    "perp_onboard_date": "2025-03-21",
    "is_new_perp": false,
-   "price": 0.498,
-   "mcap_usd": 169503088.23529413,
-   "fdv_usd": 498000000.0,
-   "fdv_to_mcap": 2.93799956794124,
-   "oi_usd": 7081621.4625,
-   "perp_vol_24h_usd": 33852034.56612,
-   "alpha_vol_24h_usd": 45698.76703779888,
-   "dex_liq_usd": 58044.79,
-   "dex_vol_24h_usd": 14733.37,
+   "price": 0.50559794,
+   "mcap_usd": 172089181.19558826,
+   "fdv_usd": 505597940.0,
+   "fdv_to_mcap": 2.9379995679412394,
+   "oi_usd": 7081899.71081637,
+   "perp_vol_24h_usd": 30794277.68164,
+   "alpha_vol_24h_usd": 36977.705770693414,
+   "dex_liq_usd": 58072.19,
+   "dex_vol_24h_usd": 12004.16,
    "funding_rate": 5e-05,
    "circ_supply": 340367647.0588236,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.04177871646013737,
+     "value": 0.0411524981501738,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 122.00270622910342,
+     "value": 121.94993353645471,
      "level": "alert"
     },
     "perp_to_spot_vol": {
-     "value": 2297.6436868224987,
+     "value": 2565.3005026290884,
      "level": "alert"
     },
     "float_ratio": {
@@ -822,133 +824,35 @@
    }
   },
   {
-   "ticker": "BTW",
-   "perp_symbol": "BTWUSDT",
-   "chain": "bsc",
-   "address": "0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
-   "perp_onboard_date": "2026-06-04",
-   "is_new_perp": false,
-   "price": 1.30688514,
-   "mcap_usd": 3804864340.632807,
-   "fdv_usd": 13068851399.999998,
-   "fdv_to_mcap": 3.434774601668571,
-   "oi_usd": 23132369.08422616,
-   "perp_vol_24h_usd": 301572837.91939,
-   "alpha_vol_24h_usd": 6633383.011643894,
-   "dex_liq_usd": 212668.99,
-   "dex_vol_24h_usd": 5848117.11,
-   "funding_rate": 5e-05,
-   "circ_supply": 2911399192.0,
-   "total_supply": 10000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.0060796830092446595,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 108.77170707504729,
-     "level": "alert"
-    },
-    "perp_to_spot_vol": {
-     "value": 51.567510062976496,
-     "level": "alert"
-    },
-    "float_ratio": {
-     "value": 0.2911399192,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 2,
-    "warn": 0
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/BTWUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
-    "explorer": "https://bscscan.com/token/0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa"
-   }
-  },
-  {
-   "ticker": "AIN",
-   "perp_symbol": "AINUSDT",
-   "chain": "bsc",
-   "address": "0x9558a9254890b2a8b057a789f413631b9084f4a3",
-   "perp_onboard_date": "2025-07-10",
-   "is_new_perp": false,
-   "price": 0.09785,
-   "mcap_usd": 42173316.06947706,
-   "fdv_usd": 97850000.0,
-   "fdv_to_mcap": 2.3201874815535066,
-   "oi_usd": 30924757.1836593,
-   "perp_vol_24h_usd": 154205601.50464,
-   "alpha_vol_24h_usd": 17364238.596535254,
-   "dex_liq_usd": 624907.34,
-   "dex_vol_24h_usd": 14237075.86,
-   "funding_rate": 0.00052006,
-   "circ_supply": 430999653.239418,
-   "total_supply": 1000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.7332778179622707,
-     "level": "alert"
-    },
-    "oi_to_dex_liq": {
-     "value": 49.486948230851795,
-     "level": "warn"
-    },
-    "perp_to_spot_vol": {
-     "value": 10.831269217149485,
-     "level": "warn"
-    },
-    "float_ratio": {
-     "value": 0.430999653239418,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 1,
-    "warn": 2
-   },
-   "flags": [
-    "circ_mismatch"
-   ],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/AINUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0x9558a9254890b2a8b057a789f413631b9084f4a3",
-    "explorer": "https://bscscan.com/token/0x9558a9254890b2a8b057a789f413631b9084f4a3"
-   }
-  },
-  {
    "ticker": "BLUAI",
    "perp_symbol": "BLUAIUSDT",
    "chain": "bsc",
    "address": "0xed9ae3def8d6f052971bb8b6d1975ff267cf9aad",
    "perp_onboard_date": "2025-10-21",
    "is_new_perp": false,
-   "price": 0.008834,
-   "mcap_usd": 10848152.0,
-   "fdv_usd": 88340000.0,
+   "price": 0.008678,
+   "mcap_usd": 10656584.0,
+   "fdv_usd": 86780000.0,
    "fdv_to_mcap": 8.143322475570033,
-   "oi_usd": 6036505.98549432,
-   "perp_vol_24h_usd": 2157137.879924,
-   "alpha_vol_24h_usd": 442420.47127221123,
-   "dex_liq_usd": 394857.9,
-   "dex_vol_24h_usd": 383308.85,
-   "funding_rate": 0.00011301,
+   "oi_usd": 5941883.068809,
+   "perp_vol_24h_usd": 2027964.504026,
+   "alpha_vol_24h_usd": 440878.6595093863,
+   "dex_liq_usd": 391163.51,
+   "dex_vol_24h_usd": 378203.49,
+   "funding_rate": 5e-05,
    "circ_supply": 1228000000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.5564547754764425,
+     "value": 0.5575785888619655,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 15.287793369448401,
+     "value": 15.190279555495858,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 5.627675645694066,
+     "value": 5.362098863831214,
      "level": "warn"
     },
     "float_ratio": {
@@ -974,29 +878,29 @@
    "address": "0x722294f6c97102fb0ddb5b907c8d16bdeab3f6d9",
    "perp_onboard_date": "2025-05-09",
    "is_new_perp": false,
-   "price": 0.00231975,
-   "mcap_usd": 20591086.8684898,
-   "fdv_usd": 23197500.000000004,
+   "price": 0.002034,
+   "mcap_usd": 18054648.42785138,
+   "fdv_usd": 20339999.999999996,
    "fdv_to_mcap": 1.1265796773213927,
-   "oi_usd": 7446374.4894915,
-   "perp_vol_24h_usd": 503659781.3997115,
-   "alpha_vol_24h_usd": 7611665.507007892,
-   "dex_liq_usd": 217502.16,
-   "dex_vol_24h_usd": 7613238.53,
-   "funding_rate": -0.00571997,
+   "oi_usd": 6359168.591004,
+   "perp_vol_24h_usd": 296729841.114267,
+   "alpha_vol_24h_usd": 4840550.749538678,
+   "dex_liq_usd": 205915.75,
+   "dex_vol_24h_usd": 4818421.92,
+   "funding_rate": -0.00637664,
    "circ_supply": 8876424989.110807,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3616309589216762,
+     "value": 0.35221780232476024,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 34.235864551834794,
+     "value": 30.88238073583007,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 66.15578632076716,
+     "value": 61.58236992128472,
      "level": "alert"
     },
     "float_ratio": {
@@ -1022,29 +926,29 @@
    "address": "Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs",
    "perp_onboard_date": "2024-11-08",
    "is_new_perp": false,
-   "price": 0.68206833,
-   "mcap_usd": 166359938.09686804,
-   "fdv_usd": 682068330.0,
-   "fdv_to_mcap": 4.099955420774714,
-   "oi_usd": 16032876.55381289,
-   "perp_vol_24h_usd": 18627025.76949,
-   "alpha_vol_24h_usd": 317613.50295928476,
-   "dex_liq_usd": 520334.35,
-   "dex_vol_24h_usd": 5214.35,
+   "price": 0.67753362,
+   "mcap_usd": 165253899.2416594,
+   "fdv_usd": 677533620.0,
+   "fdv_to_mcap": 4.099955420774715,
+   "oi_usd": 15891988.0979875,
+   "perp_vol_24h_usd": 16652899.43684,
+   "alpha_vol_24h_usd": 322100.21389123355,
+   "dex_liq_usd": 515070.8,
+   "dex_vol_24h_usd": 5046.79,
    "funding_rate": 5e-05,
    "circ_supply": 243905091.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.09637462442716989,
+     "value": 0.0961670990573591,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 30.81264297429699,
+     "value": 30.853987642062993,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 3572.2622703673514,
+     "value": 3299.7012827638955,
      "level": "alert"
     },
     "float_ratio": {
@@ -1070,33 +974,33 @@
    "address": "0x22b1458e780f8fa71e2f84502cee8b5a3cc731fa",
    "perp_onboard_date": "2025-07-07",
    "is_new_perp": false,
-   "price": 0.969,
-   "mcap_usd": 2219857577.007231,
-   "fdv_usd": 9690000000.0,
-   "fdv_to_mcap": 4.365144908559345,
-   "oi_usd": 4128241.87701,
-   "perp_vol_24h_usd": 4531067.6112,
-   "alpha_vol_24h_usd": 40047.56653767285,
-   "dex_liq_usd": 52438.87,
-   "dex_vol_24h_usd": 27006.1,
+   "price": 1.0293,
+   "mcap_usd": 2358124385.899837,
+   "fdv_usd": 10293000000.000002,
+   "fdv_to_mcap": 4.364909697531623,
+   "oi_usd": 4366006.50526029,
+   "perp_vol_24h_usd": 3054441.4144,
+   "alpha_vol_24h_usd": 31981.654265371508,
+   "dex_liq_usd": 53798.4,
+   "dex_vol_24h_usd": 20850.18,
    "funding_rate": 5e-05,
-   "circ_supply": 2290874692.4739227,
+   "circ_supply": 2290998140.386512,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.0018596877204057458,
+     "value": 0.0018514742188183023,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 78.72484431891839,
+     "value": 81.15495080263148,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 167.77941321405166,
+     "value": 146.49472639564743,
      "level": "alert"
     },
     "float_ratio": {
-     "value": 0.22908746924739226,
+     "value": 0.22909981403865118,
      "level": "warn"
     }
    },
@@ -1118,29 +1022,29 @@
    "address": "0xd5eaaac47bd1993d661bc087e15dfb079a7f3c19",
    "perp_onboard_date": "2024-12-10",
    "is_new_perp": false,
-   "price": 0.015087,
-   "mcap_usd": 5850366.497717901,
-   "fdv_usd": 15087000.0,
-   "fdv_to_mcap": 2.5788127984605933,
-   "oi_usd": 5766479.370344,
-   "perp_vol_24h_usd": 1273292.890522,
-   "alpha_vol_24h_usd": 215504.26277567836,
-   "dex_liq_usd": 2274636.41,
-   "dex_vol_24h_usd": 213993.38,
-   "funding_rate": -0.0002146,
+   "price": 0.01499015,
+   "mcap_usd": 5812810.456403924,
+   "fdv_usd": 14990150.0,
+   "fdv_to_mcap": 2.578812798460593,
+   "oi_usd": 5734750.486392,
+   "perp_vol_24h_usd": 1339922.157983,
+   "alpha_vol_24h_usd": 205629.20077891272,
+   "dex_liq_usd": 2268176.62,
+   "dex_vol_24h_usd": 203942.63,
+   "funding_rate": -7.27e-05,
    "circ_supply": 387775336.2310533,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.9856612184199701,
+     "value": 0.9865710450052734,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 2.535121369284685,
+     "value": 2.528352702265311,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 5.950150843554132,
+     "value": 6.570093550244987,
      "level": "warn"
     },
     "float_ratio": {
@@ -1166,29 +1070,29 @@
    "address": "0x8fce7206e3043dd360f115afa956ee31b90b787c",
    "perp_onboard_date": "2026-05-14",
    "is_new_perp": false,
-   "price": 0.03210088,
-   "mcap_usd": 5979718.378328098,
-   "fdv_usd": 32100880.0,
-   "fdv_to_mcap": 5.368292947765085,
-   "oi_usd": 3716233.93207152,
-   "perp_vol_24h_usd": 2146247.56678,
-   "alpha_vol_24h_usd": 1410632.7593777084,
-   "dex_liq_usd": 851634.26,
-   "dex_vol_24h_usd": 1412495.76,
+   "price": 0.03232,
+   "mcap_usd": 6020535.822929594,
+   "fdv_usd": 32320000.0,
+   "fdv_to_mcap": 5.3682929477650845,
+   "oi_usd": 3712532.48178,
+   "perp_vol_24h_usd": 1909938.67251,
+   "alpha_vol_24h_usd": 1253896.6955083637,
+   "dex_liq_usd": 852995.82,
+   "dex_vol_24h_usd": 1253982.36,
    "funding_rate": 5e-05,
    "circ_supply": 186278954.91737604,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.6214730689558933,
+     "value": 0.6166448620138733,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 4.363650109697935,
+     "value": 4.352345456722168,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.5194718650199701,
+     "value": 1.5230985167207614,
      "level": "ok"
     },
     "float_ratio": {
@@ -1214,29 +1118,29 @@
    "address": "0xeccbb861c0dda7efd964010085488b69317e4444",
    "perp_onboard_date": "2026-03-11",
    "is_new_perp": false,
-   "price": 0.01935,
-   "mcap_usd": 19350000.0,
-   "fdv_usd": 19350000.0,
+   "price": 0.01940418,
+   "mcap_usd": 19404180.0,
+   "fdv_usd": 19404180.0,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 10858654.83320345,
-   "perp_vol_24h_usd": 12441120.32825,
-   "alpha_vol_24h_usd": 666148.6911652193,
-   "dex_liq_usd": 1399676.08,
-   "dex_vol_24h_usd": 638327.08,
-   "funding_rate": 6.999e-05,
+   "oi_usd": 10923897.60904,
+   "perp_vol_24h_usd": 9272940.97124,
+   "alpha_vol_24h_usd": 633751.5989392891,
+   "dex_liq_usd": 1406296.5,
+   "dex_vol_24h_usd": 607332.08,
+   "funding_rate": 0.0001619,
    "circ_supply": 1000000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.561170792413615,
+     "value": 0.5629662067162848,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 7.757976997937587,
+     "value": 7.767848109584287,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 19.490196668845698,
+     "value": 15.268320703954913,
      "level": "warn"
     },
     "float_ratio": {
@@ -1262,29 +1166,29 @@
    "address": "0x9123400446a56176eb1b6be9ee5cf703e409f492",
    "perp_onboard_date": "2025-09-19",
    "is_new_perp": false,
-   "price": 0.61501131,
-   "mcap_usd": 8824797.28719,
-   "fdv_usd": 36900678.6,
+   "price": 0.6121878,
+   "mcap_usd": 8784282.742199998,
+   "fdv_usd": 36731268.0,
    "fdv_to_mcap": 4.181476061049551,
-   "oi_usd": 4778323.51899678,
-   "perp_vol_24h_usd": 1938792.2912,
-   "alpha_vol_24h_usd": 680449.4290410656,
-   "dex_liq_usd": 805444.43,
-   "dex_vol_24h_usd": 681397.95,
+   "oi_usd": 4720001.41000772,
+   "perp_vol_24h_usd": 1431903.9601,
+   "alpha_vol_24h_usd": 616745.929748481,
+   "dex_liq_usd": 802638.17,
+   "dex_vol_24h_usd": 617337.21,
    "funding_rate": 5e-05,
    "circ_supply": 14349000.0,
    "total_supply": 60000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.5414655275915463,
+     "value": 0.5373234842877574,
      "level": "alert"
     },
     "oi_to_dex_liq": {
-     "value": 5.932530341040138,
+     "value": 5.880609204029905,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.8453157089774046,
+     "value": 2.31948428979358,
      "level": "ok"
     },
     "float_ratio": {
@@ -1304,35 +1208,83 @@
    }
   },
   {
+   "ticker": "SWARMS",
+   "perp_symbol": "SWARMSUSDT",
+   "chain": "solana",
+   "address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+   "perp_onboard_date": "2025-01-07",
+   "is_new_perp": false,
+   "price": 0.00616228,
+   "mcap_usd": 6162186.5182124,
+   "fdv_usd": 6162186.5182124,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 2893878.56988,
+   "perp_vol_24h_usd": 1200660.92343,
+   "alpha_vol_24h_usd": 56337.67916800658,
+   "dex_liq_usd": 1291218.98,
+   "dex_vol_24h_usd": 52129.98,
+   "funding_rate": 0.00029378,
+   "circ_supply": 999984830.0,
+   "total_supply": 999984830.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.46961878893589387,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.241198909483192,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 23.032061846753056,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SWARMSUSDT",
+    "dexscreener": "https://dexscreener.com/solana/74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+    "explorer": "https://solscan.io/token/74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
+   }
+  },
+  {
    "ticker": "SIREN",
    "perp_symbol": "SIRENUSDT",
    "chain": "bsc",
    "address": "0x997a58129890bbda032231a52ed1ddc845fc18e1",
    "perp_onboard_date": "2025-03-22",
    "is_new_perp": false,
-   "price": 0.02343051,
-   "mcap_usd": 16933294.861426048,
-   "fdv_usd": 16933294.861426048,
+   "price": 0.02333,
+   "mcap_usd": 16860656.004375048,
+   "fdv_usd": 16860656.004375048,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 8003452.74770769,
-   "perp_vol_24h_usd": 12706428.56198,
-   "alpha_vol_24h_usd": 660510.4530939029,
-   "dex_liq_usd": 2229589.27,
-   "dex_vol_24h_usd": 231592.58,
-   "funding_rate": 0.00024481,
+   "oi_usd": 7899654.23160744,
+   "perp_vol_24h_usd": 12662227.29954,
+   "alpha_vol_24h_usd": 524443.835159696,
+   "dex_liq_usd": 2237137.62,
+   "dex_vol_24h_usd": 209914.87,
+   "funding_rate": 5e-05,
    "circ_supply": 722702786.2998307,
    "total_supply": 722702786.2998307,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.4726459211396307,
+     "value": 0.46852591201419547,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 3.5896534197564067,
+     "value": 3.531143618964058,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 54.86543896173185,
+     "value": 60.32077336655569,
      "level": "alert"
     },
     "float_ratio": {
@@ -1354,83 +1306,35 @@
    }
   },
   {
-   "ticker": "SWARMS",
-   "perp_symbol": "SWARMSUSDT",
-   "chain": "solana",
-   "address": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
-   "perp_onboard_date": "2025-01-07",
-   "is_new_perp": false,
-   "price": 0.00609468,
-   "mcap_usd": 6094587.5437044,
-   "fdv_usd": 6094587.5437044,
-   "fdv_to_mcap": 1.0,
-   "oi_usd": 2836879.828896,
-   "perp_vol_24h_usd": 1472902.216863,
-   "alpha_vol_24h_usd": 73541.67457498489,
-   "dex_liq_usd": 1291901.7999999998,
-   "dex_vol_24h_usd": 66230.22,
-   "funding_rate": 0.00021725,
-   "circ_supply": 999984830.0,
-   "total_supply": 999984830.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.46547527762177215,
-     "level": "warn"
-    },
-    "oi_to_dex_liq": {
-     "value": 2.195894323311571,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 22.23912614004604,
-     "level": "alert"
-    },
-    "float_ratio": {
-     "value": 1.0,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 1,
-    "warn": 1
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/SWARMSUSDT",
-    "dexscreener": "https://dexscreener.com/solana/74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
-    "explorer": "https://solscan.io/token/74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
-   }
-  },
-  {
    "ticker": "US",
    "perp_symbol": "USUSDT",
    "chain": "sui",
    "address": "0xee962a61432231c2ede6946515beb02290cb516ad087bb06a731e922b2a5f57a::us::US",
    "perp_onboard_date": "2025-12-12",
    "is_new_perp": false,
-   "price": 0.00515717,
-   "mcap_usd": 17308800.64252599,
-   "fdv_usd": 51571700.0,
-   "fdv_to_mcap": 2.979507423136731,
-   "oi_usd": 5048827.52633843,
-   "perp_vol_24h_usd": 25239233.924002,
-   "alpha_vol_24h_usd": 851643.3328241431,
-   "dex_liq_usd": 457961.11,
-   "dex_vol_24h_usd": 852049.51,
+   "price": 0.00493876,
+   "mcap_usd": 16575760.012037933,
+   "fdv_usd": 49387600.0,
+   "fdv_to_mcap": 2.9795074231367304,
+   "oi_usd": 5076947.59644825,
+   "perp_vol_24h_usd": 29499260.161828,
+   "alpha_vol_24h_usd": 944679.785141525,
+   "dex_liq_usd": 455036.2,
+   "dex_vol_24h_usd": 945465.32,
    "funding_rate": 5e-05,
    "circ_supply": 3356259468.376259,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.29169135577967004,
+     "value": 0.30628746994172107,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 11.024577013402798,
+     "value": 11.157238910768529,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 29.621792663200992,
+     "value": 31.200784986833785,
      "level": "alert"
     },
     "float_ratio": {
@@ -1450,35 +1354,83 @@
    }
   },
   {
+   "ticker": "AVAAI",
+   "perp_symbol": "AVAAIUSDT",
+   "chain": "solana",
+   "address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+   "perp_onboard_date": "2025-01-17",
+   "is_new_perp": false,
+   "price": 0.00718889,
+   "mcap_usd": 7183073.969116724,
+   "fdv_usd": 7188860.717638141,
+   "fdv_to_mcap": 1.0008056089281965,
+   "oi_usd": 2087913.431736,
+   "perp_vol_24h_usd": 1332967.085339,
+   "alpha_vol_24h_usd": 60215.15030303426,
+   "dex_liq_usd": 1122287.42,
+   "dex_vol_24h_usd": 59715.85,
+   "funding_rate": 5e-05,
+   "circ_supply": 999190969.553954,
+   "total_supply": 999995926.72,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.29067129765235356,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 1.8604088351413581,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 22.321830558201885,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.9991950395551247,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/AVAAIUSDT",
+    "dexscreener": "https://dexscreener.com/solana/DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+    "explorer": "https://solscan.io/token/DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
+   }
+  },
+  {
    "ticker": "FHE",
    "perp_symbol": "FHEUSDT",
    "chain": "bsc",
    "address": "0xd55c9fb62e176a8eb6968f32958fefdd0962727e",
    "perp_onboard_date": "2025-04-12",
    "is_new_perp": false,
-   "price": 0.01791522,
-   "mcap_usd": 10727057.889642857,
-   "fdv_usd": 17915220.0,
+   "price": 0.01782445,
+   "mcap_usd": 10672707.73125,
+   "fdv_usd": 17824450.0,
    "fdv_to_mcap": 1.6700963287703916,
-   "oi_usd": 2556588.8546,
-   "perp_vol_24h_usd": 1144081.22107,
-   "alpha_vol_24h_usd": 60481.57246244758,
-   "dex_liq_usd": 867780.28,
-   "dex_vol_24h_usd": 28519.41,
-   "funding_rate": 0.00019687,
+   "oi_usd": 2508887.29664,
+   "perp_vol_24h_usd": 1008526.81794,
+   "alpha_vol_24h_usd": 49090.66768566136,
+   "dex_liq_usd": 864580.74,
+   "dex_vol_24h_usd": 21186.52,
+   "funding_rate": 0.00035582,
    "circ_supply": 598767857.1428572,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.23833085277449906,
+     "value": 0.23507504935171275,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 2.946124627999152,
+     "value": 2.901854252085236,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 40.11587971385102,
+     "value": 47.60228758380328,
      "level": "alert"
     },
     "float_ratio": {
@@ -1504,29 +1456,29 @@
    "address": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
    "perp_onboard_date": "2024-11-08",
    "is_new_perp": false,
-   "price": 0.0132928,
-   "mcap_usd": 8128757.546401687,
-   "fdv_usd": 13292800.0,
-   "fdv_to_mcap": 1.6352806593283438,
-   "oi_usd": 1457692.39561375,
-   "perp_vol_24h_usd": 1040873.39365,
-   "alpha_vol_24h_usd": 23789.52554025307,
-   "dex_liq_usd": 20143.17,
-   "dex_vol_24h_usd": 810.33,
+   "price": 0.01324,
+   "mcap_usd": 8096469.510889981,
+   "fdv_usd": 13240000.0,
+   "fdv_to_mcap": 1.6352806593283435,
+   "oi_usd": 1437619.77496,
+   "perp_vol_24h_usd": 1016823.53822,
+   "alpha_vol_24h_usd": 23603.238457339317,
+   "dex_liq_usd": 19262.22,
+   "dex_vol_24h_usd": 145.48,
    "funding_rate": 5e-05,
    "circ_supply": 611515824.085346,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.17932536273750946,
+     "value": 0.17756131521601615,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 72.36658359204385,
+     "value": 74.63416859323588,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 1284.5055639677662,
+     "value": 6989.438673494639,
      "level": "alert"
     },
     "float_ratio": {
@@ -1552,29 +1504,29 @@
    "address": "0x81a7da4074b8e0ed51bea40f9dcbdf4d9d4832b4",
    "perp_onboard_date": "2025-08-13",
    "is_new_perp": false,
-   "price": 0.03109444,
-   "mcap_usd": 13847520.1735,
-   "fdv_usd": 31094440.0,
-   "fdv_to_mcap": 2.245487972605047,
-   "oi_usd": 2424739.66752,
-   "perp_vol_24h_usd": 1210234.42566,
-   "alpha_vol_24h_usd": 19184.87061979428,
-   "dex_liq_usd": 25805.11,
-   "dex_vol_24h_usd": 15628.89,
+   "price": 0.03037586,
+   "mcap_usd": 13527509.55275,
+   "fdv_usd": 30375860.0,
+   "fdv_to_mcap": 2.2454879726050465,
+   "oi_usd": 2377191.73906,
+   "perp_vol_24h_usd": 1098220.07018,
+   "alpha_vol_24h_usd": 20291.935557881363,
+   "dex_liq_usd": 25612.12,
+   "dex_vol_24h_usd": 16670.13,
    "funding_rate": 5e-05,
    "circ_supply": 445337500.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1751028080941326,
+     "value": 0.17573018372600166,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 93.96354704630207,
+     "value": 92.81511015331805,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 77.43572484418279,
+     "value": 65.87951444769777,
      "level": "alert"
     },
     "float_ratio": {
@@ -1602,29 +1554,29 @@
    "address": "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U",
    "perp_onboard_date": "2025-12-10",
    "is_new_perp": false,
-   "price": 0.04808972,
-   "mcap_usd": 8211305.805603271,
-   "fdv_usd": 48089720.0,
+   "price": 0.04832,
+   "mcap_usd": 8250626.049117152,
+   "fdv_usd": 48320000.0,
    "fdv_to_mcap": 5.856525276063193,
-   "oi_usd": 1249992.92236,
-   "perp_vol_24h_usd": 3219728.98671,
-   "alpha_vol_24h_usd": 59581.81706208206,
-   "dex_liq_usd": 696877.14,
-   "dex_vol_24h_usd": 59265.25,
+   "oi_usd": 1238693.17197,
+   "perp_vol_24h_usd": 2628076.55072,
+   "alpha_vol_24h_usd": 36322.35616695178,
+   "dex_liq_usd": 695918.02,
+   "dex_vol_24h_usd": 36180.86,
    "funding_rate": 5e-05,
    "circ_supply": 170749711.281398,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.15222827549633136,
+     "value": 0.1501332340837996,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.7937063086328244,
+     "value": 1.7799412234935374,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 54.327434486651114,
+     "value": 72.6372051609608,
      "level": "alert"
     },
     "float_ratio": {
@@ -1644,35 +1596,83 @@
    }
   },
   {
+   "ticker": "BULLA",
+   "perp_symbol": "BULLAUSDT",
+   "chain": "bsc",
+   "address": "0x595e21b20e78674f8a64c1566a20b2b316bc3511",
+   "perp_onboard_date": "2025-07-04",
+   "is_new_perp": false,
+   "price": 0.06355,
+   "mcap_usd": 63549999.99999999,
+   "fdv_usd": 63549999.99999999,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 8962394.83626235,
+   "perp_vol_24h_usd": 309354140.27863,
+   "alpha_vol_24h_usd": 3621291.5030257106,
+   "dex_liq_usd": 91982.7,
+   "dex_vol_24h_usd": 3251492.83,
+   "funding_rate": -0.00973563,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.14102902968154762,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 97.43565731667314,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 95.14218743598768,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BULLAUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x595e21b20e78674f8a64c1566a20b2b316bc3511",
+    "explorer": "https://bscscan.com/token/0x595e21b20e78674f8a64c1566a20b2b316bc3511"
+   }
+  },
+  {
    "ticker": "TRUST",
    "perp_symbol": "TRUSTUSDT",
    "chain": "base",
    "address": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
    "perp_onboard_date": "2025-11-05",
    "is_new_perp": false,
-   "price": 0.0506224,
-   "mcap_usd": 9094204.4106368,
-   "fdv_usd": 54273053.84615384,
-   "fdv_to_mcap": 5.967872657741757,
-   "oi_usd": 1194023.03023248,
-   "perp_vol_24h_usd": 1906473.94667,
-   "alpha_vol_24h_usd": 8516.689959526646,
-   "dex_liq_usd": 93283.48,
-   "dex_vol_24h_usd": 2684.0,
+   "price": 0.05031,
+   "mcap_usd": 9038082.42792,
+   "fdv_usd": 53938125.0,
+   "fdv_to_mcap": 5.967872657741756,
+   "oi_usd": 1186840.17818528,
+   "perp_vol_24h_usd": 1964255.7726,
+   "alpha_vol_24h_usd": 7586.295588124673,
+   "dex_liq_usd": 92819.37,
+   "dex_vol_24h_usd": 2573.71,
    "funding_rate": 5e-05,
    "circ_supply": 179647832.0,
    "total_supply": 1072115384.6153846,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.13129494085660995,
+     "value": 0.13131548507667418,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 12.799940892347498,
+     "value": 12.786557139800454,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 710.3107103837556,
+     "value": 763.2001167963757,
      "level": "alert"
     },
     "float_ratio": {
@@ -1698,29 +1698,29 @@
    "address": "0xda7ad9dea9397cffddae2f8a052b82f1484252b3",
    "perp_onboard_date": "2025-10-17",
    "is_new_perp": false,
-   "price": 1.017,
-   "mcap_usd": 59614327.319993965,
-   "fdv_usd": 101699999.99999999,
-   "fdv_to_mcap": 1.7059657396468006,
-   "oi_usd": 5063842.45661272,
-   "perp_vol_24h_usd": 6225835.2332,
-   "alpha_vol_24h_usd": 168226.83510968828,
-   "dex_liq_usd": 152178.52,
-   "dex_vol_24h_usd": 29636.99,
+   "price": 1.007,
+   "mcap_usd": 59028149.07692617,
+   "fdv_usd": 100699999.99999999,
+   "fdv_to_mcap": 1.7059657396468009,
+   "oi_usd": 5044078.162551,
+   "perp_vol_24h_usd": 5280143.958,
+   "alpha_vol_24h_usd": 159290.23323892677,
+   "dex_liq_usd": 151123.33,
+   "dex_vol_24h_usd": 29164.1,
    "funding_rate": 5e-05,
    "circ_supply": 58617824.30677873,
    "total_supply": 100000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.0849433799601789,
+     "value": 0.08545208076874473,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 33.27567160340842,
+     "value": 33.37723012423694,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 210.06975516744444,
+     "value": 181.049439482103,
      "level": "alert"
     },
     "float_ratio": {
@@ -1746,29 +1746,29 @@
    "address": "0xe0cd4cacddcbf4f36e845407ce53e87717b6601d",
    "perp_onboard_date": "2025-07-03",
    "is_new_perp": false,
-   "price": 0.18850057,
-   "mcap_usd": 47691799.529993534,
-   "fdv_usd": 131950399.0,
+   "price": 0.1771,
+   "mcap_usd": 44807385.4459,
+   "fdv_usd": 123970000.0,
    "fdv_to_mcap": 2.766731394084133,
-   "oi_usd": 3251533.30040647,
-   "perp_vol_24h_usd": 8841137.1359,
-   "alpha_vol_24h_usd": 338755.30747075204,
-   "dex_liq_usd": 89433.92,
-   "dex_vol_24h_usd": 194877.11,
+   "oi_usd": 3055736.51263551,
+   "perp_vol_24h_usd": 8520037.2168,
+   "alpha_vol_24h_usd": 341193.2150601546,
+   "dex_liq_usd": 85116.59,
+   "dex_vol_24h_usd": 195650.67,
    "funding_rate": 5e-05,
    "circ_supply": 253006129.0,
    "total_supply": 700000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06817803757565427,
+     "value": 0.06819716174524346,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 36.35682412675716,
+     "value": 35.90059837495264,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 45.36775579184236,
+     "value": 43.547191618612906,
      "level": "alert"
     },
     "float_ratio": {
@@ -1788,83 +1788,35 @@
    }
   },
   {
-   "ticker": "Q",
-   "perp_symbol": "QUSDT",
-   "chain": "bsc",
-   "address": "0xc07e1300dc138601fa6b0b59f8d0fa477e690589",
-   "perp_onboard_date": "2025-09-02",
-   "is_new_perp": false,
-   "price": 0.19871015,
-   "mcap_usd": 935304657.8240203,
-   "fdv_usd": 1987101500.0,
-   "fdv_to_mcap": 2.1245499884743198,
-   "oi_usd": 41130747.68412356,
-   "perp_vol_24h_usd": 794383171.471531,
-   "alpha_vol_24h_usd": 32749445.65697005,
-   "dex_liq_usd": 1573208.17,
-   "dex_vol_24h_usd": 21253822.98,
-   "funding_rate": 0.00019047,
-   "circ_supply": 4706879129.34503,
-   "total_supply": 10000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.04397577552945578,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 26.14450424836248,
-     "level": "warn"
-    },
-    "perp_to_spot_vol": {
-     "value": 37.37601335152981,
-     "level": "alert"
-    },
-    "float_ratio": {
-     "value": 0.47068791293450296,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 1,
-    "warn": 1
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/QUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0xc07e1300dc138601fa6b0b59f8d0fa477e690589",
-    "explorer": "https://bscscan.com/token/0xc07e1300dc138601fa6b0b59f8d0fa477e690589"
-   }
-  },
-  {
    "ticker": "ZORA",
    "perp_symbol": "ZORAUSDT",
    "chain": "base",
    "address": "0x1111111111166b7fe7bd91427724b487980afc69",
    "perp_onboard_date": "2025-07-25",
    "is_new_perp": false,
-   "price": 0.00632,
-   "mcap_usd": 41647846.00976089,
-   "fdv_usd": 63200000.0,
-   "fdv_to_mcap": 1.517485441748608,
-   "oi_usd": 1551475.28773536,
-   "perp_vol_24h_usd": 2758782.487782,
-   "alpha_vol_24h_usd": 91591.77730996635,
-   "dex_liq_usd": 76404.49,
-   "dex_vol_24h_usd": 87398.29,
-   "funding_rate": -0.00026434,
+   "price": 0.006382,
+   "mcap_usd": 42056416.65099587,
+   "fdv_usd": 63820000.0,
+   "fdv_to_mcap": 1.5174854417486083,
+   "oi_usd": 1605850.983817,
+   "perp_vol_24h_usd": 4377721.94389,
+   "alpha_vol_24h_usd": 131744.33924777928,
+   "dex_liq_usd": 77358.11,
+   "dex_vol_24h_usd": 165267.74,
+   "funding_rate": -0.00029039,
    "circ_supply": 6589849052.177355,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.03725223358182186,
+     "value": 0.03818325743591315,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 20.306074783502382,
+     "value": 20.75866362062103,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 31.565634611180613,
+     "value": 26.488665869636748,
      "level": "alert"
     },
     "float_ratio": {
@@ -1884,19 +1836,67 @@
    }
   },
   {
+   "ticker": "BTW",
+   "perp_symbol": "BTWUSDT",
+   "chain": "bsc",
+   "address": "0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
+   "perp_onboard_date": "2026-06-04",
+   "is_new_perp": false,
+   "price": 1.4469,
+   "mcap_usd": 4212503490.9048004,
+   "fdv_usd": 14469000000.0,
+   "fdv_to_mcap": 3.434774601668571,
+   "oi_usd": 26649155.27043435,
+   "perp_vol_24h_usd": 309202150.96817,
+   "alpha_vol_24h_usd": 7113074.23662298,
+   "dex_liq_usd": 274695.34,
+   "dex_vol_24h_usd": 6293916.98,
+   "funding_rate": 5e-05,
+   "circ_supply": 2911399192.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.006326203723741104,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 97.01349600773841,
+     "level": "warn"
+    },
+    "perp_to_spot_vol": {
+     "value": 49.127141643385634,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.2911399192,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BTWUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
+    "explorer": "https://bscscan.com/token/0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa"
+   }
+  },
+  {
    "ticker": "APR",
    "perp_symbol": "APRUSDT",
    "chain": "bsc",
    "address": "0x299ad4299da5b2b93fba4c96967b040c7f611099",
    "perp_onboard_date": "2025-10-23",
    "is_new_perp": false,
-   "price": 0.03444,
-   "mcap_usd": 13847749.9998852,
-   "fdv_usd": 34440000.0,
+   "price": 0.03415,
+   "mcap_usd": 13731145.8332195,
+   "fdv_usd": 34150000.0,
    "fdv_to_mcap": 2.4870466321449705,
-   "oi_usd": 9886871.23916,
-   "perp_vol_24h_usd": 109591195.48971,
-   "alpha_vol_24h_usd": 2698934.179242194,
+   "oi_usd": 9528271.38630588,
+   "perp_vol_24h_usd": 69782764.75165,
+   "alpha_vol_24h_usd": 2086520.3932260727,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -1904,7 +1904,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.7139695069048736,
+     "value": 0.6939166987254853,
      "level": "alert"
     },
     "oi_to_dex_liq": {
@@ -1940,29 +1940,29 @@
    "address": "0x4e200fe2f3efb977d5fd9c430a41531fb04d97b8",
    "perp_onboard_date": "2025-09-26",
    "is_new_perp": false,
-   "price": 0.04034145,
-   "mcap_usd": 24113059.990204092,
-   "fdv_usd": 40341450.0,
-   "fdv_to_mcap": 1.6730124677825493,
-   "oi_usd": 4384989.16029603,
-   "perp_vol_24h_usd": 43070361.94855,
-   "alpha_vol_24h_usd": 801566.9182601334,
-   "dex_liq_usd": 336576.52,
-   "dex_vol_24h_usd": 802538.91,
-   "funding_rate": -0.00027249,
+   "price": 0.0371105,
+   "mcap_usd": 22181843.061329447,
+   "fdv_usd": 37110500.0,
+   "fdv_to_mcap": 1.6730124677825495,
+   "oi_usd": 3829248.32958,
+   "perp_vol_24h_usd": 34426635.11498,
+   "alpha_vol_24h_usd": 735259.1354346861,
+   "dex_liq_usd": 312218.51,
+   "dex_vol_24h_usd": 735717.4,
+   "funding_rate": -9.323e-05,
    "circ_supply": 597724176.7513089,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.18185121100670873,
+     "value": 0.17262985402036732,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 13.028208742237961,
+     "value": 12.264642251927985,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 53.66763082994942,
+     "value": 46.79328654586666,
      "level": "alert"
     },
     "float_ratio": {
@@ -1988,29 +1988,29 @@
    "address": "0xe3225e11cab122f1a126a28997788e5230838ab9",
    "perp_onboard_date": "2025-08-13",
    "is_new_perp": false,
-   "price": 0.006766,
-   "mcap_usd": 26221377.142857146,
-   "fdv_usd": 67660000.0,
-   "fdv_to_mcap": 2.580337395377076,
-   "oi_usd": 4335672.79716622,
-   "perp_vol_24h_usd": 5460827.644514,
-   "alpha_vol_24h_usd": 50398.65985345956,
-   "dex_liq_usd": 684308.06,
-   "dex_vol_24h_usd": 10.63,
-   "funding_rate": 0.00028817,
+   "price": 0.006876,
+   "mcap_usd": 26647677.983193282,
+   "fdv_usd": 68760000.0,
+   "fdv_to_mcap": 2.5803373953770756,
+   "oi_usd": 4354288.886676,
+   "perp_vol_24h_usd": 4578364.841112,
+   "alpha_vol_24h_usd": 46130.240444355826,
+   "dex_liq_usd": 690861.28,
+   "dex_vol_24h_usd": 9.16,
+   "funding_rate": 0.00046612,
    "circ_supply": 3875462184.87395,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.16534878292413724,
+     "value": 0.1634021879663307,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 6.3358493792491934,
+     "value": 6.302696377304573,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 513718.4990135465,
+     "value": 499821.4892043668,
      "level": "alert"
     },
     "float_ratio": {
@@ -2036,29 +2036,29 @@
    "address": "0x1bc0c42215582d5a085795f4badbac3ff36d1bcb",
    "perp_onboard_date": "2025-11-12",
    "is_new_perp": false,
-   "price": 13.61118314,
-   "mcap_usd": 13424399.964691572,
-   "fdv_usd": 13611183.139999999,
-   "fdv_to_mcap": 1.0139137075623266,
-   "oi_usd": 1953424.9374,
-   "perp_vol_24h_usd": 2441792.9954,
-   "alpha_vol_24h_usd": 107027.52485395494,
-   "dex_liq_usd": 1496209.67,
-   "dex_vol_24h_usd": 75918.46,
-   "funding_rate": 0.00015896,
+   "price": 13.64509427,
+   "mcap_usd": 13457845.739955356,
+   "fdv_usd": 13645094.27,
+   "fdv_to_mcap": 1.0139137075623268,
+   "oi_usd": 1917843.71255807,
+   "perp_vol_24h_usd": 2506796.7978,
+   "alpha_vol_24h_usd": 101869.40943844656,
+   "dex_liq_usd": 1498616.59,
+   "dex_vol_24h_usd": 69573.51,
+   "funding_rate": 0.00022506,
    "circ_supply": 986277.22708693,
    "total_supply": 1000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.14551301678569142,
+     "value": 0.14250748222385495,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.3055823502330393,
+     "value": 1.279742747648396,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 32.16336310562674,
+     "value": 36.03090885884585,
      "level": "alert"
     },
     "float_ratio": {
@@ -2084,29 +2084,29 @@
    "address": "0x0a48f85a3905cfa49a652bdb074d9e9fabad27892d54afaa5c9e0adeb7ac3cdf::swarm_network_token::SWARM_NETWORK_TOKEN",
    "perp_onboard_date": "2025-10-01",
    "is_new_perp": false,
-   "price": 0.02058812,
-   "mcap_usd": 72269354.63869405,
-   "fdv_usd": 205881200.0,
+   "price": 0.02137404,
+   "mcap_usd": 75028126.74598905,
+   "fdv_usd": 213740400.0,
    "fdv_to_mcap": 2.848803632318148,
-   "oi_usd": 9784905.708592,
-   "perp_vol_24h_usd": 6462124.626033,
-   "alpha_vol_24h_usd": 294272.31081612303,
-   "dex_liq_usd": 1471667.2,
-   "dex_vol_24h_usd": 294274.38,
-   "funding_rate": 0.00017489,
+   "oi_usd": 10256567.02824,
+   "perp_vol_24h_usd": 7530073.295609,
+   "alpha_vol_24h_usd": 294443.74063611147,
+   "dex_liq_usd": 1499371.99,
+   "dex_vol_24h_usd": 294247.73,
+   "funding_rate": 0.00025684,
    "circ_supply": 3510245454.111111,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.13539495070228594,
+     "value": 0.13670296025068104,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 6.648857641586359,
+     "value": 6.840575318630569,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 21.959521675087718,
+     "value": 25.590930797015837,
      "level": "alert"
     },
     "float_ratio": {
@@ -2132,33 +2132,33 @@
    "address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
    "perp_onboard_date": "2024-10-24",
    "is_new_perp": false,
-   "price": 0.01373357,
-   "mcap_usd": 13733249.115883315,
-   "fdv_usd": 13733570.0,
-   "fdv_to_mcap": 1.0000233654915873,
-   "oi_usd": 1668126.58104326,
-   "perp_vol_24h_usd": 1114632.37556,
-   "alpha_vol_24h_usd": 39426.046011965045,
-   "dex_liq_usd": 1406324.84,
-   "dex_vol_24h_usd": 39133.72,
+   "price": 0.01374527,
+   "mcap_usd": 13744947.986841775,
+   "fdv_usd": 13745270.0,
+   "fdv_to_mcap": 1.0000234277465825,
+   "oi_usd": 1643880.48,
+   "perp_vol_24h_usd": 1139696.24451,
+   "alpha_vol_24h_usd": 40237.32327116911,
+   "dex_liq_usd": 1401072.74,
+   "dex_vol_24h_usd": 40418.49,
    "funding_rate": 5e-05,
-   "circ_supply": 999976635.054346,
+   "circ_supply": 999976572.802264,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.12146627261817984,
+     "value": 0.1195988869200312,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.1861602195999466,
+     "value": 1.173301309109761,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 28.48265832024147,
+     "value": 28.197397886709776,
      "level": "alert"
     },
     "float_ratio": {
-     "value": 0.999976635054346,
+     "value": 0.9999765728022639,
      "level": "ok"
     }
    },
@@ -2174,83 +2174,35 @@
    }
   },
   {
-   "ticker": "STBL",
-   "perp_symbol": "STBLUSDT",
-   "chain": "bsc",
-   "address": "0x8dedf84656fa932157e27c060d8613824e7979e3",
-   "perp_onboard_date": "2025-09-17",
-   "is_new_perp": false,
-   "price": 0.02756509,
-   "mcap_usd": 19295563.0,
-   "fdv_usd": 275650900.0,
-   "fdv_to_mcap": 14.285714285714286,
-   "oi_usd": 2287533.72753792,
-   "perp_vol_24h_usd": 1852155.68471,
-   "alpha_vol_24h_usd": 1374641.842394692,
-   "dex_liq_usd": 1808929.69,
-   "dex_vol_24h_usd": 1373790.73,
-   "funding_rate": 5e-05,
-   "circ_supply": 700000000.0,
-   "total_supply": 10000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.11855231835100742,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 1.2645785738294337,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 1.348208023437456,
-     "level": "ok"
-    },
-    "float_ratio": {
-     "value": 0.07,
-     "level": "alert"
-    }
-   },
-   "cond_level": {
-    "alert": 1,
-    "warn": 0
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/STBLUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0x8dedf84656fa932157e27c060d8613824e7979e3",
-    "explorer": "https://bscscan.com/token/0x8dedf84656fa932157e27c060d8613824e7979e3"
-   }
-  },
-  {
    "ticker": "FARTCOIN",
    "perp_symbol": "FARTCOINUSDT",
    "chain": "solana",
    "address": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
    "perp_onboard_date": "2024-12-20",
    "is_new_perp": false,
-   "price": 0.1283,
-   "mcap_usd": 128299776.2448,
-   "fdv_usd": 128300000.0,
+   "price": 0.12856128,
+   "mcap_usd": 128561055.78912768,
+   "fdv_usd": 128561280.0,
    "fdv_to_mcap": 1.0000017440030415,
-   "oi_usd": 14676608.30941737,
-   "perp_vol_24h_usd": 19020906.8703,
-   "alpha_vol_24h_usd": 925678.2509743273,
-   "dex_liq_usd": 6942335.33,
-   "dex_vol_24h_usd": 465423.16,
+   "oi_usd": 14889557.47851,
+   "perp_vol_24h_usd": 19035360.34139,
+   "alpha_vol_24h_usd": 1340985.5029402543,
+   "dex_liq_usd": 6943447.0,
+   "dex_vol_24h_usd": 749550.02,
    "funding_rate": 5e-05,
    "circ_supply": 999998256.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.11439309357339753,
+     "value": 0.11581701306912572,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.114073667112443,
+     "value": 2.1444042819812696,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 40.86798531963901,
+     "value": 25.395717208292513,
      "level": "alert"
     },
     "float_ratio": {
@@ -2270,40 +2222,40 @@
    }
   },
   {
-   "ticker": "RECALL",
-   "perp_symbol": "RECALLUSDT",
-   "chain": "base",
-   "address": "0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
-   "perp_onboard_date": "2025-10-15",
+   "ticker": "STBL",
+   "perp_symbol": "STBLUSDT",
+   "chain": "bsc",
+   "address": "0x8dedf84656fa932157e27c060d8613824e7979e3",
+   "perp_onboard_date": "2025-09-17",
    "is_new_perp": false,
-   "price": 0.03695476,
-   "mcap_usd": 11087952.766695846,
-   "fdv_usd": 36954760.0,
-   "fdv_to_mcap": 3.3328749479343545,
-   "oi_usd": 1232989.29661374,
-   "perp_vol_24h_usd": 1060153.45084,
-   "alpha_vol_24h_usd": 50085.80970001429,
-   "dex_liq_usd": 454799.17,
-   "dex_vol_24h_usd": 49397.66,
+   "price": 0.0269686,
+   "mcap_usd": 18878020.0,
+   "fdv_usd": 269686000.0,
+   "fdv_to_mcap": 14.285714285714286,
+   "oi_usd": 2179072.8110525,
+   "perp_vol_24h_usd": 1742209.93445,
+   "alpha_vol_24h_usd": 1181553.4128791243,
+   "dex_liq_usd": 1789596.78,
+   "dex_vol_24h_usd": 1181257.23,
    "funding_rate": 5e-05,
-   "circ_supply": 300041260.359852,
-   "total_supply": 1000000000.0,
+   "circ_supply": 700000000.0,
+   "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.11120080708831921,
+     "value": 0.11542909749287796,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.711063207555414,
+     "value": 1.2176333995485285,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 21.461612773560528,
-     "level": "alert"
+     "value": 1.4748776898068172,
+     "level": "ok"
     },
     "float_ratio": {
-     "value": 0.300041260359852,
-     "level": "ok"
+     "value": 0.07,
+     "level": "alert"
     }
    },
    "cond_level": {
@@ -2312,9 +2264,9 @@
    },
    "flags": [],
    "links": {
-    "binance_futures": "https://www.binance.com/en/futures/RECALLUSDT",
-    "dexscreener": "https://dexscreener.com/base/0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
-    "explorer": "https://basescan.org/token/0x1f16e03c1a5908818f47f6ee7bb16690b40d0671"
+    "binance_futures": "https://www.binance.com/en/futures/STBLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x8dedf84656fa932157e27c060d8613824e7979e3",
+    "explorer": "https://bscscan.com/token/0x8dedf84656fa932157e27c060d8613824e7979e3"
    }
   },
   {
@@ -2324,29 +2276,29 @@
    "address": "0x8b194370825e37b33373e74a41009161808c1488",
    "perp_onboard_date": "2025-07-15",
    "is_new_perp": false,
-   "price": 0.05825,
-   "mcap_usd": 31286004.147460923,
-   "fdv_usd": 58250000.0,
+   "price": 0.05758,
+   "mcap_usd": 30926147.962417163,
+   "fdv_usd": 57580000.0,
    "fdv_to_mcap": 1.8618548960566892,
-   "oi_usd": 3003046.92462612,
-   "perp_vol_24h_usd": 2035650.61065,
-   "alpha_vol_24h_usd": 20366.885283318963,
-   "dex_liq_usd": 504816.21,
-   "dex_vol_24h_usd": 5868.03,
-   "funding_rate": 5e-05,
+   "oi_usd": 2989772.54427122,
+   "perp_vol_24h_usd": 2030632.54538,
+   "alpha_vol_24h_usd": 20131.327817763096,
+   "dex_liq_usd": 502988.71,
+   "dex_vol_24h_usd": 5893.96,
+   "funding_rate": 7.997e-05,
    "circ_supply": 537098783.6473978,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.09598691192623389,
+     "value": 0.09667458578755185,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 5.948792580622797,
+     "value": 5.944015213127189,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 346.9052834852583,
+     "value": 344.5277106359731,
      "level": "alert"
     },
     "float_ratio": {
@@ -2372,29 +2324,29 @@
    "address": "0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691",
    "perp_onboard_date": "2025-09-09",
    "is_new_perp": false,
-   "price": 0.04043,
-   "mcap_usd": 20406006.18204349,
-   "fdv_usd": 40430000.0,
+   "price": 0.04082438,
+   "mcap_usd": 20605059.37813734,
+   "fdv_usd": 40824380.0,
    "fdv_to_mcap": 1.9812794154486175,
-   "oi_usd": 1802557.7363,
-   "perp_vol_24h_usd": 2843550.06558,
-   "alpha_vol_24h_usd": 77817.99193460596,
-   "dex_liq_usd": 491717.91,
-   "dex_vol_24h_usd": 46471.9,
-   "funding_rate": 0.00023631,
+   "oi_usd": 1823464.81782,
+   "perp_vol_24h_usd": 2725625.64517,
+   "alpha_vol_24h_usd": 75437.93602873835,
+   "dex_liq_usd": 493875.0,
+   "dex_vol_24h_usd": 43700.83,
+   "funding_rate": 5e-05,
    "circ_supply": 504724367.5993937,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.08833466579492573,
+     "value": 0.08849597491355728,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 3.665837057470614,
+     "value": 3.6921585782232347,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 61.18859064466915,
+     "value": 62.370111624195694,
      "level": "alert"
     },
     "float_ratio": {
@@ -2420,29 +2372,29 @@
    "address": "0xba38b3c706f7a515ff7c8db04daa0a134ec46d2b",
    "perp_onboard_date": "2025-08-15",
    "is_new_perp": false,
-   "price": 0.15096297,
-   "mcap_usd": 150825765.2404504,
-   "fdv_usd": 150962970.0,
+   "price": 0.1538899,
+   "mcap_usd": 153750035.06009713,
+   "fdv_usd": 153889900.0,
    "fdv_to_mcap": 1.0009096904585955,
-   "oi_usd": 11531554.72006347,
-   "perp_vol_24h_usd": 22160223.82344,
-   "alpha_vol_24h_usd": 35776.509324852545,
-   "dex_liq_usd": 715677.72,
-   "dex_vol_24h_usd": 35613.57,
+   "oi_usd": 11819711.54994395,
+   "perp_vol_24h_usd": 18770125.44147,
+   "alpha_vol_24h_usd": 25006.112975923144,
+   "dex_liq_usd": 716710.45,
+   "dex_vol_24h_usd": 24827.65,
    "funding_rate": 5e-05,
    "circ_supply": 999091136.326017,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.07645613268846713,
+     "value": 0.0768761551522503,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 16.11277590150979,
+     "value": 16.491613244852157,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 622.2410115986687,
+     "value": 756.0169988488641,
      "level": "alert"
     },
     "float_ratio": {
@@ -2462,35 +2414,131 @@
    }
   },
   {
+   "ticker": "Q",
+   "perp_symbol": "QUSDT",
+   "chain": "bsc",
+   "address": "0xc07e1300dc138601fa6b0b59f8d0fa477e690589",
+   "perp_onboard_date": "2025-09-02",
+   "is_new_perp": false,
+   "price": 0.07089967,
+   "mcap_usd": 333716177.0004499,
+   "fdv_usd": 708996700.0,
+   "fdv_to_mcap": 2.12454998847432,
+   "oi_usd": 16999143.5078454,
+   "perp_vol_24h_usd": 1246193638.786949,
+   "alpha_vol_24h_usd": 54544224.57691561,
+   "dex_liq_usd": 1382053.47,
+   "dex_vol_24h_usd": 37102684.29,
+   "funding_rate": 5e-05,
+   "circ_supply": 4706879129.34503,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.050938925588322574,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 12.299917388757326,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 33.5876948699053,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.47068791293450296,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/QUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xc07e1300dc138601fa6b0b59f8d0fa477e690589",
+    "explorer": "https://bscscan.com/token/0xc07e1300dc138601fa6b0b59f8d0fa477e690589"
+   }
+  },
+  {
+   "ticker": "MOODENG",
+   "perp_symbol": "MOODENGUSDT",
+   "chain": "solana",
+   "address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+   "perp_onboard_date": "2024-10-25",
+   "is_new_perp": false,
+   "price": 0.0381292,
+   "mcap_usd": 37746832.41987916,
+   "fdv_usd": 37746832.41987916,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 1708520.69495776,
+   "perp_vol_24h_usd": 3211124.63574,
+   "alpha_vol_24h_usd": 116178.48660402876,
+   "dex_liq_usd": 2535808.97,
+   "dex_vol_24h_usd": 110793.16,
+   "funding_rate": 5e-05,
+   "circ_supply": 989971791.17,
+   "total_supply": 989971791.17,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.04526262431647051,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.6737576509786382,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 28.983058482491156,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/MOODENGUSDT",
+    "dexscreener": "https://dexscreener.com/solana/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
+    "explorer": "https://solscan.io/token/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
+   }
+  },
+  {
    "ticker": "H",
    "perp_symbol": "HUSDT",
    "chain": "ethereum",
    "address": "0xe76c5b78f93909d34404e9eb4c1f19e7582a5de1",
    "perp_onboard_date": "2025-06-25",
    "is_new_perp": false,
-   "price": 0.05560728,
-   "mcap_usd": 232484250.59103644,
-   "fdv_usd": 556072800.0,
+   "price": 0.0567578,
+   "mcap_usd": 237294372.2152194,
+   "fdv_usd": 567578000.0,
    "fdv_to_mcap": 2.391872991767468,
-   "oi_usd": 9803747.45516504,
-   "perp_vol_24h_usd": 2357390.02591,
-   "alpha_vol_24h_usd": 70245.14404192318,
-   "dex_liq_usd": 796615.8,
-   "dex_vol_24h_usd": 70077.22,
+   "oi_usd": 10004124.543504,
+   "perp_vol_24h_usd": 2113184.30388,
+   "alpha_vol_24h_usd": 68200.21147490812,
+   "dex_liq_usd": 802087.57,
+   "dex_vol_24h_usd": 67503.63,
    "funding_rate": 5e-05,
    "circ_supply": 4180823996.265173,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.042169512258319955,
+     "value": 0.04215913108310271,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 12.306744926682397,
+     "value": 12.47260887424549,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 33.639890764930456,
+     "value": 31.304750631632697,
      "level": "alert"
     },
     "float_ratio": {
@@ -2510,83 +2558,35 @@
    }
   },
   {
-   "ticker": "CARV",
-   "perp_symbol": "CARVUSDT",
-   "chain": "bsc",
-   "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
-   "perp_onboard_date": "2025-08-07",
-   "is_new_perp": false,
-   "price": 0.03541,
-   "mcap_usd": 27076226.09124095,
-   "fdv_usd": 35410000.0,
-   "fdv_to_mcap": 1.3077893455563585,
-   "oi_usd": 820694.9442,
-   "perp_vol_24h_usd": 776504.90711,
-   "alpha_vol_24h_usd": 27822.007920943342,
-   "dex_liq_usd": 169929.54,
-   "dex_vol_24h_usd": 27597.53,
-   "funding_rate": 5e-05,
-   "circ_supply": 764649141.2380953,
-   "total_supply": 1000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.03031053668389523,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 4.829619053873741,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 28.136753800430693,
-     "level": "alert"
-    },
-    "float_ratio": {
-     "value": 0.7646491412380952,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 1,
-    "warn": 0
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/CARVUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
-    "explorer": "https://bscscan.com/token/0xc08cd26474722ce93f4d0c34d16201461c10aa8c"
-   }
-  },
-  {
    "ticker": "ATH",
    "perp_symbol": "ATHUSDT",
    "chain": "ethereum",
    "address": "0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b",
    "perp_onboard_date": "2025-04-02",
    "is_new_perp": false,
-   "price": 0.00550657,
-   "mcap_usd": 110840451.244876,
-   "fdv_usd": 231275940.0,
+   "price": 0.0056,
+   "mcap_usd": 112721081.7208,
+   "fdv_usd": 235200000.0,
    "fdv_to_mcap": 2.0865662075756983,
-   "oi_usd": 3357765.56079696,
-   "perp_vol_24h_usd": 1741517.49535,
-   "alpha_vol_24h_usd": 54839.97651110127,
-   "dex_liq_usd": 386975.85,
-   "dex_vol_24h_usd": 54643.06,
+   "oi_usd": 3442452.46782918,
+   "perp_vol_24h_usd": 1489770.482488,
+   "alpha_vol_24h_usd": 57784.15849336408,
+   "dex_liq_usd": 390998.24,
+   "dex_vol_24h_usd": 57972.95,
    "funding_rate": 5e-05,
    "circ_supply": 20128764593.0,
    "total_supply": 42000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.030293683606346603,
+     "value": 0.030539562034685098,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 8.67693826577798,
+     "value": 8.804265890887846,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 31.870790093929585,
+     "value": 25.69768284153213,
      "level": "alert"
     },
     "float_ratio": {
@@ -2606,39 +2606,87 @@
    }
   },
   {
+   "ticker": "CARV",
+   "perp_symbol": "CARVUSDT",
+   "chain": "bsc",
+   "address": "0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+   "perp_onboard_date": "2025-08-07",
+   "is_new_perp": false,
+   "price": 0.0354888,
+   "mcap_usd": 27136480.443570517,
+   "fdv_usd": 35488800.0,
+   "fdv_to_mcap": 1.3077893455563583,
+   "oi_usd": 819337.01385848,
+   "perp_vol_24h_usd": 855779.65877,
+   "alpha_vol_24h_usd": 31877.100292446637,
+   "dex_liq_usd": 170202.01,
+   "dex_vol_24h_usd": 31784.12,
+   "funding_rate": 5e-05,
+   "circ_supply": 764649141.2380953,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.030193193828590495,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.813909153355357,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 26.924755468139438,
+     "level": "alert"
+    },
+    "float_ratio": {
+     "value": 0.7646491412380952,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 1,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CARVUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xc08cd26474722ce93f4d0c34d16201461c10aa8c",
+    "explorer": "https://bscscan.com/token/0xc08cd26474722ce93f4d0c34d16201461c10aa8c"
+   }
+  },
+  {
    "ticker": "SKR",
    "perp_symbol": "SKRUSDT",
    "chain": "solana",
    "address": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
    "perp_onboard_date": "2026-01-22",
    "is_new_perp": false,
-   "price": 0.01380338,
-   "mcap_usd": 69319374.16471492,
-   "fdv_usd": 147473478.58599412,
-   "fdv_to_mcap": 2.127449654054456,
-   "oi_usd": 2031749.03332544,
-   "perp_vol_24h_usd": 1393740.655836,
-   "alpha_vol_24h_usd": 94391.91273530715,
-   "dex_liq_usd": 599197.58,
-   "dex_vol_24h_usd": 37309.59,
+   "price": 0.013715,
+   "mcap_usd": 68874443.02612488,
+   "fdv_usd": 146529214.34296337,
+   "fdv_to_mcap": 2.127483111368075,
+   "oi_usd": 1997695.95938955,
+   "perp_vol_24h_usd": 1454024.99345,
+   "alpha_vol_24h_usd": 91988.40731296288,
+   "dex_liq_usd": 598801.8,
+   "dex_vol_24h_usd": 36216.16,
    "funding_rate": 5e-05,
-   "circ_supply": 5021913050.623465,
-   "total_supply": 10683867182.240446,
+   "circ_supply": 5021833250.17316,
+   "total_supply": 10683865427.850044,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.029309973695054576,
+     "value": 0.029004894582331513,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 3.3907831091798473,
+     "value": 3.336155568319183,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 37.35609680610267,
+     "value": 40.14851363175996,
      "level": "alert"
     },
     "float_ratio": {
-     "value": 0.4700463759949467,
+     "value": 0.4700389839320283,
      "level": "ok"
     }
    },
@@ -2660,33 +2708,33 @@
    "address": "0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf",
    "perp_onboard_date": "2025-01-29",
    "is_new_perp": false,
-   "price": 24.693,
-   "mcap_usd": 1208247529.0957255,
-   "fdv_usd": 2004717533.271087,
-   "fdv_to_mcap": 1.6591943993226737,
-   "oi_usd": 23419920.06528285,
-   "perp_vol_24h_usd": 27325155.20773,
-   "alpha_vol_24h_usd": 11100569.83413263,
-   "dex_liq_usd": 8596790.7,
-   "dex_vol_24h_usd": 905304.42,
+   "price": 25.61350521,
+   "mcap_usd": 1253324516.3193827,
+   "fdv_usd": 2079487531.1300743,
+   "fdv_to_mcap": 1.659177255414161,
+   "oi_usd": 25111231.36466,
+   "perp_vol_24h_usd": 29157826.91447,
+   "alpha_vol_24h_usd": 10637647.43925111,
+   "dex_liq_usd": 8565809.46,
+   "dex_vol_24h_usd": 869322.83,
    "funding_rate": 5e-05,
-   "circ_supply": 48930771.03210325,
-   "total_supply": 81185661.25100583,
+   "circ_supply": 48932174.88366492,
+   "total_supply": 81187151.62492491,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.01938337923422922,
+     "value": 0.020035697888048768,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.724263144534024,
+     "value": 2.9315654850744246,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 30.183388707778537,
+     "value": 33.540850312731344,
      "level": "alert"
     },
     "float_ratio": {
-     "value": 0.6027021308703947,
+     "value": 0.6027083584570846,
      "level": "ok"
     }
    },
@@ -2708,29 +2756,29 @@
    "address": "0x6f40d4a6237c257fff2db00fa0510deeecd303eb",
    "perp_onboard_date": "2025-09-24",
    "is_new_perp": false,
-   "price": 2.19894782,
-   "mcap_usd": 184045328.69864762,
-   "fdv_usd": 219894782.0,
+   "price": 2.196,
+   "mcap_usd": 183798605.01748067,
+   "fdv_usd": 219600000.00000003,
    "fdv_to_mcap": 1.1947859994863093,
-   "oi_usd": 1646633.8002,
-   "perp_vol_24h_usd": 1328256.5267,
-   "alpha_vol_24h_usd": 60590.21934143149,
-   "dex_liq_usd": 549365.93,
-   "dex_vol_24h_usd": 11494.1,
+   "oi_usd": 1642497.19124136,
+   "perp_vol_24h_usd": 1299908.8745,
+   "alpha_vol_24h_usd": 71379.52328081714,
+   "dex_liq_usd": 547637.99,
+   "dex_vol_24h_usd": 17833.29,
    "funding_rate": 5e-05,
    "circ_supply": 83696996.82034639,
    "total_supply": 100000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.008946892658689356,
+     "value": 0.008936396394766684,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.9973351281540155,
+     "value": 2.9992389520700713,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 115.55985476896842,
+     "value": 72.89226354194878,
      "level": "alert"
     },
     "float_ratio": {
@@ -2756,29 +2804,29 @@
    "address": "0x539ae81a166e5e80aed211731563e549c411b140",
    "perp_onboard_date": "2025-07-21",
    "is_new_perp": false,
-   "price": 0.06143822,
-   "mcap_usd": 26193723.900806442,
-   "fdv_usd": 61438220.0,
+   "price": 0.06289839,
+   "mcap_usd": 26816256.419298034,
+   "fdv_usd": 62898390.0,
    "fdv_to_mcap": 2.345532091300255,
-   "oi_usd": 6629915.51944442,
-   "perp_vol_24h_usd": 6156934.02007,
-   "alpha_vol_24h_usd": 560416.3275219911,
-   "dex_liq_usd": 253331.1,
-   "dex_vol_24h_usd": 552654.1,
+   "oi_usd": 6879375.80862881,
+   "perp_vol_24h_usd": 3742527.35146,
+   "alpha_vol_24h_usd": 409859.3029538596,
+   "dex_liq_usd": 256145.01,
+   "dex_vol_24h_usd": 403460.71,
    "funding_rate": 5e-05,
    "circ_supply": 426342493.3340589,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.25311084229762004,
+     "value": 0.256537515940448,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 26.170949873286066,
+     "value": 26.857348533273434,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 11.140664694372122,
+     "value": 9.27606396037919,
      "level": "warn"
     },
     "float_ratio": {
@@ -2804,29 +2852,29 @@
    "address": "0xaa036928c9c0df07d525b55ea8ee690bb5a628c1",
    "perp_onboard_date": "2025-10-03",
    "is_new_perp": false,
-   "price": 0.51518731,
-   "mcap_usd": 14204213.558582062,
-   "fdv_usd": 25759365.499999996,
-   "fdv_to_mcap": 1.8135017045302315,
-   "oi_usd": 3369777.6175306,
-   "perp_vol_24h_usd": 1344068.00402,
-   "alpha_vol_24h_usd": 111217.62502109066,
-   "dex_liq_usd": 123518.62,
-   "dex_vol_24h_usd": 99700.32,
-   "funding_rate": 0.00039572,
+   "price": 0.53209172,
+   "mcap_usd": 14670284.529394273,
+   "fdv_usd": 26604586.000000004,
+   "fdv_to_mcap": 1.8135017045302317,
+   "oi_usd": 3531980.51662,
+   "perp_vol_24h_usd": 2040408.24272,
+   "alpha_vol_24h_usd": 187545.1979694117,
+   "dex_liq_usd": 125563.34,
+   "dex_vol_24h_usd": 165891.38,
+   "funding_rate": 0.00015224,
    "circ_supply": 27570969.39864855,
    "total_supply": 50000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.23723788745027774,
+     "value": 0.2407574651700251,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 27.281535508821264,
+     "value": 28.129074271359777,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 13.48108014116705,
+     "value": 12.299664049572678,
      "level": "warn"
     },
     "float_ratio": {
@@ -2852,29 +2900,29 @@
    "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
    "perp_onboard_date": "2025-07-31",
    "is_new_perp": false,
-   "price": 0.01666,
-   "mcap_usd": 18263106.70028173,
-   "fdv_usd": 83300000.0,
-   "fdv_to_mcap": 4.561107886355118,
-   "oi_usd": 3973201.93336976,
-   "perp_vol_24h_usd": 12514439.05559,
-   "alpha_vol_24h_usd": 1309552.7572384374,
-   "dex_liq_usd": 312490.53,
-   "dex_vol_24h_usd": 1201448.34,
+   "price": 0.01579977,
+   "mcap_usd": 17320101.161459204,
+   "fdv_usd": 78998850.0,
+   "fdv_to_mcap": 4.561107886355117,
+   "oi_usd": 3662323.69135248,
+   "perp_vol_24h_usd": 5317486.17915,
+   "alpha_vol_24h_usd": 659798.584847342,
+   "dex_liq_usd": 304244.18,
+   "dex_vol_24h_usd": 611547.96,
    "funding_rate": 5e-05,
    "circ_supply": 1096224891.9736934,
    "total_supply": 5000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.2175534534498705,
+     "value": 0.2114493245283062,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 12.714631490975933,
+     "value": 12.03744864191808,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 10.41612746794423,
+     "value": 8.695125365392439,
      "level": "warn"
     },
     "float_ratio": {
@@ -2900,13 +2948,13 @@
    "address": "0x4b3d30992f003c8167699735f5ab2831b2a087d3",
    "perp_onboard_date": "2025-12-31",
    "is_new_perp": false,
-   "price": 0.02305563,
-   "mcap_usd": 12380873.31,
-   "fdv_usd": 69166890.0,
+   "price": 0.0238639,
+   "mcap_usd": 12814914.3,
+   "fdv_usd": 71591700.0,
    "fdv_to_mcap": 5.58659217877095,
-   "oi_usd": 4945307.2072,
-   "perp_vol_24h_usd": 2187978.16848,
-   "alpha_vol_24h_usd": 2508195.3797295853,
+   "oi_usd": 5157882.60284148,
+   "perp_vol_24h_usd": 3935674.43992,
+   "alpha_vol_24h_usd": 4786106.221973522,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -2914,7 +2962,7 @@
    "total_supply": 3000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.39943121001049964,
+     "value": 0.40249060447025226,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -2944,83 +2992,35 @@
    }
   },
   {
-   "ticker": "我踏马来了",
-   "perp_symbol": "我踏马来了USDT",
-   "chain": "bsc",
-   "address": "0xc51a9250795c0186a6fb4a7d20a90330651e4444",
-   "perp_onboard_date": "2026-01-21",
-   "is_new_perp": false,
-   "price": 0.00920196,
-   "mcap_usd": 9201960.0,
-   "fdv_usd": 9201960.0,
-   "fdv_to_mcap": 1.0,
-   "oi_usd": 3499641.1746,
-   "perp_vol_24h_usd": 842105.541072,
-   "alpha_vol_24h_usd": 266606.52193851594,
-   "dex_liq_usd": 862839.96,
-   "dex_vol_24h_usd": 134333.72,
-   "funding_rate": 5e-05,
-   "circ_supply": 1000000000.0,
-   "total_supply": 1000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.38031475626931655,
-     "level": "warn"
-    },
-    "oi_to_dex_liq": {
-     "value": 4.0559563034145985,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 6.268757695923258,
-     "level": "warn"
-    },
-    "float_ratio": {
-     "value": 1.0,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 2
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/我踏马来了USDT",
-    "dexscreener": "https://dexscreener.com/bsc/0xc51a9250795c0186a6fb4a7d20a90330651e4444",
-    "explorer": "https://bscscan.com/token/0xc51a9250795c0186a6fb4a7d20a90330651e4444"
-   }
-  },
-  {
    "ticker": "4",
    "perp_symbol": "4USDT",
    "chain": "bsc",
    "address": "0x0a43fc31a73013089df59194872ecae4cae14444",
    "perp_onboard_date": "2025-10-08",
    "is_new_perp": false,
-   "price": 0.011458,
-   "mcap_usd": 11458000.0,
-   "fdv_usd": 11458000.0,
+   "price": 0.012,
+   "mcap_usd": 12000000.0,
+   "fdv_usd": 12000000.0,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 4353486.09832224,
-   "perp_vol_24h_usd": 2071040.75685,
-   "alpha_vol_24h_usd": 189365.9759706129,
-   "dex_liq_usd": 1182376.12,
-   "dex_vol_24h_usd": 124417.03,
+   "oi_usd": 4562725.905616,
+   "perp_vol_24h_usd": 2006907.764435,
+   "alpha_vol_24h_usd": 180830.4907841234,
+   "dex_liq_usd": 1204707.96,
+   "dex_vol_24h_usd": 122449.92,
    "funding_rate": 5e-05,
    "circ_supply": 1000000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.37995165808363063,
+     "value": 0.38022715880133334,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 3.681980737501904,
+     "value": 3.787412432815668,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 16.6459588116675,
+     "value": 16.389620870597547,
      "level": "warn"
     },
     "float_ratio": {
@@ -3040,19 +3040,67 @@
    }
   },
   {
+   "ticker": "我踏马来了",
+   "perp_symbol": "我踏马来了USDT",
+   "chain": "bsc",
+   "address": "0xc51a9250795c0186a6fb4a7d20a90330651e4444",
+   "perp_onboard_date": "2026-01-21",
+   "is_new_perp": false,
+   "price": 0.009209,
+   "mcap_usd": 9209000.0,
+   "fdv_usd": 9209000.0,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 3471064.15826224,
+   "perp_vol_24h_usd": 768055.701112,
+   "alpha_vol_24h_usd": 237381.97945021902,
+   "dex_liq_usd": 863474.69,
+   "dex_vol_24h_usd": 114819.85,
+   "funding_rate": 5e-05,
+   "circ_supply": 1000000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.37692085549595394,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 4.019879445756818,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 6.689224041940483,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/我踏马来了USDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xc51a9250795c0186a6fb4a7d20a90330651e4444",
+    "explorer": "https://bscscan.com/token/0xc51a9250795c0186a6fb4a7d20a90330651e4444"
+   }
+  },
+  {
    "ticker": "BASED",
    "perp_symbol": "BASEDUSDT",
    "chain": "bsc",
    "address": "0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
    "perp_onboard_date": "2026-03-30",
    "is_new_perp": false,
-   "price": 0.05107387,
-   "mcap_usd": 12002359.45,
-   "fdv_usd": 51073870.0,
+   "price": 0.05255909,
+   "mcap_usd": 12351386.15,
+   "fdv_usd": 52559090.0,
    "fdv_to_mcap": 4.25531914893617,
-   "oi_usd": 3698072.5041,
-   "perp_vol_24h_usd": 2879380.66394,
-   "alpha_vol_24h_usd": 1607975.7601277856,
+   "oi_usd": 3776364.54777,
+   "perp_vol_24h_usd": 3163690.66035,
+   "alpha_vol_24h_usd": 1865449.550879336,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -3060,7 +3108,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3081121274117482,
+     "value": 0.3057441895110696,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -3096,29 +3144,29 @@
    "address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
    "perp_onboard_date": "2025-01-24",
    "is_new_perp": false,
-   "price": 0.01534431,
-   "mcap_usd": 15344252.50487043,
-   "fdv_usd": 15344252.50487043,
+   "price": 0.01535043,
+   "mcap_usd": 15350372.48193879,
+   "fdv_usd": 15350372.48193879,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 4641471.48723455,
-   "perp_vol_24h_usd": 1703613.55618,
-   "alpha_vol_24h_usd": 112204.20106383334,
-   "dex_liq_usd": 3582304.9,
-   "dex_vol_24h_usd": 111793.17,
-   "funding_rate": 5e-05,
+   "oi_usd": 4645715.72454346,
+   "perp_vol_24h_usd": 1602015.72959,
+   "alpha_vol_24h_usd": 103810.79693092199,
+   "dex_liq_usd": 3579663.06,
+   "dex_vol_24h_usd": 103777.29,
+   "funding_rate": 0.00043149,
    "circ_supply": 999996253.0,
    "total_supply": 999996253.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3024892535991113,
+     "value": 0.3026451462340472,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 1.295666230765156,
+     "value": 1.2978081027948647,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 15.238977087598466,
+     "value": 15.43705496250673,
      "level": "warn"
     },
     "float_ratio": {
@@ -3138,83 +3186,35 @@
    }
   },
   {
-   "ticker": "AVAAI",
-   "perp_symbol": "AVAAIUSDT",
-   "chain": "solana",
-   "address": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
-   "perp_onboard_date": "2025-01-17",
-   "is_new_perp": false,
-   "price": 0.00727291,
-   "mcap_usd": 7267025.994378647,
-   "fdv_usd": 7272880.375401155,
-   "fdv_to_mcap": 1.0008056089281967,
-   "oi_usd": 2133576.129839,
-   "perp_vol_24h_usd": 1451617.317779,
-   "alpha_vol_24h_usd": 75338.81405412988,
-   "dex_liq_usd": 1131079.1,
-   "dex_vol_24h_usd": 75059.4,
-   "funding_rate": 5e-05,
-   "circ_supply": 999190969.553954,
-   "total_supply": 999995926.72,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.29359687601082085,
-     "level": "warn"
-    },
-    "oi_to_dex_liq": {
-     "value": 1.8863191175922176,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 19.33958062253362,
-     "level": "warn"
-    },
-    "float_ratio": {
-     "value": 0.9991950395551247,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 2
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/AVAAIUSDT",
-    "dexscreener": "https://dexscreener.com/solana/DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
-    "explorer": "https://solscan.io/token/DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
-   }
-  },
-  {
    "ticker": "GRIFFAIN",
    "perp_symbol": "GRIFFAINUSDT",
    "chain": "solana",
    "address": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP",
    "perp_onboard_date": "2025-01-02",
    "is_new_perp": false,
-   "price": 0.01356305,
-   "mcap_usd": 13561437.624616,
-   "fdv_usd": 13561437.624616,
+   "price": 0.01341832,
+   "mcap_usd": 13416724.8301184,
+   "fdv_usd": 13416724.8301184,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 3674859.051738,
-   "perp_vol_24h_usd": 1896543.84157,
-   "alpha_vol_24h_usd": 202069.02868754824,
-   "dex_liq_usd": 1815381.76,
-   "dex_vol_24h_usd": 202158.45,
+   "oi_usd": 3599930.11674,
+   "perp_vol_24h_usd": 1890018.774689,
+   "alpha_vol_24h_usd": 193081.75695569156,
+   "dex_liq_usd": 1808434.84,
+   "dex_vol_24h_usd": 194046.87,
    "funding_rate": 5e-05,
    "circ_supply": 999881120.0,
    "total_supply": 999881120.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.270978575683421,
+     "value": 0.2683166094797393,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 2.0242899497558025,
+     "value": 1.990633025373477,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 9.381472016480142,
+     "value": 9.740011651252093,
      "level": "warn"
     },
     "float_ratio": {
@@ -3234,83 +3234,35 @@
    }
   },
   {
-   "ticker": "ON",
-   "perp_symbol": "ONUSDT",
-   "chain": "bsc",
-   "address": "0x0e4f6209ed984b21edea43ace6e09559ed051d48",
-   "perp_onboard_date": "2025-10-24",
-   "is_new_perp": false,
-   "price": 0.13,
-   "mcap_usd": 25521762.89,
-   "fdv_usd": 130000000.0,
-   "fdv_to_mcap": 5.093692021209747,
-   "oi_usd": 6192558.4751,
-   "perp_vol_24h_usd": 2721464.7042,
-   "alpha_vol_24h_usd": 1198436.1612328286,
-   "dex_liq_usd": 657119.47,
-   "dex_vol_24h_usd": 1200372.86,
-   "funding_rate": 5e-05,
-   "circ_supply": 196321253.0,
-   "total_supply": 1000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.24263835150378205,
-     "level": "warn"
-    },
-    "oi_to_dex_liq": {
-     "value": 9.423793933696714,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 2.2671828020170333,
-     "level": "ok"
-    },
-    "float_ratio": {
-     "value": 0.196321253,
-     "level": "warn"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 2
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/ONUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0x0e4f6209ed984b21edea43ace6e09559ed051d48",
-    "explorer": "https://bscscan.com/token/0x0e4f6209ed984b21edea43ace6e09559ed051d48"
-   }
-  },
-  {
    "ticker": "ARIA",
    "perp_symbol": "ARIAUSDT",
    "chain": "bsc",
    "address": "0x5d3a12c42e5372b2cc3264ab3cdcf660a1555238",
    "perp_onboard_date": "2025-09-03",
    "is_new_perp": false,
-   "price": 0.09018,
-   "mcap_usd": 41907075.42857143,
-   "fdv_usd": 90180000.0,
-   "fdv_to_mcap": 2.1519039226134358,
-   "oi_usd": 10148847.61512,
-   "perp_vol_24h_usd": 87644457.08984,
-   "alpha_vol_24h_usd": 8722923.19813031,
-   "dex_liq_usd": 1573973.59,
-   "dex_vol_24h_usd": 8584682.26,
-   "funding_rate": 5e-05,
+   "price": 0.08656739,
+   "mcap_usd": 40228278.358666666,
+   "fdv_usd": 86567390.0,
+   "fdv_to_mcap": 2.151903922613436,
+   "oi_usd": 9771042.09842,
+   "perp_vol_24h_usd": 62157404.59443,
+   "alpha_vol_24h_usd": 7533490.763683484,
+   "dex_liq_usd": 1556986.25,
+   "dex_vol_24h_usd": 7384818.54,
+   "funding_rate": 0.00015658,
    "circ_supply": 464704761.90476197,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.24217503873345242,
+     "value": 0.2428898898258457,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 6.447914805940295,
+     "value": 6.2756123237568735,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 10.209400235838197,
+     "value": 8.416916984182254,
      "level": "warn"
     },
     "float_ratio": {
@@ -3332,40 +3284,40 @@
    }
   },
   {
-   "ticker": "IN",
-   "perp_symbol": "INUSDT",
+   "ticker": "ON",
+   "perp_symbol": "ONUSDT",
    "chain": "bsc",
-   "address": "0x61fac5f038515572d6f42d4bcb6b581642753d50",
-   "perp_onboard_date": "2025-08-07",
+   "address": "0x0e4f6209ed984b21edea43ace6e09559ed051d48",
+   "perp_onboard_date": "2025-10-24",
    "is_new_perp": false,
-   "price": 0.02979,
-   "mcap_usd": 13892540.436120756,
-   "fdv_usd": 29790000.0,
-   "fdv_to_mcap": 2.144316234815173,
-   "oi_usd": 3264398.83575,
-   "perp_vol_24h_usd": 11490605.76735,
-   "alpha_vol_24h_usd": 1647641.8641907102,
-   "dex_liq_usd": 1047785.01,
-   "dex_vol_24h_usd": 1632809.99,
+   "price": 0.1293,
+   "mcap_usd": 25384338.0129,
+   "fdv_usd": 129300000.0,
+   "fdv_to_mcap": 5.093692021209747,
+   "oi_usd": 6155818.496,
+   "perp_vol_24h_usd": 2206485.6825,
+   "alpha_vol_24h_usd": 907053.6990248428,
+   "dex_liq_usd": 654107.08,
+   "dex_vol_24h_usd": 907449.47,
    "funding_rate": 5e-05,
-   "circ_supply": 466349125.0795823,
+   "circ_supply": 196321253.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.23497493858376886,
+     "value": 0.2425045905420772,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 3.1155235135020685,
+     "value": 9.411025632072352,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 7.037319613257633,
-     "level": "warn"
+     "value": 2.431524570177996,
+     "level": "ok"
     },
     "float_ratio": {
-     "value": 0.46634912507958226,
-     "level": "ok"
+     "value": 0.196321253,
+     "level": "warn"
     }
    },
    "cond_level": {
@@ -3374,59 +3326,9 @@
    },
    "flags": [],
    "links": {
-    "binance_futures": "https://www.binance.com/en/futures/INUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0x61fac5f038515572d6f42d4bcb6b581642753d50",
-    "explorer": "https://bscscan.com/token/0x61fac5f038515572d6f42d4bcb6b581642753d50"
-   }
-  },
-  {
-   "ticker": "BILL",
-   "perp_symbol": "BILLUSDT",
-   "chain": "bsc",
-   "address": "0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5",
-   "perp_onboard_date": "2026-05-07",
-   "is_new_perp": false,
-   "price": 0.00599213,
-   "mcap_usd": 14550056.77372572,
-   "fdv_usd": 59921300.0,
-   "fdv_to_mcap": 4.118286336050936,
-   "oi_usd": 3284842.12010006,
-   "perp_vol_24h_usd": 4632713.962672,
-   "alpha_vol_24h_usd": 67214.75681392202,
-   "dex_liq_usd": 0.0,
-   "dex_vol_24h_usd": 0.0,
-   "funding_rate": 5e-05,
-   "circ_supply": 2428194444.0,
-   "total_supply": 10000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.22576146410863357,
-     "level": "warn"
-    },
-    "oi_to_dex_liq": {
-     "value": null,
-     "level": "na"
-    },
-    "perp_to_spot_vol": {
-     "value": null,
-     "level": "na"
-    },
-    "float_ratio": {
-     "value": 0.2428194444,
-     "level": "warn"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 2
-   },
-   "flags": [
-    "no_dex_liq"
-   ],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/BILLUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5",
-    "explorer": "https://bscscan.com/token/0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5"
+    "binance_futures": "https://www.binance.com/en/futures/ONUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x0e4f6209ed984b21edea43ace6e09559ed051d48",
+    "explorer": "https://bscscan.com/token/0x0e4f6209ed984b21edea43ace6e09559ed051d48"
    }
   },
   {
@@ -3436,21 +3338,21 @@
    "address": "0x45f55b46689402583073ff227b6ac20520052a24",
    "perp_onboard_date": "2026-01-30",
    "is_new_perp": false,
-   "price": 0.00462718,
-   "mcap_usd": 9227985.074,
-   "fdv_usd": 46271800.0,
-   "fdv_to_mcap": 5.0142907285764435,
-   "oi_usd": 2054403.11351448,
-   "perp_vol_24h_usd": 2910436.722516,
-   "alpha_vol_24h_usd": 4944.561379981889,
+   "price": 0.004912,
+   "mcap_usd": 9796001.6,
+   "fdv_usd": 49120000.0,
+   "fdv_to_mcap": 5.014290728576443,
+   "oi_usd": 2310106.211884,
+   "perp_vol_24h_usd": 4158426.847661,
+   "alpha_vol_24h_usd": 4822.5052515153175,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 5e-05,
+   "funding_rate": 0.00015833,
    "circ_supply": 1994300000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.22262748552799405,
+     "value": 0.23582133876784994,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -3480,39 +3382,89 @@
    }
   },
   {
-   "ticker": "BIRB",
-   "perp_symbol": "BIRBUSDT",
-   "chain": "solana",
-   "address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-   "perp_onboard_date": "2026-01-29",
+   "ticker": "BILL",
+   "perp_symbol": "BILLUSDT",
+   "chain": "bsc",
+   "address": "0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5",
+   "perp_onboard_date": "2026-05-07",
    "is_new_perp": false,
-   "price": 0.0782194,
-   "mcap_usd": 22292529.0,
-   "fdv_usd": 78219400.0,
-   "fdv_to_mcap": 3.508771929824561,
-   "oi_usd": 4803252.3447,
-   "perp_vol_24h_usd": 42001668.22625,
-   "alpha_vol_24h_usd": 4852700.868906162,
-   "dex_liq_usd": 788784.96,
-   "dex_vol_24h_usd": 4704165.32,
-   "funding_rate": -0.00442548,
-   "circ_supply": 285000000.0,
-   "total_supply": 1000000000.0,
+   "price": 0.00583094,
+   "mcap_usd": 14158656.11129736,
+   "fdv_usd": 58309400.0,
+   "fdv_to_mcap": 4.118286336050936,
+   "oi_usd": 3223200.97299328,
+   "perp_vol_24h_usd": 4277671.220576,
+   "alpha_vol_24h_usd": 61171.8987228698,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
+   "funding_rate": 5e-05,
+   "circ_supply": 2428194444.0,
+   "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.21546466731971056,
+     "value": 0.2276487929120229,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 6.089431959630671,
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.2428194444,
+     "level": "warn"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 2
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BILLUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5",
+    "explorer": "https://bscscan.com/token/0xdf24f8c21cb404b3031a450d8e049d6e39fc1fa5"
+   }
+  },
+  {
+   "ticker": "IN",
+   "perp_symbol": "INUSDT",
+   "chain": "bsc",
+   "address": "0x61fac5f038515572d6f42d4bcb6b581642753d50",
+   "perp_onboard_date": "2025-08-07",
+   "is_new_perp": false,
+   "price": 0.03026,
+   "mcap_usd": 14132865.072853364,
+   "fdv_usd": 30260000.0,
+   "fdv_to_mcap": 2.1411086742860013,
+   "oi_usd": 3207542.67333884,
+   "perp_vol_24h_usd": 10240728.17024,
+   "alpha_vol_24h_usd": 1640433.5496272936,
+   "dex_liq_usd": 1056984.21,
+   "dex_vol_24h_usd": 1627555.32,
+   "funding_rate": 5e-05,
+   "circ_supply": 467047755.2165686,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.22695629349069069,
+     "level": "warn"
+    },
+    "oi_to_dex_liq": {
+     "value": 3.0346173982474536,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 8.9286122763751,
+     "value": 6.292092222241638,
      "level": "warn"
     },
     "float_ratio": {
-     "value": 0.285,
+     "value": 0.4670477552165686,
      "level": "ok"
     }
    },
@@ -3522,9 +3474,9 @@
    },
    "flags": [],
    "links": {
-    "binance_futures": "https://www.binance.com/en/futures/BIRBUSDT",
-    "dexscreener": "https://dexscreener.com/solana/G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
-    "explorer": "https://solscan.io/token/G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+    "binance_futures": "https://www.binance.com/en/futures/INUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0x61fac5f038515572d6f42d4bcb6b581642753d50",
+    "explorer": "https://bscscan.com/token/0x61fac5f038515572d6f42d4bcb6b581642753d50"
    }
   },
   {
@@ -3534,33 +3486,33 @@
    "address": "0xb9e1fd5a02d3a33b25a14d661414e6ed6954a721",
    "perp_onboard_date": "2025-05-23",
    "is_new_perp": false,
-   "price": 0.30265934,
-   "mcap_usd": 189860016.49075013,
-   "fdv_usd": 302195130.56340665,
-   "fdv_to_mcap": 1.5916733609792424,
-   "oi_usd": 14590042.7494189,
-   "perp_vol_24h_usd": 27982112.9664,
-   "alpha_vol_24h_usd": 3429186.434838941,
-   "dex_liq_usd": 676401.81,
-   "dex_vol_24h_usd": 3424427.42,
-   "funding_rate": 5e-05,
-   "circ_supply": 627305988.61,
+   "price": 0.3053,
+   "mcap_usd": 191523852.550639,
+   "fdv_usd": 304831740.40162796,
+   "fdv_to_mcap": 1.5916124093265631,
+   "oi_usd": 14666514.4892,
+   "perp_vol_24h_usd": 14470944.2735,
+   "alpha_vol_24h_usd": 1805319.3473908762,
+   "dex_liq_usd": 679952.33,
+   "dex_vol_24h_usd": 1751395.69,
+   "funding_rate": 5.226e-05,
+   "circ_supply": 627330011.63,
    "total_supply": 998466231.2532852,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.07684631561237495,
+     "value": 0.07657800474393739,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 21.57008235891459,
+     "value": 21.569915775125,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 8.171326045041422,
+     "value": 8.262521345761677,
      "level": "warn"
     },
     "float_ratio": {
-     "value": 0.6282696089006425,
+     "value": 0.6282936688229995,
      "level": "ok"
     }
    },
@@ -3582,29 +3534,29 @@
    "address": "0x1b379a79c91a540b2bcd612b4d713f31de1b80cc",
    "perp_onboard_date": "2025-07-31",
    "is_new_perp": false,
-   "price": 0.02948392,
-   "mcap_usd": 56483791.338105366,
-   "fdv_usd": 117935680.0,
-   "fdv_to_mcap": 2.0879561588571636,
-   "oi_usd": 4074924.74406255,
-   "perp_vol_24h_usd": 922914.0935,
-   "alpha_vol_24h_usd": 67706.41530587302,
-   "dex_liq_usd": 47357.94,
-   "dex_vol_24h_usd": 67799.61,
+   "price": 0.02960027,
+   "mcap_usd": 56706688.73852528,
+   "fdv_usd": 118401080.0,
+   "fdv_to_mcap": 2.087956158857163,
+   "oi_usd": 4096627.64072,
+   "perp_vol_24h_usd": 781332.46337,
+   "alpha_vol_24h_usd": 70517.16906086728,
+   "dex_liq_usd": 48142.27,
+   "dex_vol_24h_usd": 70060.42,
    "funding_rate": 5e-05,
    "circ_supply": 1915749036.69883,
    "total_supply": 4000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.07214325822554168,
+     "value": 0.0722424061755671,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 86.04522798209867,
+     "value": 85.09419353761258,
      "level": "warn"
     },
     "perp_to_spot_vol": {
-     "value": 13.612380565315936,
+     "value": 11.15226633482928,
      "level": "warn"
     },
     "float_ratio": {
@@ -3630,29 +3582,29 @@
    "address": "0x7427bd9542e64d1ac207a540cfce194b7390a07f",
    "perp_onboard_date": "2025-09-29",
    "is_new_perp": false,
-   "price": 0.00783875,
-   "mcap_usd": 19596875.0,
-   "fdv_usd": 78387500.0,
+   "price": 0.0077,
+   "mcap_usd": 19250000.0,
+   "fdv_usd": 77000000.0,
    "fdv_to_mcap": 4.0,
-   "oi_usd": 1254894.69239904,
-   "perp_vol_24h_usd": 1543773.901932,
-   "alpha_vol_24h_usd": 271455.63805976463,
-   "dex_liq_usd": 376753.84,
-   "dex_vol_24h_usd": 271832.48,
-   "funding_rate": 0.00018823,
+   "oi_usd": 1225644.7747622,
+   "perp_vol_24h_usd": 1342328.501455,
+   "alpha_vol_24h_usd": 260985.88993362396,
+   "dex_liq_usd": 373551.72,
+   "dex_vol_24h_usd": 261389.9,
+   "funding_rate": 7.024e-05,
    "circ_supply": 2500000000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06403544914171469,
+     "value": 0.0636698584292052,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 3.330807968404622,
+     "value": 3.281057773638949,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 5.679137025612245,
+     "value": 5.135349535138886,
      "level": "warn"
     },
     "float_ratio": {
@@ -3678,29 +3630,29 @@
    "address": "0x500a02a20b0b0a3f3efccfc0559543f5743bd1c4",
    "perp_onboard_date": "2026-06-24",
    "is_new_perp": false,
-   "price": 0.4239656,
-   "mcap_usd": 72074152.0,
-   "fdv_usd": 423965600.0,
+   "price": 0.42690789,
+   "mcap_usd": 72574341.3,
+   "fdv_usd": 426907890.0,
    "fdv_to_mcap": 5.882352941176471,
-   "oi_usd": 3887610.28832796,
-   "perp_vol_24h_usd": 1505561.6622,
-   "alpha_vol_24h_usd": 173357.79451047073,
-   "dex_liq_usd": 2113025.49,
-   "dex_vol_24h_usd": 151804.29,
+   "oi_usd": 3922734.9259,
+   "perp_vol_24h_usd": 1219031.7425,
+   "alpha_vol_24h_usd": 157579.61801144472,
+   "dex_liq_usd": 2124781.18,
+   "dex_vol_24h_usd": 133692.01,
    "funding_rate": 5e-05,
    "circ_supply": 170000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.05393903612390694,
+     "value": 0.05405126461547368,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.8398312309653961,
+     "value": 1.8461830153729053,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 9.917780730702669,
+     "value": 9.118209401594006,
      "level": "warn"
     },
     "float_ratio": {
@@ -3726,29 +3678,29 @@
    "address": "0x2c3a8ee94ddd97244a93bc48298f97d2c412f7db",
    "perp_onboard_date": "2025-09-26",
    "is_new_perp": false,
-   "price": 0.030919,
-   "mcap_usd": 704837253.75,
-   "fdv_usd": 3091900000.0,
+   "price": 0.02933703,
+   "mcap_usd": 668774270.1375,
+   "fdv_usd": 2933703000.0,
    "fdv_to_mcap": 4.386686406755497,
-   "oi_usd": 15122514.69432,
-   "perp_vol_24h_usd": 24736676.707609,
-   "alpha_vol_24h_usd": 2536295.646382468,
-   "dex_liq_usd": 2652590.06,
-   "dex_vol_24h_usd": 2412768.41,
+   "oi_usd": 13848633.54408133,
+   "perp_vol_24h_usd": 24317101.33538,
+   "alpha_vol_24h_usd": 2261811.04016589,
+   "dex_liq_usd": 2616485.52,
+   "dex_vol_24h_usd": 2154781.01,
    "funding_rate": 5e-05,
    "circ_supply": 22796250000.0,
    "total_supply": 100000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.02145532832418054,
+     "value": 0.020707485563453344,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 5.701037232387126,
+     "value": 5.292837830832456,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 10.252404086975343,
+     "value": 11.285184537327996,
      "level": "warn"
     },
     "float_ratio": {
@@ -3774,29 +3726,29 @@
    "address": "0x6261963ebe9ff014aad10ecc3b0238d4d04e8353",
    "perp_onboard_date": "2025-09-26",
    "is_new_perp": false,
-   "price": 0.01300263,
-   "mcap_usd": 11818547.461603252,
-   "fdv_usd": 13002630.0,
+   "price": 0.01356,
+   "mcap_usd": 12325160.646679949,
+   "fdv_usd": 13560000.0,
    "fdv_to_mcap": 1.1001884996649258,
-   "oi_usd": 5231696.1799124,
-   "perp_vol_24h_usd": 1750765.84942,
-   "alpha_vol_24h_usd": 1051486.0207626044,
-   "dex_liq_usd": 892713.62,
-   "dex_vol_24h_usd": 1051743.67,
+   "oi_usd": 5463401.62572,
+   "perp_vol_24h_usd": 3016597.61062,
+   "alpha_vol_24h_usd": 1688171.7403833163,
+   "dex_liq_usd": 914248.79,
+   "dex_vol_24h_usd": 1689846.53,
    "funding_rate": 5e-05,
    "circ_supply": 908935150.9350995,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.44266828871394076,
+     "value": 0.4432722446657672,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 5.860441761729143,
+     "value": 5.975836867905507,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.664631696257321,
+     "value": 1.7851311092848177,
      "level": "ok"
     },
     "float_ratio": {
@@ -3822,13 +3774,13 @@
    "address": "0xb0b92de23baa85fb06208277e925ced53edab482",
    "perp_onboard_date": "2026-02-06",
    "is_new_perp": false,
-   "price": 0.002888,
-   "mcap_usd": 8816408.965499999,
-   "fdv_usd": 28880000.0,
+   "price": 0.0030367,
+   "mcap_usd": 9270356.33848125,
+   "fdv_usd": 30367000.0,
    "fdv_to_mcap": 3.2757101120208922,
-   "oi_usd": 3331705.6045738,
-   "perp_vol_24h_usd": 5144806.22159,
-   "alpha_vol_24h_usd": 53815.38127463902,
+   "oi_usd": 3689474.46503406,
+   "perp_vol_24h_usd": 9662391.482926,
+   "alpha_vol_24h_usd": 124787.32358832117,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -3836,7 +3788,7 @@
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3778982596668656,
+     "value": 0.3979862618353786,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -3872,21 +3824,21 @@
    "address": "0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
    "perp_onboard_date": "2025-07-15",
    "is_new_perp": false,
-   "price": 0.00111438,
-   "mcap_usd": 6859126.382397121,
-   "fdv_usd": 11286414.44984124,
-   "fdv_to_mcap": 1.6454594682503685,
-   "oi_usd": 2211307.858534,
-   "perp_vol_24h_usd": 1265559.240304,
-   "alpha_vol_24h_usd": 722046.5800963239,
+   "price": 0.00113078,
+   "mcap_usd": 6960140.5713833,
+   "fdv_usd": 11452583.723310241,
+   "fdv_to_mcap": 1.6454529338671224,
+   "oi_usd": 2261043.53379153,
+   "perp_vol_24h_usd": 1120286.186108,
+   "alpha_vol_24h_usd": 601471.5254594524,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 6.155e-05,
-   "circ_supply": 6155105424.0,
-   "total_supply": 10127976498.0,
+   "funding_rate": 0.00031291,
+   "circ_supply": 6155167735.0,
+   "total_supply": 10128038808.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3223891404317869,
+     "value": 0.32485601556494953,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -3898,7 +3850,7 @@
      "level": "na"
     },
     "float_ratio": {
-     "value": 0.6077329884420117,
+     "value": 0.6077354018566868,
      "level": "ok"
     }
    },
@@ -3922,13 +3874,13 @@
    "address": "0xa5c8e1513b6a08334b479fe4d71f1253259469be",
    "perp_onboard_date": "2025-12-21",
    "is_new_perp": false,
-   "price": 0.03121411,
-   "mcap_usd": 10867823.319999998,
-   "fdv_usd": 31214110.0,
+   "price": 0.03107,
+   "mcap_usd": 10817648.510638297,
+   "fdv_usd": 31070000.0,
    "fdv_to_mcap": 2.8721583964800788,
-   "oi_usd": 3441156.07819911,
-   "perp_vol_24h_usd": 606030.27582,
-   "alpha_vol_24h_usd": 726351.7973797616,
+   "oi_usd": 3415832.50658,
+   "perp_vol_24h_usd": 563506.63385,
+   "alpha_vol_24h_usd": 582250.5617008817,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -3936,7 +3888,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.31663710173373616,
+     "value": 0.3157647896602298,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -3972,21 +3924,21 @@
    "address": "0xb2d97c4ed2d0ef452654f5cab3da3735b5e6f3ab",
    "perp_onboard_date": "2026-01-23",
    "is_new_perp": false,
-   "price": 0.003645,
-   "mcap_usd": 11493140.625,
-   "fdv_usd": 36450000.0,
+   "price": 0.003704,
+   "mcap_usd": 11679175.0,
+   "fdv_usd": 37040000.0,
    "fdv_to_mcap": 3.1714568880079286,
-   "oi_usd": 3598784.176664,
-   "perp_vol_24h_usd": 2518132.544622,
-   "alpha_vol_24h_usd": 579099.3466909679,
+   "oi_usd": 3621287.78160084,
+   "perp_vol_24h_usd": 2124819.236543,
+   "alpha_vol_24h_usd": 554848.0426059237,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 0.00018458,
+   "funding_rate": 0.00016398,
    "circ_supply": 3153125000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.3131245230599447,
+     "value": 0.31006366302421534,
      "level": "warn"
     },
     "oi_to_dex_liq": {
@@ -4022,29 +3974,29 @@
    "address": "0x53ec33cd4fa46b9eced9ca3f6db626c5ffcd55cc",
    "perp_onboard_date": "2026-01-20",
    "is_new_perp": false,
-   "price": 0.07433851,
-   "mcap_usd": 21230998.37151821,
-   "fdv_usd": 74338510.0,
-   "fdv_to_mcap": 3.5014137676976382,
-   "oi_usd": 6210790.08290111,
-   "perp_vol_24h_usd": 3048173.65263,
-   "alpha_vol_24h_usd": 1332515.9628413455,
-   "dex_liq_usd": 719313.21,
-   "dex_vol_24h_usd": 1334826.95,
+   "price": 0.072324,
+   "mcap_usd": 20655656.485739127,
+   "fdv_usd": 72324000.0,
+   "fdv_to_mcap": 3.5014137676976387,
+   "oi_usd": 6050499.4668,
+   "perp_vol_24h_usd": 3127750.66176,
+   "alpha_vol_24h_usd": 1420896.8472951197,
+   "dex_liq_usd": 710279.86,
+   "dex_vol_24h_usd": 1416353.1,
    "funding_rate": 5e-05,
    "circ_supply": 285598922.705314,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.2925340567701707,
+     "value": 0.2929221577139088,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 8.634333412146164,
+     "value": 8.518472517016038,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.283572153401608,
+     "value": 2.208312787086779,
      "level": "ok"
     },
     "float_ratio": {
@@ -4072,33 +4024,33 @@
    "address": "0xfed13d0c40790220fbde712987079eda1ed75c51",
    "perp_onboard_date": "2025-08-27",
    "is_new_perp": false,
-   "price": 0.05225,
-   "mcap_usd": 25148686.979166664,
-   "fdv_usd": 52250000.0,
-   "fdv_to_mcap": 2.077643259995412,
-   "oi_usd": 7096135.90170249,
-   "perp_vol_24h_usd": 6984144.17842,
-   "alpha_vol_24h_usd": 1818387.38970079,
-   "dex_liq_usd": 566709.37,
-   "dex_vol_24h_usd": 1814929.91,
-   "funding_rate": 5e-05,
-   "circ_supply": 481314583.3333333,
+   "price": 0.05352233,
+   "mcap_usd": 26703182.475833334,
+   "fdv_usd": 53522330.0,
+   "fdv_to_mcap": 2.004342742608986,
+   "oi_usd": 7322340.62092,
+   "perp_vol_24h_usd": 6918253.99839,
+   "alpha_vol_24h_usd": 1806696.504361488,
+   "dex_liq_usd": 573278.62,
+   "dex_vol_24h_usd": 1803055.92,
+   "funding_rate": 0.00016704,
+   "circ_supply": 498916666.6666667,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.28216725221404104,
+     "value": 0.27421228265757447,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 12.521649150961611,
+     "value": 12.772743244672197,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 3.84816192622006,
+     "value": 3.8369603081362005,
      "level": "ok"
     },
     "float_ratio": {
-     "value": 0.4813145833333333,
+     "value": 0.4989166666666667,
      "level": "ok"
     }
    },
@@ -4120,29 +4072,29 @@
    "address": "0x3b4de3c7855c03bb9f50ea252cd2c9fa1125ab07",
    "perp_onboard_date": "2025-07-04",
    "is_new_perp": false,
-   "price": 0.00801153,
-   "mcap_usd": 15127188.546532767,
-   "fdv_usd": 38455344.0,
+   "price": 0.00801951,
+   "mcap_usd": 15142256.200851148,
+   "fdv_usd": 38493648.0,
    "fdv_to_mcap": 2.5421342427052758,
-   "oi_usd": 4075160.249545,
-   "perp_vol_24h_usd": 840439.567698,
-   "alpha_vol_24h_usd": 460034.8463969218,
-   "dex_liq_usd": 734003.57,
-   "dex_vol_24h_usd": 460899.56,
-   "funding_rate": 6.011e-05,
+   "oi_usd": 4056526.624182,
+   "perp_vol_24h_usd": 779444.283813,
+   "alpha_vol_24h_usd": 475581.3574400619,
+   "dex_liq_usd": 734391.82,
+   "dex_vol_24h_usd": 475274.08,
+   "funding_rate": 5e-05,
    "circ_supply": 1888177232.879708,
    "total_supply": 4800000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.26939310216233464,
+     "value": 0.26789446502390984,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 5.551962437382969,
+     "value": 5.5236544222156505,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.8234766110386393,
+     "value": 1.6399890434020723,
      "level": "ok"
     },
     "float_ratio": {
@@ -4168,29 +4120,29 @@
    "address": "0x477c2c0459004e3354ba427fa285d7c053203c0e",
    "perp_onboard_date": "2025-09-27",
    "is_new_perp": false,
-   "price": 0.27477984,
-   "mcap_usd": 33707468.13961332,
-   "fdv_usd": 115407532.8,
-   "fdv_to_mcap": 3.4237971336794653,
-   "oi_usd": 7229855.01032529,
-   "perp_vol_24h_usd": 22402212.7409,
-   "alpha_vol_24h_usd": 8179387.455730086,
-   "dex_liq_usd": 1597389.87,
-   "dex_vol_24h_usd": 8144603.41,
+   "price": 0.2604,
+   "mcap_usd": 31943481.383333325,
+   "fdv_usd": 109368000.00000001,
+   "fdv_to_mcap": 3.4237971336794657,
+   "oi_usd": 6727186.03812024,
+   "perp_vol_24h_usd": 15378355.4107,
+   "alpha_vol_24h_usd": 5861874.306332747,
+   "dex_liq_usd": 1523059.22,
+   "dex_vol_24h_usd": 5781755.38,
    "funding_rate": 5e-05,
    "circ_supply": 122670819.4444444,
    "total_supply": 420000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.21448822499452871,
+     "value": 0.21059652069201773,
      "level": "warn"
     },
     "oi_to_dex_liq": {
-     "value": 4.526042856604124,
+     "value": 4.4168906565039805,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.750559065085282,
+     "value": 2.6598073422296884,
      "level": "ok"
     },
     "float_ratio": {
@@ -4210,35 +4162,83 @@
    }
   },
   {
+   "ticker": "BIRB",
+   "perp_symbol": "BIRBUSDT",
+   "chain": "solana",
+   "address": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "perp_onboard_date": "2026-01-29",
+   "is_new_perp": false,
+   "price": 0.06981117,
+   "mcap_usd": 19896183.450000003,
+   "fdv_usd": 69811170.0,
+   "fdv_to_mcap": 3.5087719298245608,
+   "oi_usd": 3943768.5263095,
+   "perp_vol_24h_usd": 38257997.17413,
+   "alpha_vol_24h_usd": 3914613.7568198144,
+   "dex_liq_usd": 762943.94,
+   "dex_vol_24h_usd": 3777390.74,
+   "funding_rate": -0.00056717,
+   "circ_supply": 285000000.0,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.1982173383262356,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.169145882867227,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 10.12815454038255,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.285,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/BIRBUSDT",
+    "dexscreener": "https://dexscreener.com/solana/G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+    "explorer": "https://solscan.io/token/G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+   }
+  },
+  {
    "ticker": "MYX",
    "perp_symbol": "MYXUSDT",
    "chain": "bsc",
    "address": "0xd82544bf0dfe8385ef8fa34d67e6e4940cc63e16",
    "perp_onboard_date": "2025-06-18",
    "is_new_perp": false,
-   "price": 0.05783,
-   "mcap_usd": 23305148.247832,
-   "fdv_usd": 57830000.0,
-   "fdv_to_mcap": 2.481425965843394,
-   "oi_usd": 4319227.33828,
-   "perp_vol_24h_usd": 2218692.46232,
-   "alpha_vol_24h_usd": 163929.5818398434,
-   "dex_liq_usd": 219063.79,
-   "dex_vol_24h_usd": 158068.35,
+   "price": 0.05800353,
+   "mcap_usd": 23375079.81233911,
+   "fdv_usd": 58003530.0,
+   "fdv_to_mcap": 2.4814259658433944,
+   "oi_usd": 4334325.5678,
+   "perp_vol_24h_usd": 1928884.34567,
+   "alpha_vol_24h_usd": 161706.44606450014,
+   "dex_liq_usd": 219985.05,
+   "dex_vol_24h_usd": 156102.5,
    "funding_rate": 5e-05,
    "circ_supply": 402994090.4,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.18533361351527997,
+     "value": 0.18542505961892033,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 19.716756193618306,
+     "value": 19.702818749728678,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 14.036285330491523,
+     "value": 12.356524371294501,
      "level": "warn"
     },
     "float_ratio": {
@@ -4264,33 +4264,33 @@
    "address": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
    "perp_onboard_date": "2025-01-17",
    "is_new_perp": false,
-   "price": 0.05371,
-   "mcap_usd": 53709035.41660913,
-   "fdv_usd": 53709909.71349,
-   "fdv_to_mcap": 1.0000162783947633,
-   "oi_usd": 9716490.39265,
-   "perp_vol_24h_usd": 6530870.95354,
-   "alpha_vol_24h_usd": 1079079.8526392088,
-   "dex_liq_usd": 4070460.22,
-   "dex_vol_24h_usd": 1056826.74,
+   "price": 0.05242376,
+   "mcap_usd": 52422818.511016965,
+   "fdv_usd": 52423671.87565944,
+   "fdv_to_mcap": 1.0000162784960198,
+   "oi_usd": 9498382.29223828,
+   "perp_vol_24h_usd": 5193790.80791,
+   "alpha_vol_24h_usd": 870148.496930192,
+   "dex_liq_usd": 4022915.51,
+   "dex_vol_24h_usd": 853199.31,
    "funding_rate": 5e-05,
-   "circ_supply": 999982040.897582,
+   "circ_supply": 999982040.796329,
    "total_supply": 999998319.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1809097913839139,
+     "value": 0.18118793613208986,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.3870741556221375,
+     "value": 2.3610692962921016,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 6.179698815663957,
+     "value": 6.087429686165592,
      "level": "warn"
     },
     "float_ratio": {
-     "value": 0.9999837218702186,
+     "value": 0.9999837217689653,
      "level": "ok"
     }
    },
@@ -4312,21 +4312,21 @@
    "address": "0x0a092e544da31150b439a1aaa1a3a2214a867f46",
    "perp_onboard_date": "2026-10-01",
    "is_new_perp": false,
-   "price": 0.16679359,
-   "mcap_usd": 31690782.099999998,
-   "fdv_usd": 166793590.0,
+   "price": 0.16894,
+   "mcap_usd": 32098600.0,
+   "fdv_usd": 168940000.0,
    "fdv_to_mcap": 5.2631578947368425,
-   "oi_usd": 5352561.838528,
-   "perp_vol_24h_usd": 20725592.55731,
-   "alpha_vol_24h_usd": 2549266.59125543,
+   "oi_usd": 5696738.39943085,
+   "perp_vol_24h_usd": 40604599.97659,
+   "alpha_vol_24h_usd": 5395458.641476086,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": -0.00097041,
+   "funding_rate": -0.00091586,
    "circ_supply": 190000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.16889964474963212,
+     "value": 0.17747622635974308,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -4362,33 +4362,33 @@
    "address": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
    "perp_onboard_date": "2025-01-02",
    "is_new_perp": false,
-   "price": 0.03079617,
-   "mcap_usd": 30794496.19175216,
-   "fdv_usd": 30796170.0,
-   "fdv_to_mcap": 1.0000543541364475,
-   "oi_usd": 4965148.93588736,
-   "perp_vol_24h_usd": 4607373.88759,
-   "alpha_vol_24h_usd": 562576.5731415297,
-   "dex_liq_usd": 3046735.88,
-   "dex_vol_24h_usd": 560365.37,
-   "funding_rate": 0.00023653,
-   "circ_supply": 999945648.817764,
+   "price": 0.0295399,
+   "mcap_usd": 29538294.470537376,
+   "fdv_usd": 29539900.0,
+   "fdv_to_mcap": 1.0000543541694402,
+   "oi_usd": 4661548.131501,
+   "perp_vol_24h_usd": 3818821.391205,
+   "alpha_vol_24h_usd": 488181.3029566647,
+   "dex_liq_usd": 2980630.15,
+   "dex_vol_24h_usd": 487641.21,
+   "funding_rate": 5e-05,
+   "circ_supply": 999945648.784775,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.16123494617253065,
+     "value": 0.15781371995429888,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.6296617532489754,
+     "value": 1.5639471846250366,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 8.222088898159429,
+     "value": 7.831211376095552,
      "level": "warn"
     },
     "float_ratio": {
-     "value": 0.999945648817764,
+     "value": 0.999945648784775,
      "level": "ok"
     }
    },
@@ -4410,29 +4410,29 @@
    "address": "0x7c8217517ed4711fe2deccdfeffe8d906b9ae11f",
    "perp_onboard_date": "2025-09-23",
    "is_new_perp": false,
-   "price": 0.00832284,
-   "mcap_usd": 25489875.553445656,
-   "fdv_usd": 83228400.0,
-   "fdv_to_mcap": 3.265155211350155,
-   "oi_usd": 3931319.98069322,
-   "perp_vol_24h_usd": 2381997.834499,
-   "alpha_vol_24h_usd": 143211.8384879006,
-   "dex_liq_usd": 230394.82,
-   "dex_vol_24h_usd": 140348.62,
-   "funding_rate": 5e-05,
+   "price": 0.00825,
+   "mcap_usd": 25266792.743333608,
+   "fdv_usd": 82500000.0,
+   "fdv_to_mcap": 3.2651552113501547,
+   "oi_usd": 3915338.8780029,
+   "perp_vol_24h_usd": 2161788.832434,
+   "alpha_vol_24h_usd": 149123.335238334,
+   "dex_liq_usd": 230088.97,
+   "dex_vol_24h_usd": 144222.79,
+   "funding_rate": 0.00011937,
    "circ_supply": 3062641544.6464977,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1542306462991654,
+     "value": 0.15495986838440046,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 17.063404379895434,
+     "value": 17.016630036645825,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 16.972007523116368,
+     "value": 14.989231815817735,
      "level": "warn"
     },
     "float_ratio": {
@@ -4458,21 +4458,21 @@
    "address": "0x0c69199c1562233640e0db5ce2c399a88eb507c7",
    "perp_onboard_date": "2025-12-12",
    "is_new_perp": false,
-   "price": 0.11833676,
-   "mcap_usd": 19028551.008,
-   "fdv_usd": 118336760.0,
-   "fdv_to_mcap": 6.218905472636815,
-   "oi_usd": 2915477.22771054,
-   "perp_vol_24h_usd": 2233923.5044,
-   "alpha_vol_24h_usd": 1056503.231875102,
+   "price": 0.1173,
+   "mcap_usd": 18861840.0,
+   "fdv_usd": 117300000.0,
+   "fdv_to_mcap": 6.218905472636816,
+   "oi_usd": 2847169.2877176,
+   "perp_vol_24h_usd": 2500358.8098,
+   "alpha_vol_24h_usd": 1266716.1622797342,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 0.00028682,
+   "funding_rate": 0.00025421,
    "circ_supply": 160800000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.15321593464919175,
+     "value": 0.15094865016973952,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -4509,29 +4509,29 @@
    "address": "0x92aa03137385f18539301349dcfc9ebc923ffb10",
    "perp_onboard_date": "2025-05-13",
    "is_new_perp": false,
-   "price": 0.03434,
-   "mcap_usd": 34340000.0,
-   "fdv_usd": 34340000.0,
+   "price": 0.03473,
+   "mcap_usd": 34730000.0,
+   "fdv_usd": 34730000.0,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 4670804.467252,
-   "perp_vol_24h_usd": 4426771.11787,
-   "alpha_vol_24h_usd": 881659.3475148409,
-   "dex_liq_usd": 5269858.76,
-   "dex_vol_24h_usd": 856096.04,
+   "oi_usd": 4721481.38225412,
+   "perp_vol_24h_usd": 3885013.04441,
+   "alpha_vol_24h_usd": 715485.8906117347,
+   "dex_liq_usd": 5306814.8,
+   "dex_vol_24h_usd": 688312.12,
    "funding_rate": 5e-05,
    "circ_supply": 1000000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1360164376019802,
+     "value": 0.13594821140956292,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.8863244120895567,
+     "value": 0.8897015554893908,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 5.170881432730375,
+     "value": 5.644260694421595,
      "level": "warn"
     },
     "float_ratio": {
@@ -4557,29 +4557,29 @@
    "address": "0x91152b4ef635403efbae860edd0f8c321d7c035d",
    "perp_onboard_date": "2025-11-26",
    "is_new_perp": false,
-   "price": 0.02991,
-   "mcap_usd": 76773381.67542,
-   "fdv_usd": 299100000.0,
-   "fdv_to_mcap": 3.8958815343646735,
-   "oi_usd": 8573896.10319021,
-   "perp_vol_24h_usd": 146299877.09157,
-   "alpha_vol_24h_usd": 11879353.844211992,
-   "dex_liq_usd": 549942.51,
-   "dex_vol_24h_usd": 7710672.85,
-   "funding_rate": -0.00148025,
+   "price": 0.0249,
+   "mcap_usd": 63913647.733799994,
+   "fdv_usd": 249000000.0,
+   "fdv_to_mcap": 3.895881534364674,
+   "oi_usd": 7865056.81962,
+   "perp_vol_24h_usd": 120451031.27352,
+   "alpha_vol_24h_usd": 10484024.806570183,
+   "dex_liq_usd": 499965.69,
+   "dex_vol_24h_usd": 6779695.43,
+   "funding_rate": -0.00030471,
    "circ_supply": 2566813162.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.11167797895680365,
+     "value": 0.12305754871601009,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 15.590531641553241,
+     "value": 15.731193113711463,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 18.97368490890779,
+     "value": 17.766436931742817,
      "level": "warn"
     },
     "float_ratio": {
@@ -4599,35 +4599,83 @@
    }
   },
   {
+   "ticker": "RECALL",
+   "perp_symbol": "RECALLUSDT",
+   "chain": "base",
+   "address": "0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+   "perp_onboard_date": "2025-10-15",
+   "is_new_perp": false,
+   "price": 0.03696519,
+   "mcap_usd": 11091082.197041398,
+   "fdv_usd": 36965190.0,
+   "fdv_to_mcap": 3.332874947934355,
+   "oi_usd": 1213593.1446,
+   "perp_vol_24h_usd": 1036638.20089,
+   "alpha_vol_24h_usd": 56071.65167727859,
+   "dex_liq_usd": 454698.71,
+   "dex_vol_24h_usd": 55994.5,
+   "funding_rate": 5e-05,
+   "circ_supply": 300041260.359852,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.10942062488038652,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 2.6690050310457223,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 18.51321470662297,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 0.300041260359852,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/RECALLUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x1f16e03c1a5908818f47f6ee7bb16690b40d0671",
+    "explorer": "https://basescan.org/token/0x1f16e03c1a5908818f47f6ee7bb16690b40d0671"
+   }
+  },
+  {
    "ticker": "DOS",
    "perp_symbol": "DOSUSDT",
    "chain": "bsc",
    "address": "0xb0f09ea9ae0515c3551080d4a745c8115aa30e37",
    "perp_onboard_date": "2026-08-11",
    "is_new_perp": false,
-   "price": 0.24111569,
-   "mcap_usd": 58771949.4375,
-   "fdv_usd": 241115690.0,
+   "price": 0.24852426,
+   "mcap_usd": 60577788.375,
+   "fdv_usd": 248524260.0,
    "fdv_to_mcap": 4.102564102564102,
-   "oi_usd": 5319633.40567425,
-   "perp_vol_24h_usd": 30726954.3982,
-   "alpha_vol_24h_usd": 6822317.47424576,
-   "dex_liq_usd": 874734.33,
-   "dex_vol_24h_usd": 6808474.56,
+   "oi_usd": 5698949.4762,
+   "perp_vol_24h_usd": 18532511.2781,
+   "alpha_vol_24h_usd": 4954854.094367114,
+   "dex_liq_usd": 883826.51,
+   "dex_vol_24h_usd": 5040143.41,
    "funding_rate": 5e-05,
    "circ_supply": 243750000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.09051313520459825,
+     "value": 0.09407655229869558,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 6.081427495447961,
+     "value": 6.4480408900611055,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 4.513045341862892,
+     "value": 3.676980944893391,
      "level": "ok"
     },
     "float_ratio": {
@@ -4647,83 +4695,35 @@
    }
   },
   {
-   "ticker": "JELLYJELLY",
-   "perp_symbol": "JELLYJELLYUSDT",
-   "chain": "solana",
-   "address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-   "perp_onboard_date": "2025-03-26",
-   "is_new_perp": false,
-   "price": 0.04952284,
-   "mcap_usd": 49522795.37992116,
-   "fdv_usd": 49522795.37992116,
-   "fdv_to_mcap": 1.0,
-   "oi_usd": 4308770.23785,
-   "perp_vol_24h_usd": 497095.66109,
-   "alpha_vol_24h_usd": 64196.65706752978,
-   "dex_liq_usd": 4620791.59,
-   "dex_vol_24h_usd": 64146.53,
-   "funding_rate": 5e-05,
-   "circ_supply": 999999099.0,
-   "total_supply": 999999099.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.0870057961145904,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 0.9324744806008445,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 7.749377263119299,
-     "level": "warn"
-    },
-    "float_ratio": {
-     "value": 1.0,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 1
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/JELLYJELLYUSDT",
-    "dexscreener": "https://dexscreener.com/solana/FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
-    "explorer": "https://solscan.io/token/FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
-   }
-  },
-  {
    "ticker": "TAG",
    "perp_symbol": "TAGUSDT",
    "chain": "bsc",
    "address": "0x208bf3e7da9639f1eaefa2de78c23396b0682025",
    "perp_onboard_date": "2025-07-25",
    "is_new_perp": false,
-   "price": 0.00072354,
-   "mcap_usd": 78435044.45466276,
-   "fdv_usd": 293309224.032,
-   "fdv_to_mcap": 3.739517534174911,
-   "oi_usd": 6303335.8317006,
-   "perp_vol_24h_usd": 36942899.3589328,
-   "alpha_vol_24h_usd": 6959427.650075298,
-   "dex_liq_usd": 2217277.99,
-   "dex_vol_24h_usd": 6994845.86,
+   "price": 0.0008265,
+   "mcap_usd": 89596379.248941,
+   "fdv_usd": 335047231.2,
+   "fdv_to_mcap": 3.7395175341749107,
+   "oi_usd": 8333041.53242944,
+   "perp_vol_24h_usd": 85619000.2711355,
+   "alpha_vol_24h_usd": 13121890.934712308,
+   "dex_liq_usd": 2375207.06,
+   "dex_vol_24h_usd": 13183178.26,
    "funding_rate": 5e-05,
    "circ_supply": 108404572594.0,
    "total_supply": 405380800000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.08036376947990476,
+     "value": 0.09300645408087664,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.8428261409389624,
+     "value": 3.508343197847113,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 5.281445810005712,
+     "value": 6.494564404921844,
      "level": "warn"
     },
     "float_ratio": {
@@ -4743,19 +4743,67 @@
    }
   },
   {
+   "ticker": "JELLYJELLY",
+   "perp_symbol": "JELLYJELLYUSDT",
+   "chain": "solana",
+   "address": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+   "perp_onboard_date": "2025-03-26",
+   "is_new_perp": false,
+   "price": 0.0489945,
+   "mcap_usd": 48994455.855955504,
+   "fdv_usd": 48994455.855955504,
+   "fdv_to_mcap": 1.0,
+   "oi_usd": 4258941.81019,
+   "perp_vol_24h_usd": 503355.71364,
+   "alpha_vol_24h_usd": 60663.36119085121,
+   "dex_liq_usd": 4587742.36,
+   "dex_vol_24h_usd": 60603.25,
+   "funding_rate": 5e-05,
+   "circ_supply": 999999099.0,
+   "total_supply": 999999099.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.08692701522619943,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.9283306419565373,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 8.305754454422823,
+     "level": "warn"
+    },
+    "float_ratio": {
+     "value": 1.0,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 1
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/JELLYJELLYUSDT",
+    "dexscreener": "https://dexscreener.com/solana/FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+    "explorer": "https://solscan.io/token/FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump"
+   }
+  },
+  {
    "ticker": "PRL",
    "perp_symbol": "PRLUSDT",
    "chain": "bsc",
    "address": "0xd20fb09a49a8e75fef536a2dbc68222900287bac",
    "perp_onboard_date": "2026-04-01",
    "is_new_perp": false,
-   "price": 0.0938524,
-   "mcap_usd": 23150932.029015012,
-   "fdv_usd": 93852400.0,
+   "price": 0.0954,
+   "mcap_usd": 23532684.46590638,
+   "fdv_usd": 95400000.0,
    "fdv_to_mcap": 4.053936138829098,
-   "oi_usd": 1615058.4366,
-   "perp_vol_24h_usd": 1174451.4257,
-   "alpha_vol_24h_usd": 1237811.0241838524,
+   "oi_usd": 1660308.87,
+   "perp_vol_24h_usd": 995114.7342,
+   "alpha_vol_24h_usd": 1202488.9498834296,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -4763,7 +4811,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.0697621346119392,
+     "value": 0.0705533137286321,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -4799,29 +4847,29 @@
    "address": "0x8b7dde054be9d180c1be7fae0874697374a49832",
    "perp_onboard_date": "2026-05-14",
    "is_new_perp": false,
-   "price": 0.63051391,
-   "mcap_usd": 85497686.196,
-   "fdv_usd": 630513910.0,
-   "fdv_to_mcap": 7.374631268436579,
-   "oi_usd": 5815366.64327448,
-   "perp_vol_24h_usd": 986760.7448,
-   "alpha_vol_24h_usd": 3248523.5729338326,
-   "dex_liq_usd": 939802.09,
-   "dex_vol_24h_usd": 3235524.24,
+   "price": 0.59937826,
+   "mcap_usd": 81275692.05600001,
+   "fdv_usd": 599378260.0,
+   "fdv_to_mcap": 7.374631268436577,
+   "oi_usd": 5505695.332,
+   "perp_vol_24h_usd": 1016162.9296,
+   "alpha_vol_24h_usd": 3166431.760204811,
+   "dex_liq_usd": 914083.7,
+   "dex_vol_24h_usd": 3166054.51,
    "funding_rate": 5e-05,
    "circ_supply": 135600000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06801782483262747,
+     "value": 0.06774098371511257,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 6.187863067291625,
+     "value": 6.023185110947718,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 0.304977083033691,
+     "value": 0.3209556014877331,
      "level": "ok"
     },
     "float_ratio": {
@@ -4847,29 +4895,29 @@
    "address": "0x6bdcce4a559076e37755a78ce0c06214e59e4444",
    "perp_onboard_date": "2025-05-22",
    "is_new_perp": false,
-   "price": 0.1317151,
-   "mcap_usd": 131715100.0,
-   "fdv_usd": 131715100.0,
+   "price": 0.13345057,
+   "mcap_usd": 133450569.99999999,
+   "fdv_usd": 133450569.99999999,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 7325247.58135718,
-   "perp_vol_24h_usd": 1542869.6624,
-   "alpha_vol_24h_usd": 1670423.6878481836,
-   "dex_liq_usd": 2270797.96,
-   "dex_vol_24h_usd": 202553.84,
+   "oi_usd": 7415093.11271976,
+   "perp_vol_24h_usd": 1599258.1693,
+   "alpha_vol_24h_usd": 1753462.7555529107,
+   "dex_liq_usd": 2290027.28,
+   "dex_vol_24h_usd": 223481.73,
    "funding_rate": 5e-05,
    "circ_supply": 1000000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.05561433412993028,
+     "value": 0.05556434200857861,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 3.2258473498704308,
+     "value": 3.2379933538257943,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 7.617084239923568,
+     "value": 7.156102511377552,
      "level": "warn"
     },
     "float_ratio": {
@@ -4889,87 +4937,39 @@
    }
   },
   {
-   "ticker": "MOODENG",
-   "perp_symbol": "MOODENGUSDT",
-   "chain": "solana",
-   "address": "ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-   "perp_onboard_date": "2024-10-25",
-   "is_new_perp": false,
-   "price": 0.0383997,
-   "mcap_usd": 38014619.789390646,
-   "fdv_usd": 38014619.789390646,
-   "fdv_to_mcap": 1.0,
-   "oi_usd": 1743727.22079,
-   "perp_vol_24h_usd": 5864963.0871,
-   "alpha_vol_24h_usd": 359650.04065458255,
-   "dex_liq_usd": 2551429.13,
-   "dex_vol_24h_usd": 353269.95,
-   "funding_rate": 5e-05,
-   "circ_supply": 989971791.17,
-   "total_supply": 989971791.17,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.04586991085142064,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 0.6834315718540064,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 16.601930300326988,
-     "level": "warn"
-    },
-    "float_ratio": {
-     "value": 1.0,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 1
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/MOODENGUSDT",
-    "dexscreener": "https://dexscreener.com/solana/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY",
-    "explorer": "https://solscan.io/token/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY"
-   }
-  },
-  {
    "ticker": "POPCAT",
    "perp_symbol": "POPCATUSDT",
    "chain": "solana",
    "address": "7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr",
    "perp_onboard_date": "2024-08-22",
    "is_new_perp": false,
-   "price": 0.04271,
-   "mcap_usd": 41852874.41867901,
-   "fdv_usd": 41854656.2672016,
-   "fdv_to_mcap": 1.0000425741014767,
-   "oi_usd": 1805848.346004,
-   "perp_vol_24h_usd": 1531394.62338,
-   "alpha_vol_24h_usd": 189167.44545672095,
-   "dex_liq_usd": 3382577.63,
-   "dex_vol_24h_usd": 130217.09,
-   "funding_rate": -0.0001251,
-   "circ_supply": 979931501.2568253,
+   "price": 0.04327428,
+   "mcap_usd": 42405830.13706226,
+   "fdv_usd": 42407635.55632491,
+   "fdv_to_mcap": 1.000042574788816,
+   "oi_usd": 1862368.79871775,
+   "perp_vol_24h_usd": 1584660.99175,
+   "alpha_vol_24h_usd": 213476.91192971708,
+   "dex_liq_usd": 3400728.2,
+   "dex_vol_24h_usd": 151463.53,
+   "funding_rate": 5e-05,
+   "circ_supply": 979931500.5833087,
    "total_supply": 979973220.96,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.04314753457406612,
+     "value": 0.04391775358950134,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.5338675245729689,
+     "value": 0.5476382378096991,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 11.760319811938663,
+     "value": 10.462327081311257,
      "level": "warn"
     },
     "float_ratio": {
-     "value": 0.9999574277110003,
+     "value": 0.9999574270237196,
      "level": "ok"
     }
    },
@@ -4991,29 +4991,29 @@
    "address": "0x5afe3855358e112b5647b952709e6165e1c1eeee",
    "perp_onboard_date": "2024-10-25",
    "is_new_perp": false,
-   "price": 0.1013,
-   "mcap_usd": 84799931.83999887,
-   "fdv_usd": 101300000.0,
-   "fdv_to_mcap": 1.1945764318671102,
-   "oi_usd": 1954244.05967322,
-   "perp_vol_24h_usd": 733286.47191,
-   "alpha_vol_24h_usd": 43278.63113028499,
-   "dex_liq_usd": 219934.59,
-   "dex_vol_24h_usd": 43359.01,
+   "price": 0.10127312,
+   "mcap_usd": 84777430.14041486,
+   "fdv_usd": 101273120.0,
+   "fdv_to_mcap": 1.1945764318671104,
+   "oi_usd": 1958418.2127,
+   "perp_vol_24h_usd": 691837.81075,
+   "alpha_vol_24h_usd": 45767.84980313529,
+   "dex_liq_usd": 220594.35,
+   "dex_vol_24h_usd": 45484.86,
    "funding_rate": 5e-05,
    "circ_supply": 837116799.9999888,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.023045349415616298,
+     "value": 0.02310070273958904,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 8.885569385303238,
+     "value": 8.877916468395496,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 16.911974510257497,
+     "value": 15.21028779136618,
      "level": "warn"
     },
     "float_ratio": {
@@ -5039,29 +5039,29 @@
    "address": "0x6a2608dabe09bc1128eec7275b92dfb939d5db3f",
    "perp_onboard_date": "2025-09-17",
    "is_new_perp": false,
-   "price": 0.00011266,
-   "mcap_usd": 47391348.36749696,
-   "fdv_usd": 47394935.4,
+   "price": 0.0001091,
+   "mcap_usd": 45893805.31594104,
+   "fdv_usd": 45897279.0,
    "fdv_to_mcap": 1.000075689606365,
-   "oi_usd": 991389.5255784,
-   "perp_vol_24h_usd": 10355521.4216391,
-   "alpha_vol_24h_usd": 678053.0932942008,
-   "dex_liq_usd": 382973.84,
-   "dex_vol_24h_usd": 678468.32,
-   "funding_rate": -0.00057648,
+   "oi_usd": 844797.9880098,
+   "perp_vol_24h_usd": 5063514.9621129,
+   "alpha_vol_24h_usd": 311912.0857611794,
+   "dex_liq_usd": 374174.64,
+   "dex_vol_24h_usd": 310778.46,
+   "funding_rate": -0.0001163,
    "circ_supply": 420658160549.4138,
    "total_supply": 420690000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.02091920909045791,
+     "value": 0.01840766923104462,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.5886612139837015,
+     "value": 2.257763882688041,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 15.263087628968586,
+     "value": 16.293004869490954,
      "level": "warn"
     },
     "float_ratio": {
@@ -5087,29 +5087,29 @@
    "address": "0x011ebe7d75e2c9d1e0bd0be0bef5c36f0a90075f",
    "perp_onboard_date": "2025-11-06",
    "is_new_perp": false,
-   "price": 0.0264,
-   "mcap_usd": 475200000.0,
-   "fdv_usd": 2640000000.0,
+   "price": 0.02652,
+   "mcap_usd": 477360000.0,
+   "fdv_usd": 2652000000.0,
    "fdv_to_mcap": 5.555555555555555,
-   "oi_usd": 5560547.97006,
-   "perp_vol_24h_usd": 2327031.94038,
-   "alpha_vol_24h_usd": 848915.7788312514,
-   "dex_liq_usd": 863503.2,
-   "dex_vol_24h_usd": 848150.1,
-   "funding_rate": 0.00014737,
+   "oi_usd": 5597894.187609,
+   "perp_vol_24h_usd": 3286557.122024,
+   "alpha_vol_24h_usd": 980863.0330397835,
+   "dex_liq_usd": 867071.29,
+   "dex_vol_24h_usd": 979212.99,
+   "funding_rate": 5.46e-05,
    "circ_supply": 18000000000.0,
    "total_supply": 100000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.01170148983598485,
+     "value": 0.011726776830084213,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 6.4395221350193035,
+     "value": 6.456094501305654,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.7436557991091437,
+     "value": 3.3563250851318878,
      "level": "ok"
     },
     "float_ratio": {
@@ -5129,83 +5129,35 @@
    }
   },
   {
-   "ticker": "SPX",
-   "perp_symbol": "SPXUSDT",
-   "chain": "ethereum",
-   "address": "0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
-   "perp_onboard_date": "2024-12-10",
-   "is_new_perp": false,
-   "price": 0.3773,
-   "mcap_usd": 351263692.88341105,
-   "fdv_usd": 377300000.0,
-   "fdv_to_mcap": 1.0741218282563314,
-   "oi_usd": 3737828.6090967,
-   "perp_vol_24h_usd": 7713023.7414,
-   "alpha_vol_24h_usd": 1419839.4378151817,
-   "dex_liq_usd": 10877027.38,
-   "dex_vol_24h_usd": 1382888.92,
-   "funding_rate": 5e-05,
-   "circ_supply": 930993090.07,
-   "total_supply": 1000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.010641090112143566,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 0.3436443137000451,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 5.5774716463850185,
-     "level": "warn"
-    },
-    "float_ratio": {
-     "value": 0.9309930900700001,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 1
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/SPXUSDT",
-    "dexscreener": "https://dexscreener.com/ethereum/0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
-    "explorer": "https://etherscan.io/token/0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c"
-   }
-  },
-  {
    "ticker": "TAKE",
    "perp_symbol": "TAKEUSDT",
    "chain": "bsc",
    "address": "0xe747e54783ba3f77a8e5251a3cba19ebe9c0e197",
    "perp_onboard_date": "2025-09-03",
    "is_new_perp": false,
-   "price": 0.06890902,
-   "mcap_usd": 27359123.84445831,
-   "fdv_usd": 68909020.0,
+   "price": 0.0704507,
+   "mcap_usd": 27971220.984259818,
+   "fdv_usd": 70450700.0,
    "fdv_to_mcap": 2.5186851885959705,
-   "oi_usd": 5224794.58687,
-   "perp_vol_24h_usd": 1797085.35268,
-   "alpha_vol_24h_usd": 3213761.6350237383,
-   "dex_liq_usd": 478606.85,
-   "dex_vol_24h_usd": 3226405.55,
-   "funding_rate": 0.00040976,
+   "oi_usd": 5402885.2017624,
+   "perp_vol_24h_usd": 1489523.78139,
+   "alpha_vol_24h_usd": 3435343.0390684395,
+   "dex_liq_usd": 484914.0,
+   "dex_vol_24h_usd": 3442372.43,
+   "funding_rate": 0.00020116,
    "circ_supply": 397032548.7789307,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.19097082993497616,
+     "value": 0.19315871855585973,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 10.916673229541114,
+     "value": 11.141945173293408,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 0.556993014309686,
+     "value": 0.43270268156022845,
      "level": "ok"
     },
     "float_ratio": {
@@ -5231,29 +5183,29 @@
    "address": "0x82ec31d69b3c289e541b50e30681fd1acad24444",
    "perp_onboard_date": "2026-09-06",
    "is_new_perp": false,
-   "price": 0.019,
-   "mcap_usd": 19000000.0,
-   "fdv_usd": 19000000.0,
+   "price": 0.01908283,
+   "mcap_usd": 19082830.0,
+   "fdv_usd": 19082830.0,
    "fdv_to_mcap": 1.0,
-   "oi_usd": 3417613.65600707,
-   "perp_vol_24h_usd": 1219410.16783,
-   "alpha_vol_24h_usd": 367873.8145637367,
-   "dex_liq_usd": 1663023.75,
-   "dex_vol_24h_usd": 344769.77,
+   "oi_usd": 3395441.64477,
+   "perp_vol_24h_usd": 1318994.0473,
+   "alpha_vol_24h_usd": 403325.50742741645,
+   "dex_liq_usd": 1669771.17,
+   "dex_vol_24h_usd": 380407.06,
    "funding_rate": 5e-05,
    "circ_supply": 1000000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.17987440294774054,
+     "value": 0.17793176613584044,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 2.0550600410890523,
+     "value": 2.0334772247684696,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 3.5368825051859965,
+     "value": 3.4673227339681865,
      "level": "ok"
     },
     "float_ratio": {
@@ -5279,29 +5231,29 @@
    "address": "0x783c3f003f172c6ac5ac700218a357d2d66ee2a2",
    "perp_onboard_date": "2025-05-06",
    "is_new_perp": false,
-   "price": 0.4233744,
-   "mcap_usd": 39119301.36263135,
-   "fdv_usd": 88908624.0,
+   "price": 0.4233,
+   "mcap_usd": 39112426.88930141,
+   "fdv_usd": 88893000.0,
    "fdv_to_mcap": 2.272755926181489,
-   "oi_usd": 6809307.19817328,
-   "perp_vol_24h_usd": 987326.6327,
-   "alpha_vol_24h_usd": 368881.4053411347,
-   "dex_liq_usd": 753081.39,
-   "dex_vol_24h_usd": 369210.96,
+   "oi_usd": 6846878.57602623,
+   "perp_vol_24h_usd": 719900.0103,
+   "alpha_vol_24h_usd": 329798.77567043545,
+   "dex_liq_usd": 754830.89,
+   "dex_vol_24h_usd": 328342.73,
    "funding_rate": 5e-05,
    "circ_supply": 92398835.07985213,
    "total_supply": 210000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1740651535427946,
+     "value": 0.17505634706342105,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 9.041927324977822,
+     "value": 9.070745072484023,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.674153098542903,
+     "value": 2.192526115318588,
      "level": "ok"
     },
     "float_ratio": {
@@ -5313,61 +5265,13 @@
     "alert": 0,
     "warn": 0
    },
-   "flags": [],
+   "flags": [
+    "circ_mismatch"
+   ],
    "links": {
     "binance_futures": "https://www.binance.com/en/futures/B2USDT",
     "dexscreener": "https://dexscreener.com/bsc/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2",
     "explorer": "https://bscscan.com/token/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2"
-   }
-  },
-  {
-   "ticker": "FOLKS",
-   "perp_symbol": "FOLKSUSDT",
-   "chain": "bsc",
-   "address": "0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
-   "perp_onboard_date": "2025-11-06",
-   "is_new_perp": false,
-   "price": 2.48,
-   "mcap_usd": 44603069.467098236,
-   "fdv_usd": 124000000.0,
-   "fdv_to_mcap": 2.7800777274189494,
-   "oi_usd": 6931033.4028,
-   "perp_vol_24h_usd": 1643557.9294,
-   "alpha_vol_24h_usd": 116547.0332713283,
-   "dex_liq_usd": 0.0,
-   "dex_vol_24h_usd": 0.0,
-   "funding_rate": 5e-05,
-   "circ_supply": 17985108.656088,
-   "total_supply": 50000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.15539364186387947,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": null,
-     "level": "na"
-    },
-    "perp_to_spot_vol": {
-     "value": null,
-     "level": "na"
-    },
-    "float_ratio": {
-     "value": 0.35970217312175995,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 0
-   },
-   "flags": [
-    "no_dex_liq"
-   ],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/FOLKSUSDT",
-    "dexscreener": "https://dexscreener.com/bsc/0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
-    "explorer": "https://bscscan.com/token/0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b"
    }
   },
   {
@@ -5377,29 +5281,29 @@
    "address": "0xd955c9ba56fb1ab30e34766e252a97ccce3d31a6",
    "perp_onboard_date": "2025-09-12",
    "is_new_perp": false,
-   "price": 0.0007052,
-   "mcap_usd": 40282744.363684416,
-   "fdv_usd": 70520000.0,
+   "price": 0.00071841,
+   "mcap_usd": 41037331.790009245,
+   "fdv_usd": 71841000.0,
    "fdv_to_mcap": 1.7506255125848622,
-   "oi_usd": 6258574.71560305,
-   "perp_vol_24h_usd": 1122412.4621109,
-   "alpha_vol_24h_usd": 259429.15193255886,
-   "dex_liq_usd": 564566.89,
-   "dex_vol_24h_usd": 259863.03,
+   "oi_usd": 6390362.19444148,
+   "perp_vol_24h_usd": 1043854.3349461,
+   "alpha_vol_24h_usd": 258863.26784228245,
+   "dex_liq_usd": 571343.29,
+   "dex_vol_24h_usd": 258638.3,
    "funding_rate": 5e-05,
    "circ_supply": 57122439540.10836,
    "total_supply": 100000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1553661453425021,
+     "value": 0.15572070394686935,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 11.085621254911088,
+     "value": 11.184803088247486,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 4.319246420358064,
+     "value": 4.035961939689907,
      "level": "ok"
     },
     "float_ratio": {
@@ -5419,27 +5323,27 @@
    }
   },
   {
-   "ticker": "PONS",
-   "perp_symbol": "PONSUSDT",
-   "chain": "robinhood",
-   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
-   "perp_onboard_date": "2026-09-06",
+   "ticker": "FOLKS",
+   "perp_symbol": "FOLKSUSDT",
+   "chain": "bsc",
+   "address": "0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
+   "perp_onboard_date": "2025-11-06",
    "is_new_perp": false,
-   "price": 0.2404961,
-   "mcap_usd": 161640951.49524322,
-   "fdv_usd": 240496100.0,
-   "fdv_to_mcap": 1.4878414026601257,
-   "oi_usd": 21464624.88904989,
-   "perp_vol_24h_usd": 20887682.7149,
-   "alpha_vol_24h_usd": 9082690.326146238,
-   "dex_liq_usd": null,
-   "dex_vol_24h_usd": null,
+   "price": 2.48050284,
+   "mcap_usd": 44612112.99888783,
+   "fdv_usd": 124025142.00000001,
+   "fdv_to_mcap": 2.7800777336660096,
+   "oi_usd": 6898403.86710897,
+   "perp_vol_24h_usd": 1307019.5094,
+   "alpha_vol_24h_usd": 111603.62582939373,
+   "dex_liq_usd": 0.0,
+   "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
-   "circ_supply": 672114647.577417,
-   "total_supply": 1000000000.0,
+   "circ_supply": 17985108.615674,
+   "total_supply": 50000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1327919978847783,
+     "value": 0.15463073599049088,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -5451,7 +5355,57 @@
      "level": "na"
     },
     "float_ratio": {
-     "value": 0.672114647577417,
+     "value": 0.35970217231348,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [
+    "no_dex_liq"
+   ],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/FOLKSUSDT",
+    "dexscreener": "https://dexscreener.com/bsc/0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b",
+    "explorer": "https://bscscan.com/token/0xff7f8f301f7a706e3cfd3d2275f5dc0b9ee8009b"
+   }
+  },
+  {
+   "ticker": "PONS",
+   "perp_symbol": "PONSUSDT",
+   "chain": "robinhood",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "perp_onboard_date": "2026-09-06",
+   "is_new_perp": false,
+   "price": 0.24770547,
+   "mcap_usd": 166475833.8749915,
+   "fdv_usd": 247705470.0,
+   "fdv_to_mcap": 1.4879365024595985,
+   "oi_usd": 21848125.72418736,
+   "perp_vol_24h_usd": 20811260.6885,
+   "alpha_vol_24h_usd": 9175516.419044437,
+   "dex_liq_usd": null,
+   "dex_vol_24h_usd": null,
+   "funding_rate": 5e-05,
+   "circ_supply": 672071690.1204947,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.13123902259948042,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": null,
+     "level": "na"
+    },
+    "perp_to_spot_vol": {
+     "value": null,
+     "level": "na"
+    },
+    "float_ratio": {
+     "value": 0.6720716901204947,
      "level": "ok"
     }
    },
@@ -5471,21 +5425,21 @@
    "address": "0xf3d5b4c34ed623478cc5141861776e6cf7ae3a1e",
    "perp_onboard_date": "2025-10-07",
    "is_new_perp": false,
-   "price": 0.10485439,
-   "mcap_usd": 29849806.156822033,
-   "fdv_usd": 102547593.42,
+   "price": 0.10445725,
+   "mcap_usd": 29736748.877893414,
+   "fdv_usd": 102159190.5,
    "fdv_to_mcap": 3.435452574842374,
-   "oi_usd": 3857522.0830034,
-   "perp_vol_24h_usd": 1644683.6254,
-   "alpha_vol_24h_usd": 799477.5059890869,
+   "oi_usd": 3877076.5956,
+   "perp_vol_24h_usd": 2053728.223,
+   "alpha_vol_24h_usd": 891057.6231261746,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 5e-05,
+   "funding_rate": 0.00023707,
    "circ_supply": 284678649.6666666,
    "total_supply": 978000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1292310597508447,
+     "value": 0.13037997568329524,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -5521,29 +5475,29 @@
    "address": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump",
    "perp_onboard_date": "2025-01-07",
    "is_new_perp": false,
-   "price": 0.03826458,
-   "mcap_usd": 32524893.0,
-   "fdv_usd": 38264580.0,
+   "price": 0.03773564,
+   "mcap_usd": 32075294.0,
+   "fdv_usd": 37735640.0,
    "fdv_to_mcap": 1.1764705882352942,
-   "oi_usd": 3984651.38977,
-   "perp_vol_24h_usd": 637580.64152,
-   "alpha_vol_24h_usd": 201395.53737310623,
-   "dex_liq_usd": 2839268.84,
-   "dex_vol_24h_usd": 200972.98,
+   "oi_usd": 3924945.50906,
+   "perp_vol_24h_usd": 656287.87789,
+   "alpha_vol_24h_usd": 187168.93507289983,
+   "dex_liq_usd": 2810298.41,
+   "dex_vol_24h_usd": 186726.66,
    "funding_rate": 5e-05,
    "circ_supply": 850000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.12251082239594147,
+     "value": 0.12236662613474408,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.4034075722713175,
+     "value": 1.3966294451484957,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 3.172469460919572,
+     "value": 3.5146983183333327,
      "level": "ok"
     },
     "float_ratio": {
@@ -5569,29 +5523,29 @@
    "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
    "perp_onboard_date": "2026-01-22",
    "is_new_perp": false,
-   "price": 0.07995594,
-   "mcap_usd": 43894211.30155248,
-   "fdv_usd": 79955940.0,
+   "price": 0.08239597,
+   "mcap_usd": 45233738.95143224,
+   "fdv_usd": 82395970.0,
    "fdv_to_mcap": 1.8215600105149186,
-   "oi_usd": 4959762.98609715,
-   "perp_vol_24h_usd": 5785212.10609,
-   "alpha_vol_24h_usd": 3860033.148604667,
-   "dex_liq_usd": 525228.71,
-   "dex_vol_24h_usd": 3849037.59,
-   "funding_rate": 0.00011978,
+   "oi_usd": 5169385.66189395,
+   "perp_vol_24h_usd": 6221878.34446,
+   "alpha_vol_24h_usd": 4769830.51977488,
+   "dex_liq_usd": 535713.36,
+   "dex_vol_24h_usd": 4752793.67,
+   "funding_rate": 0.00013964,
    "circ_supply": 548979992.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.1129935551643396,
+     "value": 0.11428163538380837,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 9.44305383857853,
+     "value": 9.649536576601244,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.503028217006839,
+     "value": 1.3090991901737659,
      "level": "ok"
     },
     "float_ratio": {
@@ -5617,29 +5571,29 @@
    "address": "0x5dbde81fce337ff4bcaaee4ca3466c00aecae274",
    "perp_onboard_date": "2025-05-20",
    "is_new_perp": false,
-   "price": 0.05997673,
-   "mcap_usd": 205879931.93131167,
-   "fdv_usd": 299883650.0,
+   "price": 0.05331987,
+   "mcap_usd": 183029171.58348557,
+   "fdv_usd": 266599350.0,
    "fdv_to_mcap": 1.4565948569482288,
-   "oi_usd": 22460901.219,
-   "perp_vol_24h_usd": 29177022.10403,
-   "alpha_vol_24h_usd": 17525052.87296738,
-   "dex_liq_usd": 2560355.99,
-   "dex_vol_24h_usd": 17529892.64,
-   "funding_rate": 5e-05,
+   "oi_usd": 20468505.77512,
+   "perp_vol_24h_usd": 27539042.789925,
+   "alpha_vol_24h_usd": 16239672.205569176,
+   "dex_liq_usd": 2434320.77,
+   "dex_vol_24h_usd": 16225261.38,
+   "funding_rate": 0.00013584,
    "circ_supply": 3432663500.182682,
    "total_supply": 5000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.10909708881433718,
+     "value": 0.11183193147865857,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 8.772569637474513,
+     "value": 8.408302647444446,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.6644153334660694,
+     "value": 1.6972942466043035,
      "level": "ok"
     },
     "float_ratio": {
@@ -5665,13 +5619,13 @@
    "address": "0x9dc44ae5be187eca9e2a67e33f27a4c91cea1223",
    "perp_onboard_date": "2025-12-06",
    "is_new_perp": false,
-   "price": 0.07777,
-   "mcap_usd": 30146500.997498866,
-   "fdv_usd": 77770000.0,
+   "price": 0.07861,
+   "mcap_usd": 30472115.76974908,
+   "fdv_usd": 78610000.0,
    "fdv_to_mcap": 2.5797355390084,
-   "oi_usd": 3123598.80762,
-   "perp_vol_24h_usd": 1206563.22112,
-   "alpha_vol_24h_usd": 505884.1636690839,
+   "oi_usd": 3211586.3923,
+   "perp_vol_24h_usd": 2183797.41955,
+   "alpha_vol_24h_usd": 682003.8362731085,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -5679,7 +5633,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.10361397522980038,
+     "value": 0.10539426984877347,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -5715,29 +5669,29 @@
    "address": "0x55ad16bd573b3365f43a9daeb0cc66a73821b4a5",
    "perp_onboard_date": "2025-04-30",
    "is_new_perp": false,
-   "price": 0.06901,
-   "mcap_usd": 36247502.43099,
-   "fdv_usd": 69010000.0,
-   "fdv_to_mcap": 1.9038553106213332,
-   "oi_usd": 3173807.54885852,
-   "perp_vol_24h_usd": 1317182.36938,
-   "alpha_vol_24h_usd": 765082.8143941676,
-   "dex_liq_usd": 1933275.88,
-   "dex_vol_24h_usd": 762913.87,
-   "funding_rate": 0.00060651,
+   "price": 0.07270043,
+   "mcap_usd": 38185900.78479957,
+   "fdv_usd": 72700430.0,
+   "fdv_to_mcap": 1.9038553106213334,
+   "oi_usd": 3398408.5607791,
+   "perp_vol_24h_usd": 2279110.33575,
+   "alpha_vol_24h_usd": 880946.2033612068,
+   "dex_liq_usd": 2042514.64,
+   "dex_vol_24h_usd": 876370.42,
+   "funding_rate": 0.00010871,
    "circ_supply": 525249999.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.08755934439623779,
+     "value": 0.08899642252597807,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.6416733802412722,
+     "value": 1.6638355947250885,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.726515169241844,
+     "value": 2.6006244434288415,
      "level": "ok"
     },
     "float_ratio": {
@@ -5763,13 +5717,13 @@
    "address": "0x02bcc4c181b83a8c0a342bc003389cbecb4bc54d",
    "perp_onboard_date": "2026-06-01",
    "is_new_perp": false,
-   "price": 0.05088,
-   "mcap_usd": 22954037.14968,
-   "fdv_usd": 50880000.0,
-   "fdv_to_mcap": 2.2166035398574455,
-   "oi_usd": 1976776.34278,
-   "perp_vol_24h_usd": 2364166.60819,
-   "alpha_vol_24h_usd": 31247.97176993758,
+   "price": 0.05051343,
+   "mcap_usd": 22788662.515286166,
+   "fdv_usd": 50513430.0,
+   "fdv_to_mcap": 2.216603539857446,
+   "oi_usd": 1978638.66495,
+   "perp_vol_24h_usd": 1596310.46536,
+   "alpha_vol_24h_usd": 29187.23175833075,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -5777,7 +5731,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.0861188962050433,
+     "value": 0.08682557230477084,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -5813,13 +5767,13 @@
    "address": "0x97693439ea2f0ecdeb9135881e49f354656a911c",
    "perp_onboard_date": "2025-12-14",
    "is_new_perp": false,
-   "price": 0.1418,
-   "mcap_usd": 39126671.42857145,
-   "fdv_usd": 141800000.0,
-   "fdv_to_mcap": 3.6241263266891,
-   "oi_usd": 3349887.9816,
-   "perp_vol_24h_usd": 2479412.766,
-   "alpha_vol_24h_usd": 482659.9258835971,
+   "price": 0.1422,
+   "mcap_usd": 39237042.857142866,
+   "fdv_usd": 142200000.0,
+   "fdv_to_mcap": 3.624126326689101,
+   "oi_usd": 3370499.1903,
+   "perp_vol_24h_usd": 2380353.5087,
+   "alpha_vol_24h_usd": 505255.24378099095,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -5827,7 +5781,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.08561648254990106,
+     "value": 0.08590094830977868,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -5863,21 +5817,21 @@
    "address": "0x87acfa3fd7a6e0d48677d070644d76905c2bdc00",
    "perp_onboard_date": "2026-01-23",
    "is_new_perp": false,
-   "price": 0.00363996,
-   "mcap_usd": 23720291.13902067,
-   "fdv_usd": 76439160.0,
-   "fdv_to_mcap": 3.222521998233615,
-   "oi_usd": 1655948.107146,
-   "perp_vol_24h_usd": 958280.305771,
-   "alpha_vol_24h_usd": 293474.47078909253,
+   "price": 0.00364164,
+   "mcap_usd": 23731239.086007327,
+   "fdv_usd": 76474440.0,
+   "fdv_to_mcap": 3.2225219982336153,
+   "oi_usd": 1653224.4363431,
+   "perp_vol_24h_usd": 791901.839363,
+   "alpha_vol_24h_usd": 260807.53959127833,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 5e-05,
+   "funding_rate": 6.235e-05,
    "circ_supply": 6516635111.105801,
    "total_supply": 21000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06981145793872277,
+     "value": 0.0696644802385347,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -5907,67 +5861,19 @@
    }
   },
   {
-   "ticker": "CTR",
-   "perp_symbol": "CTRUSDT",
-   "chain": "base",
-   "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
-   "perp_onboard_date": "2026-05-28",
-   "is_new_perp": false,
-   "price": 0.016919,
-   "mcap_usd": 58930907.28,
-   "fdv_usd": 169190000.0,
-   "fdv_to_mcap": 2.8709892280484164,
-   "oi_usd": 3941760.2628485,
-   "perp_vol_24h_usd": 4673543.744736,
-   "alpha_vol_24h_usd": 2426425.249319648,
-   "dex_liq_usd": 667228.74,
-   "dex_vol_24h_usd": 2425529.08,
-   "funding_rate": 5e-05,
-   "circ_supply": 3483120000.0,
-   "total_supply": 10000000000.0,
-   "metrics": {
-    "oi_to_mcap": {
-     "value": 0.066887825841878,
-     "level": "ok"
-    },
-    "oi_to_dex_liq": {
-     "value": 5.907659587398019,
-     "level": "ok"
-    },
-    "perp_to_spot_vol": {
-     "value": 1.9268141467658677,
-     "level": "ok"
-    },
-    "float_ratio": {
-     "value": 0.348312,
-     "level": "ok"
-    }
-   },
-   "cond_level": {
-    "alert": 0,
-    "warn": 0
-   },
-   "flags": [],
-   "links": {
-    "binance_futures": "https://www.binance.com/en/futures/CTRUSDT",
-    "dexscreener": "https://dexscreener.com/base/0x11030f79109269d796fd0fb956d6244e502757f7",
-    "explorer": "https://basescan.org/token/0x11030f79109269d796fd0fb956d6244e502757f7"
-   }
-  },
-  {
    "ticker": "UAI",
    "perp_symbol": "UAIUSDT",
    "chain": "bsc",
    "address": "0x3e5d4f8aee0d9b3082d5f6da5d6e225d17ba9ea0",
    "perp_onboard_date": "2025-11-06",
    "is_new_perp": false,
-   "price": 0.24008644,
-   "mcap_usd": 88706831.35787237,
-   "fdv_usd": 240086440.0,
+   "price": 0.23742472,
+   "mcap_usd": 87723382.45021279,
+   "fdv_usd": 237424720.0,
    "fdv_to_mcap": 2.7065157928075774,
-   "oi_usd": 5795719.566,
-   "perp_vol_24h_usd": 3348039.4199,
-   "alpha_vol_24h_usd": 3710959.855425908,
+   "oi_usd": 5725363.65123572,
+   "perp_vol_24h_usd": 2986905.5826,
+   "alpha_vol_24h_usd": 3123342.942604318,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -5975,7 +5881,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06533566217260282,
+     "value": 0.06526610683856311,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -6011,13 +5917,13 @@
    "address": "0x9f854b3ad20f8161ec0886f15f4a1752bf75d22261556f14cc8d3a1c5d50e529::magma::MAGMA",
    "perp_onboard_date": "2025-12-31",
    "is_new_perp": false,
-   "price": 0.27946,
-   "mcap_usd": 83421782.97872339,
-   "fdv_usd": 279460000.0,
+   "price": 0.25528101,
+   "mcap_usd": 76204097.24042551,
+   "fdv_usd": 255281009.99999997,
    "fdv_to_mcap": 3.349964362081255,
-   "oi_usd": 5340368.6761632,
-   "perp_vol_24h_usd": 23325731.16655,
-   "alpha_vol_24h_usd": 8503861.107685551,
+   "oi_usd": 4819403.79160328,
+   "perp_vol_24h_usd": 19756967.03878,
+   "alpha_vol_24h_usd": 6700719.075676867,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -6025,7 +5931,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06401647729736554,
+     "value": 0.06324336835062767,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -6061,21 +5967,21 @@
    "address": "0xa37eded373c5cdf88644db7c6b89f222e756afb2",
    "perp_onboard_date": "2026-07-03",
    "is_new_perp": false,
-   "price": 0.1388,
-   "mcap_usd": 50051173.2628,
-   "fdv_usd": 143536732.9384,
-   "fdv_to_mcap": 2.8677995655514863,
-   "oi_usd": 3162896.5039327303,
-   "perp_vol_24h_usd": 3048595.5797,
-   "alpha_vol_24h_usd": 193975.50256082576,
+   "price": 0.13767991,
+   "mcap_usd": 49649255.56517105,
+   "fdv_usd": 142380404.2858932,
+   "fdv_to_mcap": 2.8677248563979085,
+   "oi_usd": 3116537.45908692,
+   "perp_vol_24h_usd": 2992305.0763000003,
+   "alpha_vol_24h_usd": 193149.77446450325,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
-   "circ_supply": 360599231.0,
-   "total_supply": 1034126318.0,
+   "circ_supply": 360613655.0,
+   "total_supply": 1034140742.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.06319325397879373,
+     "value": 0.06277108133063673,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -6087,7 +5993,7 @@
      "level": "na"
     },
     "float_ratio": {
-     "value": 0.34869940424434687,
+     "value": 0.348708488462202,
      "level": "ok"
     }
    },
@@ -6105,27 +6011,75 @@
    }
   },
   {
+   "ticker": "CTR",
+   "perp_symbol": "CTRUSDT",
+   "chain": "base",
+   "address": "0x11030f79109269d796fd0fb956d6244e502757f7",
+   "perp_onboard_date": "2026-05-28",
+   "is_new_perp": false,
+   "price": 0.016646,
+   "mcap_usd": 57980015.52,
+   "fdv_usd": 166460000.0,
+   "fdv_to_mcap": 2.8709892280484164,
+   "oi_usd": 3567496.101807,
+   "perp_vol_24h_usd": 5249295.631618,
+   "alpha_vol_24h_usd": 2148428.6491059815,
+   "dex_liq_usd": 661711.25,
+   "dex_vol_24h_usd": 2136317.06,
+   "funding_rate": 4.164e-05,
+   "circ_supply": 3483120000.0,
+   "total_supply": 10000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.061529754171528374,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 5.391318497013614,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 2.457170674664743,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.348312,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/CTRUSDT",
+    "dexscreener": "https://dexscreener.com/base/0x11030f79109269d796fd0fb956d6244e502757f7",
+    "explorer": "https://basescan.org/token/0x11030f79109269d796fd0fb956d6244e502757f7"
+   }
+  },
+  {
    "ticker": "EDGE",
    "perp_symbol": "EDGEUSDT",
    "chain": "bsc",
    "address": "0x70f2eadf1ca1969ff42b0c78e9da519e8937cbaf",
    "perp_onboard_date": "2026-03-19",
    "is_new_perp": false,
-   "price": 0.3354,
-   "mcap_usd": 117389999.99999999,
-   "fdv_usd": 335400000.0,
-   "fdv_to_mcap": 2.8571428571428577,
-   "oi_usd": 5976318.8732034,
-   "perp_vol_24h_usd": 2591688.476,
-   "alpha_vol_24h_usd": 1530901.4337239116,
+   "price": 0.33497273,
+   "mcap_usd": 117240455.5,
+   "fdv_usd": 334972730.0,
+   "fdv_to_mcap": 2.857142857142857,
+   "oi_usd": 5928726.591,
+   "perp_vol_24h_usd": 2599267.9607,
+   "alpha_vol_24h_usd": 1524938.683186644,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 9.287e-05,
+   "funding_rate": 5e-05,
    "circ_supply": 350000000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.050909948660051114,
+     "value": 0.05056894879600668,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -6161,29 +6115,29 @@
    "address": "0xe50e3d1a46070444f44df911359033f2937fcc13",
    "perp_onboard_date": "2025-06-11",
    "is_new_perp": false,
-   "price": 0.02001,
-   "mcap_usd": 23990591.162659794,
-   "fdv_usd": 26753370.0,
-   "fdv_to_mcap": 1.1151609319923863,
-   "oi_usd": 1147922.444565,
-   "perp_vol_24h_usd": 1044379.61576,
-   "alpha_vol_24h_usd": 387621.3466812474,
-   "dex_liq_usd": 278230.06,
-   "dex_vol_24h_usd": 387293.6,
+   "price": 0.02003988,
+   "mcap_usd": 24026415.19384122,
+   "fdv_usd": 26793319.56,
+   "fdv_to_mcap": 1.115160931992386,
+   "oi_usd": 1150329.61024,
+   "perp_vol_24h_usd": 1125780.05022,
+   "alpha_vol_24h_usd": 443210.18986658537,
+   "dex_liq_usd": 278370.58,
+   "dex_vol_24h_usd": 443530.45,
    "funding_rate": 5e-05,
    "circ_supply": 1198930093.0864465,
    "total_supply": 1337000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.047848860279511844,
+     "value": 0.047877704641301144,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 4.125803101810782,
+     "value": 4.132367760414912,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.6966095379835866,
+     "value": 2.538224940858063,
      "level": "ok"
     },
     "float_ratio": {
@@ -6209,29 +6163,29 @@
    "address": "0xa0c56a8c0692bd10b3fa8f8ba79cf5332b7107f9",
    "perp_onboard_date": "2025-05-29",
    "is_new_perp": false,
-   "price": 0.02752584,
-   "mcap_usd": 39550867.15616166,
-   "fdv_usd": 57804264.0,
-   "fdv_to_mcap": 1.4615169819606504,
-   "oi_usd": 1735278.1253829,
-   "perp_vol_24h_usd": 1317372.84816,
-   "alpha_vol_24h_usd": 757864.0920618322,
-   "dex_liq_usd": 1956194.05,
-   "dex_vol_24h_usd": 757348.57,
+   "price": 0.02728544,
+   "mcap_usd": 39205445.237544775,
+   "fdv_usd": 57299424.0,
+   "fdv_to_mcap": 1.4615169819606506,
+   "oi_usd": 1707598.09429,
+   "perp_vol_24h_usd": 1201112.0187,
+   "alpha_vol_24h_usd": 757737.9255477833,
+   "dex_liq_usd": 1942050.86,
+   "dex_vol_24h_usd": 757798.18,
    "funding_rate": 5e-05,
    "circ_supply": 1436863222.2000003,
    "total_supply": 2100000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.043874591131753723,
+     "value": 0.04355512567052121,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.8870685019121186,
+     "value": 0.8792756819406882,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.739453800196652,
+     "value": 1.5850025117505557,
      "level": "ok"
     },
     "float_ratio": {
@@ -6257,29 +6211,29 @@
    "address": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
    "perp_onboard_date": "2024-06-17",
    "is_new_perp": false,
-   "price": 0.0004329,
-   "mcap_usd": 38478501.255096614,
-   "fdv_usd": 38479999.9996152,
-   "fdv_to_mcap": 1.000038950179183,
-   "oi_usd": 1639595.9027772,
-   "perp_vol_24h_usd": 5959246.2680759,
-   "alpha_vol_24h_usd": 1347094.9853045247,
-   "dex_liq_usd": 8855789.91,
-   "dex_vol_24h_usd": 1352191.72,
-   "funding_rate": -8.771e-05,
+   "price": 0.00043366,
+   "mcap_usd": 38546054.179452986,
+   "fdv_usd": 38547555.55517008,
+   "fdv_to_mcap": 1.0000389501791833,
+   "oi_usd": 1623813.3147304,
+   "perp_vol_24h_usd": 3822779.6827406,
+   "alpha_vol_24h_usd": 842237.7152386996,
+   "dex_liq_usd": 8852853.25,
+   "dex_vol_24h_usd": 843182.1,
+   "funding_rate": 2.459e-05,
    "circ_supply": 88885426784.69997,
    "total_supply": 88888888888.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.04261070076267666,
+     "value": 0.042126576877899356,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.1851439475687833,
+     "value": 0.18342259482618217,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 4.407101581775623,
+     "value": 4.533753364475598,
      "level": "ok"
     },
     "float_ratio": {
@@ -6305,21 +6259,21 @@
    "address": "0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9",
    "perp_onboard_date": "2025-11-14",
    "is_new_perp": false,
-   "price": 1.02710459,
-   "mcap_usd": 317888870.605,
-   "fdv_usd": 1027104590.0,
+   "price": 1.02593883,
+   "mcap_usd": 317528067.88500005,
+   "fdv_usd": 1025938830.0000001,
    "fdv_to_mcap": 3.231017770597738,
-   "oi_usd": 11268250.543,
-   "perp_vol_24h_usd": 1819006.5185,
-   "alpha_vol_24h_usd": 1219127.0457569838,
+   "oi_usd": 11229100.42619085,
+   "perp_vol_24h_usd": 1678274.0227,
+   "alpha_vol_24h_usd": 1062022.7963447596,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
-   "funding_rate": 5.572e-05,
+   "funding_rate": 0.00016828,
    "circ_supply": 309500000.0,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.035447137616219405,
+     "value": 0.0353641191501147,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -6355,29 +6309,29 @@
    "address": "0x0a8d6c86e1bce73fe4d0bd531e1a567306836ea5",
    "perp_onboard_date": "2025-09-25",
    "is_new_perp": false,
-   "price": 0.2457,
-   "mcap_usd": 81665027.42131917,
-   "fdv_usd": 245700000.0,
+   "price": 0.24439006,
+   "mcap_usd": 81229633.5018227,
+   "fdv_usd": 244390060.0,
    "fdv_to_mcap": 3.008631819008714,
-   "oi_usd": 2638652.58,
-   "perp_vol_24h_usd": 1127059.3862,
-   "alpha_vol_24h_usd": 1109403.1308927098,
-   "dex_liq_usd": 1710519.45,
-   "dex_vol_24h_usd": 1106564.37,
-   "funding_rate": 0.00010185,
+   "oi_usd": 2619743.84141526,
+   "perp_vol_24h_usd": 962667.4981,
+   "alpha_vol_24h_usd": 1084893.871813034,
+   "dex_liq_usd": 1708750.5,
+   "dex_vol_24h_usd": 1080278.49,
+   "funding_rate": 5e-05,
    "circ_supply": 332376993.981763,
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.03231068014447471,
+     "value": 0.03225108533028745,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 1.5426030846945353,
+     "value": 1.5331342062022864,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.0185213050009914,
+     "value": 0.8911290070211432,
      "level": "ok"
     },
     "float_ratio": {
@@ -6403,29 +6357,29 @@
    "address": "0x0f0df6cb17ee5e883eddfef9153fc6036bdb4e37",
    "perp_onboard_date": "2025-08-26",
    "is_new_perp": false,
-   "price": 0.016581,
-   "mcap_usd": 79381537.5,
-   "fdv_usd": 165810000.0,
+   "price": 0.016645,
+   "mcap_usd": 79687937.5,
+   "fdv_usd": 166450000.0,
    "fdv_to_mcap": 2.088772845953003,
-   "oi_usd": 1425843.186911,
-   "perp_vol_24h_usd": 1708063.020315,
-   "alpha_vol_24h_usd": 970666.8231952927,
-   "dex_liq_usd": 1682458.02,
-   "dex_vol_24h_usd": 971741.49,
+   "oi_usd": 1430515.16082,
+   "perp_vol_24h_usd": 1385432.984981,
+   "alpha_vol_24h_usd": 903642.9223053312,
+   "dex_liq_usd": 1691590.44,
+   "dex_vol_24h_usd": 903772.9,
    "funding_rate": 5e-05,
    "circ_supply": 4787500000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.017961899351105412,
+     "value": 0.017951464245388456,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.8474762341535274,
+     "value": 0.8456628312583749,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.7577339630882696,
+     "value": 1.5329437129404964,
      "level": "ok"
     },
     "float_ratio": {
@@ -6437,7 +6391,9 @@
     "alert": 0,
     "warn": 0
    },
-   "flags": [],
+   "flags": [
+    "circ_mismatch"
+   ],
    "links": {
     "binance_futures": "https://www.binance.com/en/futures/BASUSDT",
     "dexscreener": "https://dexscreener.com/bsc/0x0f0df6cb17ee5e883eddfef9153fc6036bdb4e37",
@@ -6451,29 +6407,29 @@
    "address": "0xaaee1a9723aadb7afa2810263653a34ba2c21c7a",
    "perp_onboard_date": "2024-11-07",
    "is_new_perp": false,
-   "price": 9.943699000000001e-08,
-   "mcap_usd": 38836859.22026451,
-   "fdv_usd": 41832147.3231,
-   "fdv_to_mcap": 1.0771248798943194,
-   "oi_usd": 608317.58144616,
-   "perp_vol_24h_usd": 472930.54732,
-   "alpha_vol_24h_usd": 194922.95323021838,
-   "dex_liq_usd": 5035067.71,
-   "dex_vol_24h_usd": 195173.46,
+   "price": 9.957088e-08,
+   "mcap_usd": 38889152.30637865,
+   "fdv_usd": 41888473.5072,
+   "fdv_to_mcap": 1.0771248798943196,
+   "oi_usd": 609633.4489,
+   "perp_vol_24h_usd": 441283.82765,
+   "alpha_vol_24h_usd": 172765.90703403368,
+   "dex_liq_usd": 5031859.94,
+   "dex_vol_24h_usd": 173097.72,
    "funding_rate": 5e-05,
    "circ_supply": 390567526433216.7,
    "total_supply": 420690000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.015663408258532623,
+     "value": 0.015676182501926306,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.12081616702750557,
+     "value": 0.12115469352670415,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 2.423129391260472,
+     "value": 2.5493335651676983,
      "level": "ok"
     },
     "float_ratio": {
@@ -6499,13 +6455,13 @@
    "address": "0x30c60b20c25b2810ca524810467a0c342294fc61",
    "perp_onboard_date": "2025-06-11",
    "is_new_perp": false,
-   "price": 0.08086862,
-   "mcap_usd": 70621630.24674791,
-   "fdv_usd": 80868620.0,
+   "price": 0.08019862,
+   "mcap_usd": 70036526.99822801,
+   "fdv_usd": 80198620.0,
    "fdv_to_mcap": 1.145097043461751,
-   "oi_usd": 1067485.70286436,
-   "perp_vol_24h_usd": 1200013.23765,
-   "alpha_vol_24h_usd": 60.33904788652352,
+   "oi_usd": 1065388.90713651,
+   "perp_vol_24h_usd": 1292336.81531,
+   "alpha_vol_24h_usd": 108.0865318992434,
    "dex_liq_usd": 0.0,
    "dex_vol_24h_usd": 0.0,
    "funding_rate": 5e-05,
@@ -6513,7 +6469,7 @@
    "total_supply": 1000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.015115563024170164,
+     "value": 0.015211903742221044,
      "level": "ok"
     },
     "oi_to_dex_liq": {
@@ -6549,33 +6505,33 @@
    "address": "0x6bf62ca91e397b5a7d1d6bce97d9092065d7a510",
    "perp_onboard_date": "2025-07-10",
    "is_new_perp": false,
-   "price": 0.10360741,
-   "mcap_usd": 56602202.16890829,
-   "fdv_usd": 102076391.9056149,
-   "fdv_to_mcap": 1.80339965574141,
-   "oi_usd": 843701.82102204,
-   "perp_vol_24h_usd": 978636.48233,
-   "alpha_vol_24h_usd": 794687.2150002617,
-   "dex_liq_usd": 1072183.75,
-   "dex_vol_24h_usd": 790173.12,
+   "price": 0.10201008,
+   "mcap_usd": 55729557.15738567,
+   "fdv_usd": 100502665.8267312,
+   "fdv_to_mcap": 1.8033996850702032,
+   "oi_usd": 825635.75819,
+   "perp_vol_24h_usd": 729830.03951,
+   "alpha_vol_24h_usd": 749834.7581199687,
+   "dex_liq_usd": 1063614.83,
+   "dex_vol_24h_usd": 749974.35,
    "funding_rate": 5e-05,
-   "circ_supply": 546314227.6108272,
+   "circ_supply": 546314218.7260873,
    "total_supply": 985222890.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.014905812648495984,
+     "value": 0.014815042507126418,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.7869003993224482,
+     "value": 0.7762544625200458,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.2385089514687617,
+     "value": 0.9731400007346919,
      "level": "ok"
     },
     "float_ratio": {
-     "value": 0.5545082571222307,
+     "value": 0.5545082481042308,
      "level": "ok"
     }
    },
@@ -6591,35 +6547,83 @@
    }
   },
   {
+   "ticker": "SPX",
+   "perp_symbol": "SPXUSDT",
+   "chain": "ethereum",
+   "address": "0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+   "perp_onboard_date": "2024-12-10",
+   "is_new_perp": false,
+   "price": 0.3783,
+   "mcap_usd": 352194685.97348106,
+   "fdv_usd": 378300000.0,
+   "fdv_to_mcap": 1.0741218282563314,
+   "oi_usd": 3713918.88113304,
+   "perp_vol_24h_usd": 5676867.9611,
+   "alpha_vol_24h_usd": 1274881.067349657,
+   "dex_liq_usd": 10887985.36,
+   "dex_vol_24h_usd": 1241212.54,
+   "funding_rate": 5e-05,
+   "circ_supply": 930993090.07,
+   "total_supply": 1000000000.0,
+   "metrics": {
+    "oi_to_mcap": {
+     "value": 0.010545073588681812,
+     "level": "ok"
+    },
+    "oi_to_dex_liq": {
+     "value": 0.341102486670963,
+     "level": "ok"
+    },
+    "perp_to_spot_vol": {
+     "value": 4.573646960656713,
+     "level": "ok"
+    },
+    "float_ratio": {
+     "value": 0.9309930900700001,
+     "level": "ok"
+    }
+   },
+   "cond_level": {
+    "alert": 0,
+    "warn": 0
+   },
+   "flags": [],
+   "links": {
+    "binance_futures": "https://www.binance.com/en/futures/SPXUSDT",
+    "dexscreener": "https://dexscreener.com/ethereum/0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c",
+    "explorer": "https://etherscan.io/token/0xe0f63a424a4439cbe457d80e4f4b51ad25b2c56c"
+   }
+  },
+  {
    "ticker": "UB",
    "perp_symbol": "UBUSDT",
    "chain": "bsc",
    "address": "0x40b8129b786d766267a7a118cf8c07e31cdb6fde",
    "perp_onboard_date": "2025-09-12",
    "is_new_perp": false,
-   "price": 0.12007,
-   "mcap_usd": 600350000.0,
-   "fdv_usd": 1200700000.0,
+   "price": 0.11636025,
+   "mcap_usd": 581801250.0,
+   "fdv_usd": 1163602500.0,
    "fdv_to_mcap": 2.0,
-   "oi_usd": 2111482.21766132,
-   "perp_vol_24h_usd": 1606090.3424,
-   "alpha_vol_24h_usd": 1371867.5188246365,
-   "dex_liq_usd": 3672695.86,
-   "dex_vol_24h_usd": 1371062.14,
+   "oi_usd": 2084788.54068,
+   "perp_vol_24h_usd": 1819350.87559,
+   "alpha_vol_24h_usd": 1326157.0115281912,
+   "dex_liq_usd": 3624647.88,
+   "dex_vol_24h_usd": 1326175.44,
    "funding_rate": 5e-05,
    "circ_supply": 5000000000.0,
    "total_supply": 10000000000.0,
    "metrics": {
     "oi_to_mcap": {
-     "value": 0.0035170853962876994,
+     "value": 0.0035833345849291317,
      "level": "ok"
     },
     "oi_to_dex_liq": {
-     "value": 0.5749134418283468,
+     "value": 0.5751699502132053,
      "level": "ok"
     },
     "perp_to_spot_vol": {
-     "value": 1.171420532697373,
+     "value": 1.3718779738448483,
      "level": "ok"
     },
     "float_ratio": {
